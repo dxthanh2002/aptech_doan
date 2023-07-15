@@ -1,16 +1,13 @@
         <div class="row justify-content-start">
-        	<div class="col-1 col-md-7 col-lg-17 col-xl-7 mx-auto mt-3 slider owl-carousel owl-theme ">
-        		<div class="item">
-        			<img src="https://justwines.com/cdn/shop/files/banner1.jpg?v=1681120959">
-        		</div>
+        	<div class="col-1 col-md-7 col-lg-17 col-xl-7 mx-auto mt-3 slider owl-carousel owl-theme " style="width: 90%;">
         		<div class="item">
         			<img src="https://static.vecteezy.com/system/resources/previews/003/030/643/original/white-wine-bottle-glass-banner-illustration-free-vector.jpg">
         		</div>
         		<div class="item">
-        			<img src="https://monroevillewinery.com/wp-content/uploads/2018/03/monroe-wine-banner-1.png">
+        			<img src="https://loveittours.com.au/wp-content/uploads/2015/03/Banner-Barrel-Cheese-Wine.jpg">
         		</div>
         		<div class="item">
-        			<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRi0-CwdSICog-NPjcSUbcKrhL-DNUWjyZNg9ftJeRHkOFn7qN_o30qf8BJIjg6KkLq0w&usqp=CAU">
+        			<img src="https://img.freepik.com/free-psd/wine-banner-template-design_23-2148528398.jpg">
         		</div>
 
 

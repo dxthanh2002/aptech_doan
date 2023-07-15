@@ -76,8 +76,8 @@ session_start();
         nav: false,
         dots: false,
         autoplay: true,
-        autoplayTimeout: 4000,
-        sautoplaySpeed: 1000,
+        autoplayTimeout: 5000,
+        autoplaySpeed: 1500,
         responsive: {
             0: {
                 items: 1
@@ -98,7 +98,7 @@ session_start();
         dots: false,
         autoplay: true,
         autoplayTimeout: 4000,
-        sautoplaySpeed: 1000,
+        sautoplaySpeed: 1500,
         responsive: {
             0: {
                 items: 1
@@ -107,7 +107,7 @@ session_start();
                 items: 3
             },
             1000: {
-                items: 3
+                items: 5
             }
         }
 
