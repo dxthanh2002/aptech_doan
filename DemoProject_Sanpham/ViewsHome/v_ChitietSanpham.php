@@ -18,9 +18,12 @@
               <div class="tomtatsanpham">
               	  <h3>Giá: <?=number_format($row["price"])?> VNĐ</h3>
                   <h3><i class="fa fa-shopping-cart"></i><a href="?module=cart&act=add&masp=<?=$row["id"]?>"> Mua hàng</a></h3>
-                  <h2> TÓM TẮT SẢN PHẨM</h2>
+                     <h2> Thông tin sản phẩm</h2>
                   <div class="noidung_tomtat">
-                      <?=$row["summary"]?>
+                  <h4>Thương hiệu: <?=$row["author"]?></h4>
+                 <h4> Xuất xứ : <?=$row["summary"]?> </h4>
+                  <h4> Nồng Độ: <?=$row["concentration"]?> % </h4>
+                  <h4> Dung tích: <?=$row["capacity"]?> ml </h4>
                   </div>
               </div> 
               <div class="chitietsanpham">
