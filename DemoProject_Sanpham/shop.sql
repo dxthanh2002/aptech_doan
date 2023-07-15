@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jul 15, 2023 at 12:39 PM
+-- Generation Time: Jul 15, 2023 at 08:31 PM
 -- Server version: 10.4.27-MariaDB
 -- PHP Version: 8.2.0
 
@@ -28,7 +28,7 @@ SET time_zone = "+00:00";
 --
 
 CREATE TABLE `books` (
-  `id` int(10) UNSIGNED NOT NULL,
+  `id` int(11) NOT NULL,
   `title` varchar(255) NOT NULL,
   `author` varchar(100) NOT NULL,
   `price` int(30) NOT NULL,
@@ -117,8 +117,8 @@ CREATE TABLE `tbchitiethoadon` (
   `id` int(11) NOT NULL,
   `mahd` int(11) NOT NULL,
   `masp` int(11) NOT NULL,
-  `soluong` int(11) NOT NULL,
-  `giamua` float NOT NULL
+  `soluong` int(11) NOT NULL DEFAULT 0,
+  `giamua` float NOT NULL DEFAULT 0
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1 COLLATE=latin1_swedish_ci;
 
 --
@@ -126,19 +126,32 @@ CREATE TABLE `tbchitiethoadon` (
 --
 
 INSERT INTO `tbchitiethoadon` (`id`, `mahd`, `masp`, `soluong`, `giamua`) VALUES
-(5, 9, 4, 3, 1800000),
-(7, 9, 3, 5, 1900000),
-(8, 10, 25, 2, 200000),
-(9, 10, 24, 3, 3000000),
-(10, 16, 24, 2, 3000000),
-(11, 16, 2, 1, 1500000),
-(12, 17, 3, 1, 2000000),
-(13, 18, 24, 1, 3000000),
-(14, 21, 24, 1, 3000000),
-(16, 23, 22, 3, 1000000),
-(17, 23, 3, 2, 2000000),
-(18, 24, 2, 1, 1500000),
-(19, 24, 3, 1, 2000000);
+(5, 9, 33, 3, 2100000),
+(7, 9, 28, 1, 1750000),
+(8, 10, 30, 1, 5490000),
+(9, 10, 31, 1, 4500000),
+(10, 16, 32, 1, 5460000),
+(11, 16, 2, 1, 1590000),
+(12, 17, 33, 1, 700000),
+(13, 18, 37, 2, 1340000),
+(14, 21, 34, 4, 13800000),
+(16, 23, 32, 1, 5460000),
+(17, 23, 35, 1, 842000),
+(18, 24, 2, 1, 1590000),
+(19, 24, 33, 2, 1400000),
+(25, 16, 28, 2, 3500000);
+
+--
+-- Triggers `tbchitiethoadon`
+--
+DELIMITER $$
+CREATE TRIGGER `tinhgia` BEFORE INSERT ON `tbchitiethoadon` FOR EACH ROW SET new.giamua = new.soluong * ( SELECT price from books WHERE books.id = new.masp)
+$$
+DELIMITER ;
+DELIMITER $$
+CREATE TRIGGER `updatetinh` BEFORE UPDATE ON `tbchitiethoadon` FOR EACH ROW SET new.giamua = new.soluong * ( SELECT price from books WHERE books.id = new.masp)
+$$
+DELIMITER ;
 
 -- --------------------------------------------------------
 
@@ -248,7 +261,7 @@ ALTER TABLE `tbtintuc`
 -- AUTO_INCREMENT for table `books`
 --
 ALTER TABLE `books`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=38;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=38;
 
 --
 -- AUTO_INCREMENT for table `tbadmin`
@@ -266,7 +279,7 @@ ALTER TABLE `tbcategory`
 -- AUTO_INCREMENT for table `tbchitiethoadon`
 --
 ALTER TABLE `tbchitiethoadon`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=20;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=26;
 
 --
 -- AUTO_INCREMENT for table `tbhoadon`
@@ -294,7 +307,8 @@ ALTER TABLE `books`
 -- Constraints for table `tbchitiethoadon`
 --
 ALTER TABLE `tbchitiethoadon`
-  ADD CONSTRAINT `tbchitiethoadon_ibfk_1` FOREIGN KEY (`mahd`) REFERENCES `tbhoadon` (`mahd`);
+  ADD CONSTRAINT `tbchitiethoadon_ibfk_1` FOREIGN KEY (`mahd`) REFERENCES `tbhoadon` (`mahd`),
+  ADD CONSTRAINT `tbchitiethoadon_ibfk_2` FOREIGN KEY (`masp`) REFERENCES `books` (`id`);
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
