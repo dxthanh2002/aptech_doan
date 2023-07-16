@@ -27,10 +27,10 @@ else
 				<input type="hidden" name="id" id="id" value="<?=$id?>">
 			  <table width="750" border="0" align="center" cellpadding="0" cellspacing="0">
 				<tr>
-                  <td width="120" height="30">Nhóm sản phẩm:</td>
+                  <td width="120" height="30">Loại Rượu:</td>
                   <td width="630">
                   	<select name="s1" id="s1">
-                    	<option value="0"> Chọn nhóm SP</option>
+                    	<option value="0"> Chọn loại rượu</option>
                     	<?php
 							require_once("Models/clsCategory.php");
 							require_once("DungChung/Tienich.php");
@@ -42,11 +42,11 @@ else
                   </td>
                 </tr>
                 <tr>
-				  <td width="142" height="30">Tên sách:</td>
+				  <td width="142" height="30">Tên Rượu:</td>
 				  <td width="258"><input type="text" name="t1" id="t1"  value="<?=$row["title"];?>"></td>
 				</tr>
 				<tr>
-				  <td height="30">Tác giả:</td>
+				  <td height="30">Thương hiệu:</td>
 				  <td><input type="text" name="t2" id="t2"  value="<?=$row["author"]?>"></td>
 				</tr>
 				<tr>
@@ -67,8 +67,16 @@ else
                   </td>
                 </tr>
                  <tr>
-                  <td height="30" valign="top">Tóm tắt:</td>
+                  <td height="30" valign="top">Xuất xứ:</td>
                   <td><textarea name="t4" id="t4" rows="5" cols="50"><?=$row["summary"]?></textarea></td>
+                </tr>
+				<tr>
+                  <td height="30" valign="top">Nồng Độ:</td>
+                  <td><textarea name="t4a" id="t4a" rows="5" cols="50"><?=$row["concentration"]?></textarea></td>
+                </tr>
+				<tr>
+                  <td height="30" valign="top">Dung tích:</td>
+                  <td><textarea name="t4b" id="t4b" rows="5" cols="50"><?=$row["capacity"]?></textarea></td>
                 </tr>
                  <tr>
                   <td height="30"  valign="top">Chi tiết:</td>

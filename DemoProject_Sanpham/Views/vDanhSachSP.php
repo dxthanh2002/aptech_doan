@@ -26,6 +26,7 @@
                         require_once("DungChung/Tienich.php");
                         $nps = new clsCategory();
                         //lấy nhóm SP tất cả trạng thái, sắp xếp theo thứu tự tăng dần
+<<<<<<< HEAD
                         $nps->LayDanhSachNhomSanpham(2, 1);
                         ShowOptions($nps->data, "cat_id", "cat_name", $manhom);
                         ?>
@@ -76,3 +77,53 @@
     	        </table>
     	    </div>
     	</div>
+=======
+						$nps->LayDanhSachNhomSanpham(2,1);
+                        ShowOptions($nps->data,"cat_id","cat_name",$manhom);
+                    ?>
+                </select>
+                <input type="submit" name="bSearch" id="bSearch" value="Tìm kiếm">
+                </form>
+            </div>
+            <div id="right_detail">
+            <table width="100%" border="1" class="Content_Table" cellpadding="0" cellspacing="0">
+            	<tr>
+                	<td> id </td>
+                    <td> Tên Rượu </td>
+                    <td> Thương Hiệu </td>
+                    <td> Giá bán </td>
+                    <td> Hình ảnh </td>
+                    <td> Trạng thái </td>
+                    <td> Thao tác </td>
+                </tr>
+                <?php
+				$rows = $sanpham->data;
+				foreach($rows as $row)
+				{
+					$hinhanh = $row["images"];
+					if($hinhanh=="")
+						$hinhanh = "no-Image.png";
+					$trangthai="";
+					if($row["status"]==1)
+						$trangthai = "có";
+					else
+						$trangthai = "không";
+				?>
+                <tr>
+                	<td> <?=$row["id"]?> </td>
+                    <td> <?=$row["title"]?> </td>
+                    <td> <?=$row["author"]?> </td>
+                    <td> <?=$row["price"]?> VNĐ </td>
+                    <td align="center"> <img width="80" src="Hinhanh/Sanpham/<?=$hinhanh?>"> </td>
+                    <td> <?=$trangthai?> </td>
+                    <td> <a href="?module=<?=$module?>&act=sua&id=<?=$row["id"]?>"> Sửa </a>
+        				- <a href="?module=<?=$module?>&act=xoa&id=<?=$row["id"]?>" 
+                        		onClick="return confirm('Chắc chắn xóa?');"> Xóa </a> </td>
+                </tr>
+                <?php
+				}
+				?>
+            </table>
+			</div>
+        </div>
+>>>>>>> 99d3eaa46db964279145b6c60aa3690d1fbea4ae

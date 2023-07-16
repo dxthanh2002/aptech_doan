@@ -31,7 +31,7 @@
 					else
 						$trangthai = "không";
 				?>
-              <div class="sanpham">
+              <div class="sanpham" style="width:200px; height:350px;">
                 <p><a href="?module=chitietsanpham&manhom=<?=$row["cat_id"]?>&masp=<?=$row["id"]?>"><?=$row["title"]?></a></p><!-- thẻ <a href>...</a> để tạo liên kết tới sp1.htm-->
                 <p><a href="?module=chitietsanpham&manhom=<?=$row["cat_id"]?>&masp=<?=$row["id"]?>"><img src="Hinhanh/Sanpham/<?=$hinhanh?>"></a></p> <!--thẻ p này dùng để cố định chiều cao dòng 2, và để ảnh căn giữa-->
                 <p>Giá: <?=number_format($row["price"])?> VNĐ</p>
