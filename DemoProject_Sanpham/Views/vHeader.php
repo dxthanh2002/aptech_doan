@@ -25,9 +25,17 @@
                         <li class="nav-item">
                             <a class="nav-link" href="?module=hoadon">Quản lý hóa đơn</a>
                         </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="text-white">Xin chào: <b><?= isset($_SESSION["user"]) ? $_SESSION["user"] : "" ?></b></span></a>
+                            <div class="dropdown-menu" aria-labelledby="dropdownId">
+                                <a class="dropdown-item"><?= isset($_SESSION["user"]) ? "<a href='logout.php'>Đăng xuất</a>" : "<a href='login.php'>Đăng nhập</a>" ?></a>>
+                            </div>
+                        </li>
                     </ul>
                 </div>
+
             </div>
+
         </nav>
 
     </div>
