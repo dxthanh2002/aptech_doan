@@ -67,7 +67,7 @@
     						<td align="center"> <img width="80" src="Hinhanh/Sanpham/<?= $hinhanh ?>"> </td>
     						<td> <?= $trangthai ?> </td>
     						<td>  <a class="btn btn-secondary" href="?module=<?= $module ?>&act=sua&id=<?= $row["id"] ?>"> Sửa </a>
-    							- <a class="btn btn-secondary" href="?module=<?= $module ?>&act=xoa&id=<?= $row["id"] ?>" onClick="return confirm('Chắc chắn xóa?');"> Xóa </a> </td>
+    							- <a class="btn btn-danger" href="?module=<?= $module ?>&act=xoa&id=<?= $row["id"] ?>" onClick="return confirm('Chắc chắn xóa?');"> Xóa </a> </td>
     					</tr>
     				<?php
 					}
