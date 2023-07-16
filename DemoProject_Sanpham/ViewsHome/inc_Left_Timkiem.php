@@ -21,7 +21,7 @@
 			        <label class="form-label">
 			            Nhóm sản phẩm:
 			            <select class="form-select form-select-sm" name="manhom" id="manhom">
-			                <option value="0">Tìm nhóm của phẩm</option>
+			                <option value="0">Tất cả sản phẩm</option>
 			                <?php
                             require_once("Models/clsCategory.php");
                             require_once("DungChung/Tienich.php");
