@@ -10,13 +10,15 @@ if($hinhanh=="")//nếu không chọn ảnh mới thì lấy ảnh hiện taij
 	$hinhanh = $_REQUEST["anhHientai"];
 	
 $tomtat = $_REQUEST["t4"];
+$nongdo = $_REQUEST["t4a"];
+$dungtich = $_REQUEST["t4b"];
 $chitiet = $_REQUEST["t5"];
 $trangthai =1;
 if(isset($_REQUEST["rTrangthai"]))
 	$trangthai = $_REQUEST["rTrangthai"];
 $nhomsp = $_REQUEST["s1"];
 
-$ketqua = $sanpham->SuaSanpham($id,$tensp,$tacgia,$gia, $hinhanh,$tomtat,$chitiet,$trangthai,$nhomsp);
+$ketqua = $sanpham->SuaSanpham($id,$tensp,$tacgia,$gia, $hinhanh,$tomtat,$nongdo, $dungtich,$chitiet,$trangthai,$nhomsp);
 if($ketqua==FALSE)
 	$thongbao="Lỗi sửa dữ liệu";
 else

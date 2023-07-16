@@ -37,9 +37,9 @@
             <table width="100%" border="1" class="Content_Table" cellpadding="0" cellspacing="0">
             	<tr>
                 	<td> id </td>
-                    <td> Tên sách </td>
-                    <td> Tác giả </td>
-                    <td> Giá sách </td>
+                    <td> Tên Rượu </td>
+                    <td> Thương Hiệu </td>
+                    <td> Giá bán </td>
                     <td> Hình ảnh </td>
                     <td> Trạng thái </td>
                     <td> Thao tác </td>
