@@ -14,7 +14,7 @@ require("KiemtraDangNhap.php");
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css" integrity="sha512-UTNP5BXLIptsaj5WdKFrkFov94lDx+eBvbKyoe1YAfjeRPC+gT5kyZ10kOHCfNZqEui1sxmqvodNUx3KbuYI/A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css" integrity="sha512-OTcub78R3msOCtY3Tc6FzeDJ8N9qvQn1Ph49ou13xgA9VsH9+LRxoFU6EqLhW4+PKRfU+/HReXmSZXHEkpYoOA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-
+	<link rel="stylesheet" type="text/css" href="css_Admin/Admin.css">
 
 	<!--nhúng file css và js của Slide show-->
 	<link rel="stylesheet" type="text/css" href="CSS/SlideShow.css">
@@ -29,7 +29,7 @@ require("KiemtraDangNhap.php");
 </head>
 
 <body>
-
+	
 	<div id="menu">
 		<ul>
 			<li><a href="index_admin.php">Trang chủ</a></li>
@@ -41,7 +41,11 @@ require("KiemtraDangNhap.php");
 		<span class="welcome">Xin chào: <b><?= isset($_SESSION["user"]) ? $_SESSION["user"] : "" ?></b></span>
 		<span class="logout"><?= isset($_SESSION["user"]) ? "<a href='logout.php'>Đăng xuất</a>" : "<a href='login.php'>Đăng nhập</a>" ?></span>
 	</div>
+
 	<div id="content" class="clear_fix">
+	<div>
+		<?php include("Views/vHeader.php"); ?>
+	</div>
 		<?php
 		$module = "";
 		if (isset($_REQUEST["module"]))
@@ -60,12 +64,9 @@ require("KiemtraDangNhap.php");
 		?>
 	</div>
 
-	<div>
-		<?php include("ViewsHome/inc_Footer.php"); ?>
+
+
 	</div>
-
-
-
 </body>
 
 <!-- Bootstrap JavaScript Libraries -->
