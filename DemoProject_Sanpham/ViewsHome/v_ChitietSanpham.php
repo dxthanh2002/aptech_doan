@@ -15,11 +15,11 @@
                 <p><a href="#"><?=$row["title"];?></a></p><!-- thẻ <a href>...</a> để tạo liên kết tới sp1.htm-->
                 <p><a href="#"><img src="Hinhanh/Sanpham/<?=$hinhanh?>"></a></p> <!--thẻ p này dùng để cố định chiều cao dòng 2, và để ảnh căn giữa-->
                </div>
-              <div class="tomtatsanpham">
+              <div class="tomtatsanpham" style="width:580px; height:350px;padding:5px;">
               	  <h3>Giá: <?=number_format($row["price"])?> VNĐ</h3>
                   <h3><i class="fa fa-shopping-cart"></i><a href="?module=cart&act=add&masp=<?=$row["id"]?>"> Mua hàng</a></h3>
                      <h2> Thông tin sản phẩm</h2>
-                  <div class="noidung_tomtat">
+                  <div class="noidung_tomtat" style="margin:10px; padding:10px;" >
                   <h4>Thương hiệu: <?=$row["author"]?></h4>
                  <h4> Xuất xứ : <?=$row["summary"]?> </h4>
                   <h4> Nồng Độ: <?=$row["concentration"]?> % </h4>
