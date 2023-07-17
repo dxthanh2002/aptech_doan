@@ -16,10 +16,7 @@
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Tin tức</a>
                             <div class="dropdown-menu" aria-labelledby="dropdownId">
-                                <a class="dropdown-item" href="?module=tintuc&manhom=1">Action 1</a>
-                                <a class="dropdown-item" href="?module=tintuc&manhom=2">Action 2</a>
-                                <a class="dropdown-item" href="?module=tintuc&manhom=3">Action 3</a>
-                                <a class="dropdown-item" href="?module=tintuc&manhom=4">Action 4</a>
+                                <a class="dropdown-item" href="?module=tintuc&manhom=1">Tin tức</a>
                             </div>
                         </li>
                         <li class="nav-item dropdown">
