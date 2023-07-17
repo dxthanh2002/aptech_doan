@@ -2,22 +2,22 @@
     <div class="contrainer text-white text-center text-md-start">
         <div class="row text-center text-md-start">
             <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
-                <h5 class=" text-uppercase mb-4 fw-bold text-warning ">Company Name</h5>
-                <p>Content</p>
+                <h5 class=" text-uppercase mb-4 fw-bold text-warning ">Wines shops</h5>
+                <p>New shopping wine</p>
             </div>
             <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
                 <h5 class=" text-uppercase mb-4 fw-bold text-warning ">Product</h5>
                 <p>
-                    <a href="#" class="text-white" style="text-decoration:none">Provider</a>
+                    <a href="#" class="text-white" style="text-decoration:none">Whisky</a>
                 </p>
                 <p>
-                    <a href="#" class="text-white" style="text-decoration:none">Provider2</a>
+                    <a href="#" class="text-white" style="text-decoration:none">Vodka</a>
                 </p>
                 <p>
-                    <a href="#" class="text-white" style="text-decoration:none">Provider3</a>
+                    <a href="#" class="text-white" style="text-decoration:none">Vang</a>
                 </p>
                 <p>
-                    <a href="#" class="text-white" style="text-decoration:none">Provider4</a>
+                    <a href="#" class="text-white" style="text-decoration:none">Cognac</a>
                 </p>
             </div>
             <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
