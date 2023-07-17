@@ -14,7 +14,7 @@
                 if($ketqua)
                 {
                 ?>
-                <table width="100%" border="1" class="Content_Table" cellpadding="0" cellspacing="0">
+                <table id="example" width="100%" border="1" class="Content_Table" cellpadding="0" cellspacing="0">
                   <tr>
                     <td>Mã hd</td>
                     <td>Họ tên</td>
