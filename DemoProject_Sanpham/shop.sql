@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jul 16, 2023 at 09:51 AM
+-- Generation Time: Jul 17, 2023 at 09:45 AM
 -- Server version: 10.4.27-MariaDB
 -- PHP Version: 8.2.0
 
@@ -163,8 +163,11 @@ DELIMITER ;
 CREATE TABLE `tbhoadon` (
   `mahd` int(11) NOT NULL,
   `tennguoimua` varchar(30) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL,
-  `diachi` varchar(100) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL,
+  `dtnguoimua` varchar(15) NOT NULL,
+  `nguoinhan` varchar(30) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL,
   `dienthoai` varchar(15) NOT NULL,
+  `diachi` varchar(100) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL,
+  `Note` text CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL,
   `ngaydat` datetime NOT NULL DEFAULT current_timestamp(),
   `ngaynhan` datetime NOT NULL DEFAULT current_timestamp(),
   `trangthai` int(11) NOT NULL DEFAULT 0
@@ -174,15 +177,15 @@ CREATE TABLE `tbhoadon` (
 -- Dumping data for table `tbhoadon`
 --
 
-INSERT INTO `tbhoadon` (`mahd`, `tennguoimua`, `diachi`, `dienthoai`, `ngaydat`, `ngaynhan`, `trangthai`) VALUES
-(9, 'nguyễn văn nam', 'Hà nội', '0123456789', '2021-08-13 17:28:14', '2021-08-13 17:28:14', 1),
-(10, 'Nguyễn Trọng Tâm', 'Định Công - Hà nội', '0912356004', '2021-09-15 21:00:22', '2021-09-26 00:00:00', 3),
-(16, 'Lê Văn Quý', 'Nam Định', '0912356004', '2021-09-18 15:24:18', '2020-09-19 00:00:00', 0),
-(17, 'Nguyễn Văn Nam', 'Hà nội', '1234567', '2021-09-18 15:30:44', '2020-09-19 00:00:00', 0),
-(18, 'Nguyễn Văn Dũng', 'Hà nội', '0912356004', '2021-09-18 15:47:17', '2021-09-19 00:00:00', 0),
-(21, 'Nguyễn Văn Dũng3', 'Hà nội', '0912356004', '2021-09-18 15:51:26', '2021-09-26 00:00:00', 0),
-(23, 'Vũ văn Hiệu', 'Hà nội', '012345674', '2021-09-19 14:21:19', '2021-09-19 00:00:00', 2),
-(24, 'Nguyễn Ngọc Long', 'Nam Định', '0912356004', '2021-09-19 17:25:48', '2021-09-26 00:00:00', 2);
+INSERT INTO `tbhoadon` (`mahd`, `tennguoimua`, `dtnguoimua`, `nguoinhan`, `dienthoai`, `diachi`, `Note`, `ngaydat`, `ngaynhan`, `trangthai`) VALUES
+(9, 'nguyễn văn nam', '', '', '0123456789', 'Hà nội', '', '2021-08-13 17:28:14', '2021-08-13 17:28:14', 1),
+(10, 'Nguyễn Trọng Tâm', '', '', '0912356004', 'Định Công - Hà nội', '', '2021-09-15 21:00:22', '2021-09-26 00:00:00', 3),
+(16, 'Lê Văn Quý', '', '', '0912356004', 'Nam Định', '', '2021-09-18 15:24:18', '2020-09-19 00:00:00', 0),
+(17, 'Nguyễn Văn Nam', '', '', '1234567', 'Hà nội', '', '2021-09-18 15:30:44', '2020-09-19 00:00:00', 0),
+(18, 'Nguyễn Văn Dũng', '', '', '0912356004', 'Hà nội', '', '2021-09-18 15:47:17', '2021-09-19 00:00:00', 0),
+(21, 'Nguyễn Văn Dũng3', '', '', '0912356004', 'Hà nội', '', '2021-09-18 15:51:26', '2021-09-26 00:00:00', 0),
+(23, 'Vũ văn Hiệu', '', '', '012345674', 'Hà nội', '', '2021-09-19 14:21:19', '2021-09-19 00:00:00', 2),
+(24, 'Nguyễn Ngọc Long', '', '', '0912356004', 'Nam Định', '', '2021-09-19 17:25:48', '2021-09-26 00:00:00', 2);
 
 -- --------------------------------------------------------
 
