@@ -31,7 +31,7 @@
 						$trangthai = "không";
 				?>
 
-        			<div class=" card text-center mt-5" style="width: 18rem;">
+        			<div class=" d-grid gap-3 card text-center mt-5" style="width: 18rem;">
         				<a class="card-link" href="?module=chitietsanpham&manhom=<?= $row["cat_id"] ?>&masp=<?= $row["id"] ?>"><img src="Hinhanh/Sanpham/<?= $hinhanh ?>" class="card-img-top"></a>
         				<div class="card-body">
         					<h5 class="card-title"><a href="?module=chitietsanpham&manhom=<?= $row["cat_id"] ?>&masp=<?= $row["id"] ?>" class="card-link"><?= $row["title"] ?></a></h5><!-- thẻ <a href>...</a> để tạo liên kết tới sp1.htm-->
