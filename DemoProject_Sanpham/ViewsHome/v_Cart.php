@@ -9,7 +9,7 @@
             if($count==0)
             {
             ?>
-                <h2>Ban khong co mon hang nao trong gio hang</h2>
+                <h2>Chưa có hàng trong giỏ</h2>
                 
                 <h3><a href="index.php">Mua hàng</a></h3>	
         	<?php

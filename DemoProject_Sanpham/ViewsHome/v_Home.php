@@ -1,5 +1,5 @@
-        <div class="row justify-content-start">
-        	<div class="col-1 col-md-7 col-lg-17 col-xl-7 mx-auto mt-3 slider owl-carousel owl-theme " style="width: 90%;">
+        <div class="row justify-content-start" >
+        	<div class="col-1 col-md-7 col-lg-17 col-xl-7 mx-auto mt-3 slider owl-carousel owl-theme " style="width: 80%;">
         		<div class="item">
         			<img src="https://static.vecteezy.com/system/resources/previews/003/030/643/original/white-wine-bottle-glass-banner-illustration-free-vector.jpg">
         		</div>
@@ -7,7 +7,7 @@
         			<img src="https://loveittours.com.au/wp-content/uploads/2015/03/Banner-Barrel-Cheese-Wine.jpg">
         		</div>
         		<div class="item">
-        			<img src="https://img.freepik.com/free-psd/wine-banner-template-design_23-2148528398.jpg">
+        			<img src="https://img.freepik.com/free-vector/wine-testing-horizontal-banner-template_23-2148929797.jpg?w=1380&t=st=1689577751~exp=1689578351~hmac=e9e01ff3f7baf39bbd5b4496c2f226b288dbd7fddc9ddc5fe7d90971500da30c">
         		</div>
 
 
