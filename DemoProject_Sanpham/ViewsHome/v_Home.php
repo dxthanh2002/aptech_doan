@@ -1,13 +1,13 @@
         <div class="row justify-content-start" >
-        	<div class="col-1 col-md-7 col-lg-17 col-xl-7 mx-auto mt-3 slider owl-carousel owl-theme " style="width: 80%;">
+        	<div class="col-1 col-md-7 col-lg-17 col-xl-7 mx-auto mt-3 slider owl-carousel owl-theme imgbanner" style="width: 80%;">
         		<div class="item">
-        			<img src="https://static.vecteezy.com/system/resources/previews/003/030/643/original/white-wine-bottle-glass-banner-illustration-free-vector.jpg">
+        			<img src="https://img.freepik.com/free-psd/wine-banner-template-theme_23-2148559351.jpg?w=1380&t=st=1689578640~exp=1689579240~hmac=5415922a6307e2b6df5e341afb86560fa7eac55b18259123195588391f2413f7">
         		</div>
         		<div class="item">
-        			<img src="https://loveittours.com.au/wp-content/uploads/2015/03/Banner-Barrel-Cheese-Wine.jpg">
+        			<img src="https://img.freepik.com/free-psd/wine-banner-template-design_23-2148559350.jpg?w=1380&t=st=1689578589~exp=1689579189~hmac=88fd819201cbcc55b7aa4c425ba38d65438741a731a827fd0ba4ffa13575751b">
         		</div>
         		<div class="item">
-        			<img src="https://img.freepik.com/free-vector/wine-testing-horizontal-banner-template_23-2148929797.jpg?w=1380&t=st=1689577751~exp=1689578351~hmac=e9e01ff3f7baf39bbd5b4496c2f226b288dbd7fddc9ddc5fe7d90971500da30c">
+        			<img src="https://img.freepik.com/free-psd/wine-banner-template-theme_23-2148570003.jpg?w=1380&t=st=1689578553~exp=1689579153~hmac=78f02cd4022f0436307b75584a2d3625eb40f68cb2df56a249dfa2ea395ca3ec">
         		</div>
 
 
