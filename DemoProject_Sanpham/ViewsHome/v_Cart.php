@@ -1,4 +1,6 @@
 		<div id="content_center_2"> <!-- không kèm <div id="content_right"> -->
+			<br>
+			<br>
 			<h1>GIỎ HÀNG CỦA BẠN</h1>
 			<?php
 			//đếm số đầu sản phẩm trong giỏ hàng
@@ -7,9 +9,7 @@
 				$count = count($_SESSION["cart"]); //đếm số phần tử của mảng cart
 			if ($count == 0) {
 			?>
-				<h2>Chưa có hàng trong giỏ</h2>
-
-				<h3><a href="index.php">Mua hàng</a></h3>
+				<p>Chưa có hàng trong giỏ</p>
 				<?php
 			} else //count>0
 			{
@@ -53,10 +53,10 @@
 									<span><a href="#"><img src="hinhanh/Sanpham/<?= $hinhanh ?>"></a></span>
 									<span>
 										<p class="cart_item_name"><a href="?module=chitietsanpham&manhom=<?= $row["cat_id"] ?>&masp=<?= $row["id"] ?>"> <?= $row["title"] ?> </a></p>
-										<p class="cart_item_author">Tác giả: <?= $row["author"] ?></p>
+										<p class="cart_item_author">Hãng: <?= $row["author"] ?></p>
 									</span>
 									<span><?= number_format($row["price"]) ?> VNĐ</span>
-									<span><input type="number" name="qty[<?= $masp ?>]" value="<?= $soluong ?>"></span>
+									<span><input type="number" name="qty[<?= $masp ?>]" value="<?= $soluong ?>" min="1"></span>
 									<span><?= number_format($soluong * $row["price"]) ?> VNĐ</span>
 									<span><a href="?module=cart&act=del&masp=<?= $row["id"] ?>" title="Xóa sản phẩm"> X </a></span>
 								</div>
@@ -64,7 +64,7 @@
 							}
 							?>
 							<div class="cart_update">
-								<input type="submit" name="capnhat" value="Cap Nhat Gio Hang">
+								<input class="form-control" type="submit" name="capnhat" value="Cập nhật giỏ hàng">
 							</div>
 							<div class="cart_total">
 								Tổng tiền:<?= number_format($total) ?> VNĐ
@@ -72,8 +72,9 @@
 
 						</form>
 					</div>
-					<h1>THANH TOÁN</h1>
-					<div class="container-fluid" id="cart_checkout">
+					<hr>
+					<h1 class="text-center">THANH TOÁN</h1>
+					<div class="container" style="width: 400px;">
 						<script>
 							function kt() {
 								hoten = document.getElementById("hoten");
@@ -86,23 +87,25 @@
 							}
 						</script>
 						<form class="row g-3" name="f2" id="f1" action="?module=checkout" method="post" onSubmit="return kt();">
-							<div class="col-md-6">
+							<div>
 								<label class="form-label">Họ tên:(*)</label>
-								<input class="form-control" type="text" name="hoten" id="hoten">
+								<input class="form-control" type="text" name="hoten" id="hoten" required>
 							</div>
 							<div>
-								<span>Địa chỉ:(*)</span>
+								<label class="form-label">Địa chỉ:(*)</label>
 								<input class="form-control" type="text" name="diachi" id="diachi">
 							</div>
 							<div>
-								<span>Điện thoại:(*)</span>
+								<label class="form-label">Điện thoại:(*)</label>
 								<input class="form-control" type="text" name="dienthoai" id="dienthoai">
 							</div>
 							<div>
-								<span>Ngày nhận hàng:</span>
-								<input class="form-control" type="text" name="ngaynhan" id="ngaynhan">
+								<label class="form-label">Ngày nhận hàng:</label>
+								<input class="form-control" type="date" name="ngaynhan" id="ngaynhan">
 							</div>
-							<p><input class="form-control" type="submit" name="dathang" id="dathang" value="ĐỒNG Ý"></p>
+							<label class="form-label">
+								<input class="btn btn-success" class="form-control" type="submit" name="dathang" id="dathang" value="ĐỒNG Ý">
+							</label>
 						</form>
 					</div>
 			<?php

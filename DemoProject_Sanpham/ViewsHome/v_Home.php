@@ -14,7 +14,7 @@
         	</div>
         	<br>
         	<hr>
-        	<h1>SẢN PHẨM MỚI</h1>
+        	 <h3>Sản phẩm mới <i class="fa-solid fa-cart-plus"></i></h3>
         	<div class="row product owl-carousel owl-theme ">
         		<?php
 				$rows = $sanpham->data;

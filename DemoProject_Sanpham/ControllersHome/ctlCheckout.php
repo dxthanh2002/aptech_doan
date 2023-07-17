@@ -37,9 +37,7 @@ else
 			{
 				unset($_SESSION["cart"]);//xóa giỏ hàng
  				$thongbao ="CẢM ƠN BẠN ĐÃ MUA HÀNG, CHÚNG TÔI SẼ LIÊN HỆ SỚM NHẤT";
-				$thongbao .= "<br>Tài khoản: Trần Mạnh Trường";
-				$thongbao .= "<br>STK: 0011223344";
-				$thongbao .= "<br>Ngân hàng: BIDV";
+
 			}
 		}
 	}
