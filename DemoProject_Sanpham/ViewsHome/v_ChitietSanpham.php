@@ -1,5 +1,5 @@
         <div id="content_center_2">
-        	<h1>CHI TIẾT SẢN PHẨM</h1>
+        	<h1>Thông tin về rượu</h1>
             <?php
 			if($sanpham->data==NULL)
 				echo "<H2>KHÔNG TÌM THẤY SẢN PHẨM</H2>";
@@ -30,8 +30,10 @@
               	<h2>CHI TIẾT SẢN PHẨM</h2>
                   <?=$row["content"]?>
               </div> 
+              
             </div>
             <?php
 			}
 			?>
         </div>
+        

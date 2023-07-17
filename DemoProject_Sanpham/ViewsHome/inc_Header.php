@@ -44,7 +44,7 @@
                             </div>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="?module=lienhe">Liên hệ</a>
+                            <a class="nav-link" href="?module=lienhe">Giới thiệu</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="?module=cart">Giỏ hàng</a>
