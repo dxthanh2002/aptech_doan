@@ -11,12 +11,17 @@ else if(isset($_REQUEST["dathang"])==false)
 	$thongbao ="lỗi submit form đặt hàng";
 else
 {
+	
 	$hoten = $_REQUEST["hoten"];
-	$diachi = $_REQUEST["diachi"];
+	$dtmua = $_REQUEST["dtmua"];
+	$ngnhan  = $_REQUEST["ngnhan"];
+
 	$dienthoai = $_REQUEST["dienthoai"];
+	$diachi = $_REQUEST["diachi"];
+	$note  = $_REQUEST["note"];
 	$ngaynhan = $_REQUEST["ngaynhan"];
 	$hoadon = new clsHoadon();
-	$ketqua = $hoadon->ThemHoadon($hoten,$diachi,$dienthoai,$ngaynhan);
+	$ketqua = $hoadon->ThemHoadon($hoten,$dtmua, $ngnhan,$dienthoai, $diachi,$note, $ngaynhan);
 	if($ketqua==FALSE)
 		$thongbao ="LỖI THÊM HÓA ĐƠN MỚI";
 	else

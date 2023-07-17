@@ -95,10 +95,20 @@
 								<label class="form-label">Địa chỉ:(*)</label>
 								<input class="form-control" type="text" name="diachi" id="diachi">
 							</div>
+							<p><span>Điện thoại người mua:</span>
+		                        <input type="text" name="dtmua" id="dtmua">
+		                    </p>
+							<p><span>Họ tên người nhận:</span>
+		                        <input type="text" name="ngnhan" id="ngnhan">
+		                    </p>
 							<div>
 								<label class="form-label">Điện thoại:(*)</label>
 								<input class="form-control" type="text" name="dienthoai" id="dienthoai">
 							</div>
+
+							<p><span>Chú thích:</span>
+		                        <textarea   name="note" id="note" rows="4" cols="39"> </textarea>
+		                    </p> 
 							<div>
 								<label class="form-label">Ngày nhận hàng:</label>
 								<input class="form-control" type="date" name="ngaynhan" id="ngaynhan">
