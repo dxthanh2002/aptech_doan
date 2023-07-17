@@ -1,5 +1,5 @@
         <div class="row justify-content-start" >
-        	<div class="col-1 col-md-7 col-lg-17 col-xl-7 mx-auto mt-3 slider owl-carousel owl-theme imgbanner" style="width: 80%;">
+        	<div class="col-1 col-md-7 col-lg-17 col-xl-7 my-5 mx-auto slider owl-carousel owl-theme " style="width: 70%;">
         		<div class="item">
         			<img src="https://img.freepik.com/free-psd/wine-banner-template-theme_23-2148559351.jpg?w=1380&t=st=1689578640~exp=1689579240~hmac=5415922a6307e2b6df5e341afb86560fa7eac55b18259123195588391f2413f7">
         		</div>
