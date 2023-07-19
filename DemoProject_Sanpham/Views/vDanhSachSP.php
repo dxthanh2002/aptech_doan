@@ -34,8 +34,8 @@
     			</form>
     		</div>
     		<div class="table-responsive">
-    			<table id="example" class="table table-striped table-hover table-bordered table align-middle">
-					<thead >
+    			<table class="table table-striped table-hover table-bordered table align-middle">
+					<thead class="bg-dark text-white">
     				<tr>
     					<td> id </td>
     					<td> Tên Rượu </td>

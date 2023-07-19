@@ -40,7 +40,11 @@ session_start();
             $module = $_REQUEST["module"];
         if ($module == "tintuc") {
             require("ControllersHome/ctlTintuc.php");
-        } else if ($module == "sanpham") {
+        } else if($module=="chitiettintuc")
+            {
+                require("ControllersHome/ctlchitietTintuc.php");
+            }
+        else if ($module == "sanpham") {
             require("ControllersHome/ctlSanpham.php");
         } else if ($module == "chitietsanpham") {
             require("ControllersHome/ctlChitietSanpham.php");
