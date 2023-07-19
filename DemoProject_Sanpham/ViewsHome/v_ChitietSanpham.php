@@ -28,7 +28,7 @@
               </div> 
               <div class="chitietsanpham">
               	<h2>CHI TIẾT SẢN PHẨM</h2>
-                  <?=$row["content"]?>
+                 <div> <?=$row["content"]?> </div>
               </div> 
               
             </div>

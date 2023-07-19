@@ -54,10 +54,13 @@ class clsTintuc
 		return $ketqua;
 	}
 	//Hàm TimTheoIDTintuc($id) truy vấn dữ liệu theo id lưu vào thuộc tính data
-	function TimTheoIDTintuc($id)
+	function TimTheoIDTintuc($id, $trangthai=2)
 	{
 		$sql = "SELECT * FROM tbTintuc WHERE id=?";
-		$data[] = $id;
+		if($trangthai!=2) 
+			$sql = $sql . " AND trangthai = " . $trangthai;
+			
+		 $data[] = $id;
  		$ketqua = $this->db->ThucthiSQL($sql,$data);
 		//LẤY BẢN GHI KẾT QUẢ LƯU VÀO $data
 		$this->data=NULL;

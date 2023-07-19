@@ -16,7 +16,7 @@
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Tin tức</a>
                             <div class="dropdown-menu" aria-labelledby="dropdownId">
-                                <a class="dropdown-item" href="?module=tintuc&manhom=1">Tin tức</a>
+                                <a class="dropdown-item" href="?module=tintuc">Tin tức</a>
                             </div>
                         </li>
                         <li class="nav-item dropdown">
