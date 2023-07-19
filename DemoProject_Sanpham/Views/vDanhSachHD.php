@@ -1,11 +1,4 @@
-    	<div id="content_left">
-    		<div class="left1">
-    			<h3>CHỨC NĂNG</h3>
-    			<p><a href="?module=<?= $module ?>">Danh sách Hóa đơn</a></p>
-    			<p><a href="?module=<?= $module ?>">Thống kê</a></p>
-    		</div>
 
-    	</div>
     	<div class="container table-responsive">
     		<h1> QUẢN LÝ HÓA ĐƠN</h1>
     		<h2> DANH SÁCH HÓA ĐƠN</h2>
@@ -16,7 +9,7 @@
     				<table id="example" class="table table-striped table-hover table-bordered table align-middle">
     					<thead>
     						<tr>
-    							<td>Mã hd</td>
+    							<td>Id KH</td>
     							<td>Họ tên</td>
     							<td>Địa chỉ</td>
     							<td>Điện thoại</td>
