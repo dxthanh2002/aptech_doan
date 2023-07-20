@@ -15,16 +15,16 @@
 .sanpham p:nth-child(3) { color:red; text-align:center; margin:10px}
 .sanpham p:nth-child(4) { color:red; font-weight:bold; text-align:center; 
 							margin:10px}	
-.sanpham i { font-size:20px; color:#F90}			
+.sanpham i { font-size:20px;font-family: Verdana, Geneva, Tahoma, sans-serif; color:#F90}			
 
-.tomtatsanpham {width:590px; height:300px;float:left; margin:5px;
+.tomtatsanpham {width:600px; height:350px;float:left; margin:5px;
 			border:1px #FF9900 dashed;  border-radius:10px; text-align:justify}
 .tomtatsanpham h3 {padding:10px; color:#F00;}			
 .tomtatsanpham h2 { margin:10px;background:#999; padding:10px;border-radius:10px; color:#FFF}
 .tomtatsanpham p { margin-bottom:10px; padding-left:10px; padding-right:10px; text-align:justify}		
 .tomtatsanpham i { font-size:20px; color:#F90}
 .tomtatsanpham a {color:green; text-decoration:none; font-size:14px; font-weight:bold}
-.noidung_tomtat { height:170px;overflow:auto;}
+.noidung_tomtat { height:170px;overflow:auto; font: size 16px; }
 
 .chitietsanpham	{width:100%; clear:both  ;text-align:justify}
 .chitietsanpham h2 { margin:10px; background:#999; padding:10px;border-radius:10px; color:#FFF}
