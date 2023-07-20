@@ -1,21 +1,21 @@
 <?php
 require_once("Models/clsTintuc.php");
 //biến $link_tieptuc và $thongbao dùng cho Views/vKetqua.php
-$link_tieptuc ="?module=" . $module;
+
 $thongbao ="";
 $manhom = 0;
-$matin = 0;
+$masp = 0;
 //lấy các thông tin từ request nếu có
 if(isset($_REQUEST["manhom"]))
 $manhom = $_REQUEST["manhom"];
-if(isset($_REQUEST["matin"]))
-	$matin = $_REQUEST["matin"];
+if(isset($_REQUEST["id"])){
+$masp = $_REQUEST["id"];} 
 //tạo đối tượng clstintuc
 $tintuc = new clsTintuc();
-
-if($matin > 0)
+$link_tieptuc ="?module=" . $module . "&id=" . $masp;
+if($masp > 0)
 {
-	$ketqua = $tintuc->TimTheoIDTintuc($matin,1);//tìm tin có $matin và status=1
+	$ketqua = $tintuc->TimTheoIDTintuc($masp,1);//tìm tin có $matin và status=1
 	
     require("ViewsHome/v_ChitietTintuc.php");
 }
