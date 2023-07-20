@@ -55,9 +55,7 @@ session_start();
         }
         ?>
         <?php
-        if ($module != "cart" && $module != "chitietsanpham") {
-            include("ViewsHome/inc_Right.php");
-        }
+        
         ?>
 
     </div>
