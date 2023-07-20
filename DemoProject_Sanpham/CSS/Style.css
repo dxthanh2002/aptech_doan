@@ -16,7 +16,7 @@
 #content_left {width:200px; /*background-color:#3CC;*/ float:left}
 #content_center { width:600px; /*background-color:#FFC;*/ float:left}
 #content_center_2 { width:900px; /*background-color:#FFC;*/ float:left} /*không có content_right*/
-#content_right {width:200px; /*background:#0C6;*/ float:left}
+
 
 #content h1 {width:auto; color:#666; text-align:left; padding:10px; margin:5px;
 			background:#FC0;border-radius:10px}
