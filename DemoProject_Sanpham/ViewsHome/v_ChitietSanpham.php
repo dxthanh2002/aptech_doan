@@ -11,9 +11,10 @@
                 $hinhanh = "no-Image.png";
             ?>
               <div id="content_sp">
-                <div class="sanpham card">
-                  <p><a href="#"><?= $row["title"]; ?></a></p><!-- thẻ <a href>...</a> để tạo liên kết tới sp1.htm-->
-                  <p><a href="#"><img src="Hinhanh/Sanpham/<?= $hinhanh ?>"></a></p> <!--thẻ p này dùng để cố định chiều cao dòng 2, và để ảnh căn giữa-->
+                <div class="row">
+                <div class=" card" style="width: 18rem;">
+                  <p><a style="text-decoration: none;" href="#"><?= $row["title"]; ?></a></p><!-- thẻ <a href>...</a> để tạo liên kết tới sp1.htm-->
+                  <p><a href="#"><img src="Hinhanh/Sanpham/<?= $hinhanh ?>" class="card-img-top"></a></p> <!--thẻ p này dùng để cố định chiều cao dòng 2, và để ảnh căn giữa-->
                 </div>
                 <div class="tomtatsanpham card" style="width:580px; height:350px;padding:5px;">
                   <h2> Thông tin sản phẩm</h2>
@@ -28,9 +29,13 @@
                   <h3>Giá: <?= number_format($row["price"]) ?> VNĐ</h3>
                   <h3><i class="fa fa-shopping-cart"></i><a href="?module=cart&act=add&masp=<?= $row["id"] ?>"> Mua hàng</a></h3>
                 </div>
-                <div class="chitietsanpham">
-                  <h2>CHI TIẾT SẢN PHẨM</h2>
-                  <div> <?= $row["content"] ?> </div>
+                </div>
+                <div class="chitietsanpham row">
+                  <div class="card">
+                  <h2 class="card-title">CHI TIẾT SẢN PHẨM</h2>
+                  <p class="card-text"> <?= $row["content"] ?> </p>
+                  </div>
+                  
                 </div>
 
               </div>
