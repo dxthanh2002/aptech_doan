@@ -17,8 +17,6 @@
                 </div>
                 <div class="tomtatsanpham card" style="width:580px; height:350px;padding:5px;">
                   <h2> Thông tin sản phẩm</h2>
-
-
                   <div class="noidung_tomtat" style="margin:10px; padding:10px;">
                     <ul class="list-group list-group-flush">
                       <li class="list-group-item">Thương hiệu: <?= $row["author"] ?></li>
