@@ -1,7 +1,7 @@
 			<div class="col-1 col-md-2 col-lg-2 col-xl-2 mx-auto mt-3  d-flex flex-column flex-shrink-0 p-3 bg-light" style="height:1000px;float:left">
 			    <div class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-dark text-decoration-none">
 			        <svg width="40" height="32"><i class="fa-solid fa-magnifying-glass"></i></svg>
-			        <span class="fs-4">Tìm kiếm</span>
+			        <span class="fs-4">Tìm kiếm Sản Phẩm</span>
 			    </div>
 				<hr>
 			    <?php

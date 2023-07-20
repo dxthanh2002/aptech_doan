@@ -1,11 +1,11 @@
 <div id="content_center_2">
         	<h1>Tin tức</h1>
             <?php
-			if($matin->data==NULL)
-				echo "<H2>KHÔNG TÌM THẤY TIN</H2>";
+			if($tintuc->data==NULL){
+				echo "<H2>KHÔNG TÌM THẤY TIN</H2>";}
 			else
 			{
-				$row = $matin->data;
+				$row = $tintuc->data;
 				$hinhanh = $row["hinhanh"];
 				  if($hinhanh=="")
 				  	$hinhanh= "no-Image.png";
@@ -24,7 +24,7 @@
               </div> 
               <div class="chitietsanpham">
               	<h2>Nội dung</h2>
-                  <?=$row["content"]?>
+                  <?=$row["noidung"]?>
               </div> 
               
             </div>
