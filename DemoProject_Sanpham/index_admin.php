@@ -31,18 +31,7 @@ require("KiemtraDangNhap.php");
 </head>
 
 <body>
-	
-	<div id="menu">
-		<ul>
-			<li><a href="index_admin.php">Trang chủ</a></li>
-			<li><a href="?module=tintuc">Quản lý Tin tức</a></li>
-			<li><a href="?module=nhomsp">Quản lý Nhóm Sản phẩm</a></li>
-			<li><a href="?module=sanpham">Quản lý Sản phẩm</a></li>
-			<li><a href="?module=hoadon">Quán lý Hóa đơn</a></li>
-		</ul>
-		<span class="welcome">Xin chào: <b><?= isset($_SESSION["user"]) ? $_SESSION["user"] : "" ?></b></span>
-		<span class="logout"><?= isset($_SESSION["user"]) ? "<a href='logout.php'>Đăng xuất</a>" : "<a href='login.php'>Đăng nhập</a>" ?></span>
-	</div>
+
 
 	<div id="content" class="clear_fix">
 	<div>
