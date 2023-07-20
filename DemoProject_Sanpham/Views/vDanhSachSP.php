@@ -14,27 +14,9 @@
 				$tukhoa = isset($_REQUEST["tTukhoa"]) ? $_REQUEST["tTukhoa"] : "";
 				$manhom = isset($_REQUEST["manhom"]) ? $_REQUEST["manhom"] : 0;
 				?>
-    			<form name="fTimkiem" id="fTiemkiem" action="">
-    				<input type="hidden" name="module" value="sanpham">
-    				<input type="hidden" name="act" value="timkiem">
-    				<span>Từ khóa:</span><input type="text" name="tTukhoa" id="tTukhoa" value="<?= $tukhoa ?>">
-    				<span>Nhóm sản phẩm:</span>
-    				<select name="manhom" id="manhom">
-    					<option value="0">Tất tả nhóm sản phẩm</option>
-    					<?php
-						require_once("Models/clsCategory.php");
-						require_once("DungChung/Tienich.php");
-						$nps = new clsCategory();
-						//lấy nhóm SP tất cả trạng thái, sắp xếp theo thứu tự tăng dần
-						$nps->LayDanhSachNhomSanpham(2, 1);
-						ShowOptions($nps->data, "cat_id", "cat_name", $manhom);
-						?>
-    				</select>
-    				<input type="submit" name="bSearch" id="bSearch" value="Tìm kiếm">
-    			</form>
     		</div>
     		<div class="table-responsive">
-    			<table class="table table-striped table-hover table-bordered table align-middle">
+    			<table id="example" class="table table-striped table-hover table-bordered table align-middle">
 					<thead class="bg-dark text-white">
     				<tr>
     					<td> id </td>

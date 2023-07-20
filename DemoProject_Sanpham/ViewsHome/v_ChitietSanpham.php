@@ -1,5 +1,5 @@
-        <div class="row  d-flex justify-content-evenly">
-          <div class="col-1 col-md-8">
+        <div class="row col-1 col-md-10 col-lg-10 col-xl-10 mx-auto mt-3  d-flex flex-shrink-0 p-3 bg-light">
+          <div class="col-1 col-md-10">
             <h1>Thông tin về rượu</h1>
             <hr>
             <?php
@@ -17,7 +17,7 @@
                     <p><a style="text-decoration: none;" href="#"><?= $row["title"]; ?></a></p><!-- thẻ <a href>...</a> để tạo liên kết tới sp1.htm-->
                     <p><a href="#"><img src="Hinhanh/Sanpham/<?= $hinhanh ?>" class="card-img-top"></a></p> <!--thẻ p này dùng để cố định chiều cao dòng 2, và để ảnh căn giữa-->
                   </div>
-                  <div class=" tomtatsanpham card col-1 col-sm-4 col-md-6 " >
+                  <div class=" tomtatsanpham card col-1 col-sm-5 col-md-7 " >
                     <h2> Thông tin sản phẩm</h2>
                     <div class="noidung_tomtat" style="margin:10px; padding:10px;">
                       <ul class="list-group list-group-flush">
@@ -31,7 +31,8 @@
                     <h3><i class="fa fa-shopping-cart"></i><a href="?module=cart&act=add&masp=<?= $row["id"] ?>"> Mua hàng</a></h3>
                   </div>
                 </div>
-                <div class="chitietsanpham col-9">
+                
+                <div class="chitietsanpham ">
                   <div class="card">
                     <h2 class="card-title">CHI TIẾT SẢN PHẨM</h2>
                     <p class="card-text"> <?= $row["content"] ?> </p>
