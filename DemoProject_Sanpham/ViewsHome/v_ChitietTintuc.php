@@ -18,13 +18,13 @@
               <div class="tomtatsanpham" style="width:580px; height:350px;padding:5px;">
               	
                      <h2> Tóm tắt</h2>
-                  <div class="noidung_tomtat" style="margin:10px; padding:10px;" >
-                  <h3><?=$row["tomtat"]?></h3>  
+                  <div class="noidung_tomtat" style="width:540px; height:280px;margin:10px; padding:10px;" >
+                  <h3 ><?=$row["tomtat"]?></h3>  
                   </div>
               </div> 
               <div class="chitietsanpham">
               	<h2>Nội dung</h2>
-                  <?=$row["noidung"]?>
+                <div style="margin: 5px; padding: 10px; font-size:20px;font-family: Roboto, Arial, Helvetica, Verdana, Geneva, Tahoma, sans-serif;">  <?=$row["noidung"]?> </div>
               </div> 
               
             </div>
