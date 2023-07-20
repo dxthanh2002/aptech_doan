@@ -15,7 +15,7 @@
                 <p><a href="#"><?=$row["tieude"];?></a></p><!-- thẻ <a href>...</a> để tạo liên kết tới sp1.htm-->
                 <p><a href="#"><img src="Hinhanh/Tintuc/<?=$hinhanh?>"></a></p> <!--thẻ p này dùng để cố định chiều cao dòng 2, và để ảnh căn giữa-->
                </div>
-              <div class="tomtatsanpham" style="width:580px; height:350px;padding:5px;">
+              <div class="tomtatsanpham" style="width:680px; height:350px;padding:5px;">
               	
                      <h2> Tóm tắt</h2>
                   <div class="noidung_tomtat" style="width:540px; height:280px;margin:10px; padding:10px;" >

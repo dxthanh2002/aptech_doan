@@ -96,9 +96,6 @@ else
 			  </table>
 			</form>
 			<script language="javascript">
-				var ckTomtat = CKEDITOR.replace('t4');
-				ckTomtat.config.width = 600;
-				CKFinder.setupCKEditor(ckTomtat, null, { type: 'Images' });
 				
 				var ckNoidung = CKEDITOR.replace('t5');
 				ckNoidung.config.width = 600;
