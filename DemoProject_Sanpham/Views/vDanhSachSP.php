@@ -2,8 +2,7 @@
     		<div class="left1">
     			<h3>CHỨC NĂNG</h3>
     			<p><a href="?module=<?= $module ?>&act=them">Thêm Sản phẩm</a></p>
-    			<p><a href="?module=<?= $module ?>">Danh sách Sản phẩm</a></p>
-    			<p><a href="?module=<?= $module ?>">Thống kê</a></p>
+
     		</div>
 
     	</div>

@@ -1,7 +1,7 @@
     	<div id="content_left"> 
         	<div class="left1">
             	<h3>CHỨC NĂNG</h3>
-                <p><a href="?module=<?=$module?>&act=them">Thêm Tiin tức</a></p>
+                <p><a href="?module=<?=$module?>&act=them">Thêm Tin tức</a></p>
                 <p><a href="?module=tintuc">Danh sách Tin tức</a></p>
             </div>
 
