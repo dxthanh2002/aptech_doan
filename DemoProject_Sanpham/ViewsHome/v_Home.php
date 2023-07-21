@@ -28,7 +28,7 @@
 					else
 						$trangthai = "không";
 				?>
-        			<div class="d-flex  justify-content-evenly ">
+        			<div class="d-flex justify-content-evenly ">
         				<div class=" card text-center" style="width: 18rem;">
         					<a class="card-link" href="?module=chitietsanpham&manhom=<?= $row["cat_id"] ?>&masp=<?= $row["id"] ?>"><img src="Hinhanh/Sanpham/<?= $hinhanh ?>" class="card-img-top"></a>
         					<div class="card-body">

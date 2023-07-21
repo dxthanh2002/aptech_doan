@@ -11,6 +11,7 @@ session_start();
     <link rel="stylesheet" type="text/css" href="CSS/Menu.css">
     <link rel="stylesheet" type="text/css" href="CSS/Sanpham.css">
     <link rel="stylesheet" type="text/css" href="CSS/Cart.css">
+    <link rel="stylesheet" type="text/css" href="CSS/ContactUs.css">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css" integrity="sha512-UTNP5BXLIptsaj5WdKFrkFov94lDx+eBvbKyoe1YAfjeRPC+gT5kyZ10kOHCfNZqEui1sxmqvodNUx3KbuYI/A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -51,6 +52,8 @@ session_start();
             require("ControllersHome/ctlCart.php");
         } else if ($module == "checkout") {
             require("ControllersHome/ctlCheckout.php");
+        } else if ($module == "lienhe") {
+            require("ViewsHome/vcontact.php");
         } else {
             require("ControllersHome/ctlHome.php");
         }
