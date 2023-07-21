@@ -2,10 +2,8 @@
     	    <div class="left1">
     	        <h3>CHỨC NĂNG</h3>
     	        <p><a href="?module=<?= $module ?>&act=them">Thêm Nhóm SP</a></p>
-    	        <p><a href="?module=<?= $module ?>">Danh sách Nhóm SP</a></p>
-    	        <p><a href="?module=<?= $module ?>">Thống kê</a></p>
+    	        <p><a href="?module=nhomsp">Danh sách Nhóm SP</a></p>
     	    </div>
-
     	</div>
     	<div id="content_right">
     	    <h1> QUẢN LÝ NHÓM SẢN PHẨM</h1>
