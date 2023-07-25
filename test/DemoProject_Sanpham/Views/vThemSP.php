@@ -14,10 +14,10 @@
             <form name="form1" method="post" action="?module=<?=$module?>&act=xulythem" enctype="multipart/form-data">
               <table width="750" border="0" align="center" cellpadding="0" cellspacing="0">
                 <tr>
-                  <td width="120" height="30">Loại Rượu:</td>
+                  <td width="120" height="30">Nhóm sản phẩm:</td>
                   <td width="630">
                   	<select name="s1" id="s1">
-                    	<option value="0"> Chọn loại rượu</option>
+                    	<option value="0"> Chọn nhóm SP</option>
                     	<?php
 							require_once("Models/clsCategory.php");
 							require_once("DungChung/Tienich.php");
@@ -29,11 +29,11 @@
                   </td>
                 </tr>
                 <tr>
-                  <td width="120" height="30">Tên Rượu:</td>
+                  <td width="120" height="30">Tên sách:</td>
                   <td width="380"><input type="text" name="t1" id="t1"></td>
                 </tr>
                 <tr>
-                  <td height="30">Thương hiệu:</td>
+                  <td height="30">Tác giả:</td>
                   <td><input type="text" name="t2" id="t2"></td>
                 </tr>
                 <tr>
@@ -45,16 +45,8 @@
                   <td><input type="file" name="f1" id="f1"></td>
                 </tr>
                  <tr>
-                  <td height="30"  valign="top">Xuất xứ:</td>
+                  <td height="30"  valign="top">Tóm tắt:</td>
                   <td><textarea name="t4" id="t4" rows="5" cols="50"></textarea></td>
-                </tr>
-                <tr>
-                  <td height="30"  valign="top">Nồng độ:</td>
-                  <td><textarea name="t4a" id="t4a" rows="5" cols="50"></textarea></td>
-                </tr>
-                <tr>
-                  <td height="30"  valign="top">Dung tích:</td>
-                  <td><textarea name="t4b" id="t4b" rows="5" cols="50"></textarea></td>
                 </tr>
                  <tr>
                   <td height="30"  valign="top">Chi tiết:</td>
@@ -74,7 +66,10 @@
               </table>
             </form>
 			<script language="javascript">
-				 
+				var ckTomtat = CKEDITOR.replace('t4');
+				ckTomtat.config.width = 600;
+				CKFinder.setupCKEditor(ckTomtat, null, { type: 'Images' });
+				
 				var ckNoidung = CKEDITOR.replace('t5');
 				ckNoidung.config.width = 600;
 				CKFinder.setupCKEditor(ckNoidung, null, { type: 'Images' });

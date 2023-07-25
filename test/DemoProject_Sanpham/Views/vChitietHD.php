@@ -1,7 +1,14 @@
+	<div id="content_left"> 
+        	<div class="left1">
+            	<h3>CHỨC NĂNG</h3>
+                <p><a href="?module=<?=$module?>">Danh sách Hóa đơn</a></p>
+                <p><a href="?module=<?=$module?>">Thống kê</a></p>
+            </div>
 
+        </div>
         <div id="content_right"> 
-        	<h1 > QUẢN LÝ HÓA ĐƠN</h1>
-            <h2> Thông tin mua hàng</h2>
+        	<h1> QUẢN LÝ HÓA ĐƠN</h1>
+            <h2> DANH SÁCH HÓA ĐƠN</h2>
             <div id="right_detail">
 				<?php
                 $trangthai="";
@@ -41,8 +48,7 @@
 						<?=number_format($tongtien)?> VNĐ</span>
                 </p>
                 <h3> Danh sách mặt hàng</h3>
-                <table id="example" class="table table-striped table-hover table-bordered table align-middle">
-                  <thead>
+                <table width="100%" border="1" class="Content_Table" cellpadding="0" cellspacing="0">
                   <tr>
                     <td>STT</td>
                     <td>Mã SP</td>
@@ -52,8 +58,6 @@
                     <td>Số lượng</td>
                     <td>Thành tiền</td>
                   </tr>
-                  </thead>
-                  <tbody>
                   <?php
                   $rows = $hoadon->data;
                   $stt=0;
@@ -73,7 +77,6 @@
                   <?php
                     }
                   ?>
-                  </tbody>
                 </table>
 			</div>
         </div>

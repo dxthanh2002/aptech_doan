@@ -2,24 +2,22 @@
     <div class="contrainer text-white text-center text-md-start">
         <div class="row text-center text-md-start">
             <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
-                <h5 class=" text-uppercase mb-4 fw-bold text-warning ">Wines shops</h5>
-                <p>CHÚNG TÔI CAM KẾT MANG ĐẾN NHỮNG SẢN PHẨM CAO CẤP VỚI GIÁ THÀNH TỐT NHẤT!</p>
-                <p>Tuân thủ Nghị định số 185/2013/NĐ-CP của Chính phủ và luật quảng cáo số 16/2012/QH13 về kinh doanh bán hàng qua mạng.</p>
-                <p>Các sản phẩm trên Website có nồng độ cồn (ABV.) dưới 5,5% vol (ABV)</p>
+                <h5 class=" text-uppercase mb-4 fw-bold text-warning ">Company Name</h5>
+                <p>Content</p>
             </div>
             <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
                 <h5 class=" text-uppercase mb-4 fw-bold text-warning ">Product</h5>
                 <p>
-                    <a href="#" class="text-white" style="text-decoration:none">Whisky</a>
+                    <a href="#" class="text-white" style="text-decoration:none">Provider</a>
                 </p>
                 <p>
-                    <a href="#" class="text-white" style="text-decoration:none">Vodka</a>
+                    <a href="#" class="text-white" style="text-decoration:none">Provider2</a>
                 </p>
                 <p>
-                    <a href="#" class="text-white" style="text-decoration:none">Vang</a>
+                    <a href="#" class="text-white" style="text-decoration:none">Provider3</a>
                 </p>
                 <p>
-                    <a href="#" class="text-white" style="text-decoration:none">Cognac</a>
+                    <a href="#" class="text-white" style="text-decoration:none">Provider4</a>
                 </p>
             </div>
             <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">

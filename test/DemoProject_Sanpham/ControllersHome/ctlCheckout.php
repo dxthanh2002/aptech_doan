@@ -11,17 +11,12 @@ else if(isset($_REQUEST["dathang"])==false)
 	$thongbao ="lỗi submit form đặt hàng";
 else
 {
-	
 	$hoten = $_REQUEST["hoten"];
-	$dtmua = $_REQUEST["dtmua"];
-	$ngnhan  = $_REQUEST["ngnhan"];
-
-	$dienthoai = $_REQUEST["dienthoai"];
 	$diachi = $_REQUEST["diachi"];
-	$note  = $_REQUEST["note"];
+	$dienthoai = $_REQUEST["dienthoai"];
 	$ngaynhan = $_REQUEST["ngaynhan"];
 	$hoadon = new clsHoadon();
-	$ketqua = $hoadon->ThemHoadon($hoten,$dtmua, $ngnhan,$dienthoai, $diachi,$note, $ngaynhan);
+	$ketqua = $hoadon->ThemHoadon($hoten,$diachi,$dienthoai,$ngaynhan);
 	if($ketqua==FALSE)
 		$thongbao ="LỖI THÊM HÓA ĐƠN MỚI";
 	else
@@ -42,7 +37,9 @@ else
 			{
 				unset($_SESSION["cart"]);//xóa giỏ hàng
  				$thongbao ="CẢM ƠN BẠN ĐÃ MUA HÀNG, CHÚNG TÔI SẼ LIÊN HỆ SỚM NHẤT";
-
+				$thongbao .= "<br>Tài khoản: Trần Mạnh Trường";
+				$thongbao .= "<br>STK: 0011223344";
+				$thongbao .= "<br>Ngân hàng: BIDV";
 			}
 		}
 	}

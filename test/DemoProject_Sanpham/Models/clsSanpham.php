@@ -38,16 +38,14 @@ class clsSanpham
 	}
 		
 	//Hàm thêm dữ liệu
-	function ThemSanpham($name,$author,$price, $images, $summary,$concentration,$capacity,$content,$status,$cat_id)
+	function ThemSanpham($name,$author,$price, $images, $summary,$content,$status,$cat_id)
 	{
-		$sql = "INSERT INTO books VALUES (NULL, ?, ?, ?, ?, ?,?,? ,?, ?, ?)";
+		$sql = "INSERT INTO books VALUES (NULL, ?, ?, ?, ?, ?, ?, ?, ?)";
 		$data[] = $name;
 		$data[] = $author;
 		$data[] = $price;
 		$data[] = $images;
 		$data[] = $summary;
-		$data[] = $concentration;
-		$data[] = $capacity;
 		$data[] = $content;
 		$data[] = $status;
 		$data[] = $cat_id;
@@ -55,17 +53,15 @@ class clsSanpham
 		return $ketqua;
 	}
 	//Hàm sửa dữ liệu
-	function SuaSanpham($id,$name,$author,$price, $images, $summary,$concentration,$capacity,$content,$status,$cat_id)
+	function SuaSanpham($id,$name,$author,$price, $images, $summary,$content,$status,$cat_id)
 	{
 		$sql = "UPDATE books SET title=?, author = ?, price = ?, 
-				images=?,summary=?,concentration = ?, capacity = ?, content=?, status=?, cat_id=? WHERE id=?";
+				images=?,summary=?,content=?, status=?, cat_id=? WHERE id=?";
 		$data[] = $name;
 		$data[] = $author;
 		$data[] = $price;
 		$data[] = $images;
 		$data[] = $summary;
-		$data[] = $concentration;
-		$data[] = $capacity;
 		$data[] = $content;
 		$data[] = $status;
 		$data[] = $cat_id;

@@ -1,6 +1,6 @@
 		
-        <div class="d-flex flex-column bd-highlight mb-3"> 
-        	
+        <div id="content_right"> 
+        	<div class="right1">
             	<h3>SẢN PHẨM MỚI</h3>
                 <?php
 				require_once("Models/clsSanpham.php");
@@ -18,15 +18,21 @@
 					else
 						$trangthai = "không";
 				?>
-                <div class="p-2 my-3 bd-highlight card"  style="width: 10 rem;"> 
-                	<a class="card-link" href="?module=chitietsanpham&manhom=<?=$row["cat_id"]?>&masp=<?=$row["id"]?>">
-                	<img src="Hinhanh/Sanpham/<?=$hinhanh?>" class="card-img-top"><br>
+                <p> 
+                	<a href="?module=chitietsanpham&manhom=<?=$row["cat_id"]?>&masp=<?=$row["id"]?>">
+                	<img src="Hinhanh/Sanpham/<?=$hinhanh?>"><br>
                     </a>
-                	<a style="text-decoration: none;" href="?module=chitietsanpham&manhom=<?=$row["cat_id"]?>&masp=<?=$row["id"]?>"><h5 class="card-title"><?=$row["title"]?></h5></a>
-                </div>
+                	<a href="?module=chitietsanpham&manhom=<?=$row["cat_id"]?>&masp=<?=$row["id"]?>"><?=$row["title"]?></a>
+                </p>
                 <?php
 				}
 				?>
             
-            
+            </div>
+            <div class="right1">
+            	<h3>SP BÁN CHẠY</h3>
+                <p><a href="#">Sản phẩm 4</a></p>
+                <p><a href="#">Sản phẩm 5</a></p>
+                <p><a href="#">Sản phẩm 6</a></p>
+            </div>  
         </div>

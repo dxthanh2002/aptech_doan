@@ -103,16 +103,13 @@ class clsHoadon
 		return $ketqua;//trả về $ketqua: TRUE/FALSE
 	}
 	//Xây dựng hàm Thêm hóa đơn
-	function ThemHoadon($hoten,$dtmua, $ngnhan, $dienthoai,$diachi,$note, $ngaynhan)
+	function ThemHoadon($hoten,$diachi,$dienthoai,$ngaynhan)
 	{
-		$sql = "INSERT INTO tbHoadon(tennguoimua,dtnguoimua,nguoinhan,dienthoai,diachi,Note,ngaynhan) 
-				VALUES(?,?,?,?,?,?,?)";
+		$sql = "INSERT INTO tbHoadon(tennguoimua,diachi,dienthoai,ngaynhan) 
+				VALUES(?,?,?,?)";
 		$data[] = $hoten;
-		$data[] = $dtmua;
-		$data[] = $ngnhan;
-		$data[] = $dienthoai;
 		$data[] = $diachi;
-		$data[] = $note;
+		$data[] = $dienthoai;
 		$data[] = $ngaynhan;
 		$ketqua = $this->db->ThucthiSQL($sql,$data);
 		return $ketqua;
