@@ -11,7 +11,7 @@ session_start();
 //unset($_SESSION["logined"]);//hủy 1 biến $_SESSION["logined"]
 session_destroy();//hủy toàn bộ các biến session
 $thongbao = "ĐÃ ĐĂNG XUẤT THÀNH CÔNG";
-$link_tieptuc = "index_admin.php";
+$link_tieptuc = "index.php";
 require("Views/vKetqua.php");
 ?>
 </body>

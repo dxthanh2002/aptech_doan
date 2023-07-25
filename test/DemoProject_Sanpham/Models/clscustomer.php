@@ -72,5 +72,18 @@ class clscus
 			$this->data = $this->db->pdo_stm->fetch();
 		return $ketqua;//trả về $ketqua: TRUE/FALSE
 	}
+	function KiemTrauser($user,$pass)
+	{
+		$sql = "SELECT * FROM tbcustomer WHERE user=? and pass=?";
+		
+		$data[] = $user;
+		$data[] = $pass;
+ 		$ketqua = $this->db->ThucthiSQL($sql,$data);
+		//LẤY BẢN GHI KẾT QUẢ LƯU VÀO $data
+		$this->data=NULL;
+		if($ketqua==TRUE)
+			$this->data = $this->db->pdo_stm->fetch();
+		return $ketqua;//trả về $ketqua: TRUE/FALSE
+	}
 }
 ?>

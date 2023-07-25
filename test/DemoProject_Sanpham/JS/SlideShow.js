@@ -1,6 +1,6 @@
 // JavaScript Document
 //khai báo mảng chứa tên các file ảnh
-var hinhanh = new Array("promotion-01.png","promotion-02.png","promotion-03.png");
+var hinhanh = new Array("b-01.jpg","b-02.jpg","b-03.jpg");
 //lưu id của đồng hồ hẹn giờ
 var idDongho =-1;
 var i=0;

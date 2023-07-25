@@ -1,6 +1,11 @@
  
-        <div > 
-        	<h1> Đăng ký Thành viên</h1>
+      <div><br> </br> <div>
+      <div class="row col-1 col-md-10 col-lg-10 col-xl-10 mx-auto mt-3  d-flex flex-shrink-0 p-3 bg-light">
+          <div class="col-1 col-md-10">
+            <br></br>
+            
+        	<h1 style="color:red;"> Đăng ký Thành viên</h1>
+          <br></br>
             <script>
 							function kt() {
 								t1 = document.getElementById("t1");
@@ -49,21 +54,21 @@
                   <label class="form-label" width="80" height="30">Email:</label>
                   <input class="form-control" type="text" name="t6" id="t6" size="80">
                 </div> 
-                
+                <br></br>
                  <div>
                   <label class="form-label">Tôi Đồng ý với điều khoản của trang web: </label>
                   <input  class="form-check-input" type="checkbox" name="c1" id="c1" value="1" required> 
                 </div>
                 <div>
                   <td></td>
-
+                   <br></br>
                   <td><input class="btn btn-success" type="submit" name="button" id="button" value="Đồng ý"></td>
                 </div>
               
             </form>
 
 			</div>
-        </div>
+        </div> </div>
 
 
 

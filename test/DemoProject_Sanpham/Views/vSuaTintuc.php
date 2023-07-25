@@ -12,7 +12,9 @@
             <h2> THÊM TIN TỨC</h2>
             <div id="right_detail">
             <?php
+            require_once("DungChung/Tienich.php");
 				$row = $tintuc->data;
+       
 			?>
             <form name="form1" method="post" action="?module=<?=$module?>&act=xulysua">
             	<input type="hidden" name="id" id="id" value="<?=$id?>">
@@ -30,8 +32,20 @@
                   <td><textarea rows="5" cols="50" id="t3" name="t3"><?=$row["noidung"];?></textarea></td>
                 </tr>
                 <tr>
-                  <td height="30">Hình ảnh:</td>
-                  <td><input type="text" name="t4" id="t4" size="80" value="<?=$row["hinhanh"];?>"></td>
+                <td height="30">Hình ảnh:</td>
+                <td width="380"><input type="text" name="t4" id="t4" size="80" value="<?=$row["hinhanh"];?>"></td>
+               <!--  <td height="30">Hình ảnh:</td>
+                  
+         /*  < ?  php        
+				  $hinhanh = $row["hinhanh"];
+				  if($hinhanh=="")
+				  	$hinhanh= "no-Image.png";  ?> */
+				   
+                  <td>
+                  <img width="100" src="Hinhanh/Tintuc/<  ?=//$hinhanh?>"><br>
+                  <input type="hidden" name="anhHientai1" id="anhHientai1" value="< ?=$row["hinhanh"]?>">
+                  <input type="file" name="ts" id="ts"> -->
+                  </td>
                 </tr>
                  <tr>
                   <td height="30">Trạng thái:</td>
@@ -43,6 +57,14 @@
                 </tr>
               </table>
             </form>
-
+            <script language="javascript">
+				var ckTomtat = CKEDITOR.replace('t3');
+				ckTomtat.config.width = 600;
+				CKFinder.setupCKEditor(ckTomtat, null, { type: 'Images' });
+				
+				var ckNoidung = CKEDITOR.replace('t2');
+				ckNoidung.config.width = 600;
+				CKFinder.setupCKEditor(ckNoidung, null, { type: 'Images' });
+			</script>
 			</div>
         </div>

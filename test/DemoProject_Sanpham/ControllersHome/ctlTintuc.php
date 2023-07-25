@@ -1,10 +1,16 @@
-<!doctype html>
-<html>
-<head>
-<meta charset="utf-8">
-<title>Untitled Document</title>
-</head>
+<?php
+require_once("Models/clsTintuc.php");
+ 
+//lấy các thông tin từ request nếu có
 
-<body>
-</body>
-</html>
+//tạo đối tượng clsSanpham
+$tin = new clsTintuc();
+$soketqua =0;
+ 
+	$ketqua = $tin->LayDanhSachTintuc();
+	if($ketqua)
+		$soketqua = $tin->db->pdo_stm->rowCount();
+ 
+require("ViewsHome/v_DSTin.php");
+  
+?>

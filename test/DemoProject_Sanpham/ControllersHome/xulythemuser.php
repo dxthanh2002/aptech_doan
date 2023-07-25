@@ -14,7 +14,7 @@ $ketqua = $user->Themuser($username,$pass,$name,  $tel, $adress,$mail,$trangthai
 if($ketqua==FALSE)
 	$thongbao="Lỗi thêm dữ liệu";
 else
-	$thongbao ="Thêm dữ liệu thành công";
+	$thongbao ="Đăng Ký thành công";
 
 require("Views/vKetqua.php");
 ?>

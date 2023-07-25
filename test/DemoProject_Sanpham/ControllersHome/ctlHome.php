@@ -5,6 +5,6 @@ $link_tieptuc ="?module=" . $module;
 $thongbao ="";
 //tạo đối tượng clsSanpham
 $sanpham = new clsSanpham();
-$ketqua = $sanpham->LaySanphamMoiNhat(3);//lấy 3 sản phẩm mới nhất
+$ketqua = $sanpham->LaySanphamMoiNhat(6);//lấy 3 sản phẩm mới nhất
 require_once("ViewsHome/v_Home.php");
 ?>

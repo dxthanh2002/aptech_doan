@@ -9,9 +9,7 @@
 #wrapper { width:1000px; margin:0px auto; /*border:1px red solid;*/ box-sizing:content-box}
 /*box-sizing:content-box để cho width của wrapper đúng 1000px, độ rộng border được cộng ra bên ngoài*/
 
-#header {width:100%; height:180px; 
-		background-image:url(../images/banner-01.jpg); background-repeat:no-repeat;
-		background-position:center; background-size:cover}
+
 #menu {width:100%; height:30px; background-color:#666}
 
 #content {width:100%; /*background-color:#CCC;*/} /*chiều cao để tự động co dãn theo nội dung*/

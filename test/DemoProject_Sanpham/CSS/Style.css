@@ -2,24 +2,21 @@
 /* CSS Document */
 /*style chung cho mọi thẻ*/
 * {margin:0px; padding:0px; box-sizing:border-box; 
-	font-family:Tahoma, Geneva, sans-serif; font-size:12px}
+	font-family:Roboto, 'Times New Roman', Times, serif, Tahoma, Geneva, sans-serif; font-size:14px}
 .clear_fix {overflow:auto; zoom:1} 
 /*áp dụng cho các thẻ div cha có chiều cao tự động co giãn ngay cả khi thẻ div con sử dụng float*/
 	
 #wrapper { width:1000px; margin:0px auto; /*border:1px red solid;*/ box-sizing:content-box}
 /*box-sizing:content-box để cho width của wrapper đúng 1000px, độ rộng border được cộng ra bên ngoài*/
 
-#header {width:100%; height:180px; 
-		background-image:url(../images/banner-01.jpg); background-repeat:no-repeat;
-		background-position:center; background-size:cover}
-#menu {width:100%; height:30px; background-color:#666}
+
 
 #content {width:100%; /*background-color:#CCC;*/} /*chiều cao để tự động co dãn theo nội dung*/
 
 #content_left {width:200px; /*background-color:#3CC;*/ float:left}
 #content_center { width:600px; /*background-color:#FFC;*/ float:left}
-#content_center_2 { width:800px; /*background-color:#FFC;*/ float:left} /*không có content_right*/
-#content_right {width:200px; /*background:#0C6;*/ float:left}
+#content_center_2 { width:900px; /*background-color:#FFC;*/ float:left} /*không có content_right*/
+
 
 #content h1 {width:auto; color:#666; text-align:left; padding:10px; margin:5px;
 			background:#FC0;border-radius:10px}
