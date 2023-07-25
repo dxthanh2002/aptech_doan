@@ -62,8 +62,14 @@
                                             <i class="fa fa-search"></i>
                                         </a>
                                         <div class="search_widget">
+                                            <?php
+                                            $tukhoa = isset($_REQUEST["tTukhoa"]) ? $_REQUEST["tTukhoa"] : "";
+                                            $manhom = isset($_REQUEST["manhom"]) ? $_REQUEST["manhom"] : 0;
+                                            ?>
                                             <form class="mb-3" name="fTimkiem" id="fTiemkiem" action="index.php">
-                                                <input type="text" placeholder="Search Your Wine...">
+                                                <input type="hidden" name="module" value="sanpham">
+                                                <input type="hidden" name="act" value="timkiem">
+                                                <input type="text" placeholder="Search Your Wine..." name="tTukhoa" id="tTukhoa" value="<?= $tukhoa ?>">
                                                 <button type="submit">
                                                     <i class="fa fa-search"></i>
                                                 </button>
