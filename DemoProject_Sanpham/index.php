@@ -1,5 +1,6 @@
 <?php
 session_start();
+require("KiemtraDangNhap.php");
 ?>
 <!doctype html>
 <html>
@@ -12,6 +13,8 @@ session_start();
     <link rel="stylesheet" type="text/css" href="CSS/Sanpham.css">
     <link rel="stylesheet" type="text/css" href="CSS/Cart.css">
     <link rel="stylesheet" type="text/css" href="CSS/ContactUs.css">
+    <link rel="stylesheet" href="./CSS/style copy.css">
+
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css" integrity="sha512-UTNP5BXLIptsaj5WdKFrkFov94lDx+eBvbKyoe1YAfjeRPC+gT5kyZ10kOHCfNZqEui1sxmqvodNUx3KbuYI/A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -25,13 +28,15 @@ session_start();
     <script src="JS/SlideShow.js"></script>
     <!-- Font awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    
+
 </head>
 
 <body>
+    <div class="off_canvas_overlay"></div>
     <div>
-        <?php include("ViewsHome/inc_Header.php"); ?>
+        <?php include("ViewsHome/inc_newHeader.php"); ?>
     </div>
+
 
     <div class="clear_fix container-fluid">
         <?php include("ViewsHome/inc_Left.php"); ?>
@@ -54,12 +59,14 @@ session_start();
             require("ControllersHome/ctlCheckout.php");
         } else if ($module == "lienhe") {
             require("ViewsHome/vcontact.php");
+        }else if ($module == "dangky") {
+            require("ControllersHome/ctldangkyvachinhsua.php");
         } else {
             require("ControllersHome/ctlHome.php");
         }
         ?>
         <?php
-        
+
         ?>
 
     </div>
@@ -77,49 +84,12 @@ session_start();
 </script>
 <!-- OwlCarousel2 JavaScript Libraries -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-<script>
-    $('.slider').owlCarousel({
-        loop: true,
-        margin: 10,
-        nav: false,
-        dots: false,
-        autoplay: true,
-        autoplayTimeout: 5000,
-        autoplaySpeed: 1500,
-        responsive: {
-            0: {
-                items: 1
-            },
-            600: {
-                items: 1
-            },
-            1000: {
-                items: 1
-            }
-        }
 
-    })
-    $('.product').owlCarousel({
-        loop: true,
-        margin: 10,
-        nav: false,
-        dots: false,
-        autoplay: true,
-        autoplayTimeout: 4000,
-        sautoplaySpeed: 1500,
-        responsive: {
-            0: {
-                items: 1
-            },
-            600: {
-                items: 3
-            },
-            1000: {
-                items: 5
-            }
-        }
-
-    })
-</script>
+<script src="./Dependencies/jquery.min.js"></script>
+<script src="./Dependencies/jquery.easing.min.js"></script>
+<script src="./Dependencies/bootstrap.min.js"></script>
+<script src="./Dependencies/masterslider.min.js"></script>
+<script src="./Dependencies/owl.carousel.min.js"></script>
+<script src="./Dependencies/main.js"></script>
 
 </html>

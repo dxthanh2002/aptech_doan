@@ -1,5 +1,6 @@
 <?php
 session_start();
+require("KiemtraDangNhap.php");
 ?>
 <!doctype html>
 <html>
@@ -58,6 +59,8 @@ session_start();
             require("ControllersHome/ctlCheckout.php");
         } else if ($module == "lienhe") {
             require("ViewsHome/vcontact.php");
+        }else if ($module == "dangky") {
+            require("ControllersHome/ctldangkyvachinhsua.php");
         } else {
             require("ControllersHome/ctlHome.php");
         }
