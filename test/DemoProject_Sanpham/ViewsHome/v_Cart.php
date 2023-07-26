@@ -1,7 +1,7 @@
-		<div id="content_center_2"> <!-- không kèm <div id="content_right"> -->
+		<section class="container-fluid" style="background-color: whitesmoke;"> <!-- không kèm <div id="content_right"> -->
 			<br>
 			<br>
-			<h1>GIỎ HÀNG CỦA BẠN</h1>
+			<h1 class="text-center" style="color:black">GIỎ HÀNG CỦA BẠN</h1>
 			<?php
 			//đếm số đầu sản phẩm trong giỏ hàng
 			$count = 0;
@@ -28,49 +28,58 @@
 					<div id='test'>
 
 					</div>
-					<div id="content_cart">
+					<div class="col-1 col-sm-4 col-md-6 col-lg-8  ">
+
+
 						<form name="f1" id="f1" action="?module=cart&act=update" method="post">
-							<div class="cart_item_title">
-								<span>Hình ảnh</span>
-								<span>Tên sản phẩm</span>
-								<span>Đơn giá</span>
-								<span>Số lượng</span>
-								<span>Thành tiền</span>
-								<span>Xóa</span>
-							</div>
-							<?php
-							foreach ($rows as $row) {
-								$masp = $row["id"];
-								$soluong = $_SESSION['cart'][$masp]; //số lượng của masp từ giỏ hàng
-								$total += $soluong * $row["price"];
+							<table class=" table table-secondary table-striped text-center table-borderless table-responsive">
+								<thead>
+                                    <tr  >
+                                        <th scope="col">Hình ảnh</th>
+                                        <th scope="col">Tên sản phẩm</th>
+                                        <th scope="col"> Đơn giá</th>
+                                        <th scope="col">Số lượng</th>
+                                        <th scope="col">Thành tiền</th>
+                                        <th scope="col">Xóa</th>
+                                    </tr>
+                                </thead>
 
-								$hinhanh = $row["images"];
-								if ($hinhanh == "")
-									$hinhanh = "no-Image.png";
-							?>
+								<tbody>
+									<?php
+									foreach ($rows as $row) {
+										$masp = $row["id"];
+										$soluong = $_SESSION['cart'][$masp]; //số lượng của masp từ giỏ hàng
+										$total += $soluong * $row["price"];
 
-								<div class="cart_item">
-									<span><a href="#"><img src="hinhanh/Sanpham/<?= $hinhanh ?>"></a></span>
-									<span>
-										<p class="cart_item_name"><a href="?module=chitietsanpham&manhom=<?= $row["cat_id"] ?>&masp=<?= $row["id"] ?>"> <?= $row["title"] ?> </a></p>
-										<p class="cart_item_author">Hãng: <?= $row["author"] ?></p>
-									</span>
-									<span><?= number_format($row["price"]) ?> VNĐ</span>
-									<span><input type="number" name="qty[<?= $masp ?>]" value="<?= $soluong ?>" min="1"></span>
-									<span><?= number_format($soluong * $row["price"]) ?> VNĐ</span>
-									<span><a href="?module=cart&act=del&masp=<?= $row["id"] ?>" title="Xóa sản phẩm"> X </a></span>
-								</div>
-							<?php
-							}
-							?>
-							<div class="cart_update">
-								<input class="form-control" type="submit" name="capnhat" value="Cập nhật giỏ hàng">
-							</div>
-							<div class="cart_total">
-								Tổng tiền:<?= number_format($total) ?> VNĐ
-							</div>
+										$hinhanh = $row["images"];
+										if ($hinhanh == "")
+											$hinhanh = "no-Image.png";
+									?>
 
+										<tr >
+											<td style="width: 170px;" 	><a href="#"><img src="hinhanh/Sanpham/<?= $hinhanh ?>" class=" img-thumbnail mx-auto d-block "></a></td>
+											<td>
+												<p class="cart_item_name"><a href="?module=chitietsanpham&manhom=<?= $row["cat_id"] ?>&masp=<?= $row["id"] ?>"> <?= $row["title"] ?> </a></p>
+												<p class="cart_item_author">Hãng: <?= $row["author"] ?></p>
+											</td>
+											<td><?= number_format($row["price"]) ?> VNĐ</td>
+											<td><input type="number" name="qty[<?= $masp ?>]" value="<?= $soluong ?>" min="1"></td>
+											<td><?= number_format($soluong * $row["price"]) ?> VNĐ</td>
+											<td><a href="?module=cart&act=del&masp=<?= $row["id"] ?>" title="Xóa sản phẩm"> X </a></td>
+										</tr>
+									<?php
+									}
+									?>
+									<div class="cart_update">
+										<input class="form-control" type="submit" name="capnhat" value="Cập nhật giỏ hàng">
+									</div>
+									<div class="cart_total">
+										Tổng tiền:<?= number_format($total) ?> VNĐ
+									</div>
+								</tbody>
+							</table>
 						</form>
+
 					</div>
 					<hr>
 					<h1 class="text-center">THANH TOÁN</h1>
@@ -80,15 +89,15 @@
 								ngnhan = document.getElementById("ngnhan");
 								diachi = document.getElementById("diachi");
 								dienthoai = document.getElementById("dienthoai");
-								if ( diachi.value == "" ) {
+								if (diachi.value == "") {
 									alert("Chưa nhập đủ thông tin");
 									return false;
 								}
-								if ( ngnhan.value == ""  ) {
+								if (ngnhan.value == "") {
 									ngnhan = document.getElementById("hoten");
 									document.forms[2].submit()
 								}
-								if ( dienthoai.value == ""  ) {
+								if (dienthoai.value == "") {
 									dienthoai = document.getElementById("dtmua");
 									document.forms[3].submit()
 								}
@@ -97,34 +106,34 @@
 
 						<?php
 						require("KiemtraDangNhapuser.php");
-						
+
 						?>
 						<form class="row g-3" name="f2" id="f1" action="?module=checkout" method="post" onSubmit="return kt();">
 							<div>
 								<label class="form-label">Họ tên người mua:(*)</label>
-								<input class="form-control" type="text" name="hoten" id="hoten"  value="<?=$_SESSION["name"]?>" readonly>
+								<input class="form-control" type="text" name="hoten" id="hoten" value="<?= $_SESSION["name"] ?>" readonly>
 							</div>
-							
+
 							<div>
 								<label class="form-label">Điện thoại người mua:</label>
-		                        <input class="form-control" type="text" name="dtmua" id="dtmua" value="<?=$_SESSION["tel"]?>" readonly >
-		                    </div>
+								<input class="form-control" type="text" name="dtmua" id="dtmua" value="<?= $_SESSION["tel"] ?>" readonly>
+							</div>
 							<div>
 								<label class="form-label">Họ tên người nhận:</label>
-		                        <input class="form-control" type="text" name="ngnhan" id="ngnhan">
-		                    </div>
+								<input class="form-control" type="text" name="ngnhan" id="ngnhan">
+							</div>
 							<div>
 								<label class="form-label">Điện thoại người nhận:</label>
 								<input class="form-control" class="form-control" type="text" name="dienthoai" id="dienthoai">
 							</div>
-                            <div>
+							<div>
 								<label class="form-label">Địa chỉ:(*)</label>
-								<input class="form-control" type="text" name="diachi" id="diachi" value="<?=$_SESSION["adress"]?>" >
+								<input class="form-control" type="text" name="diachi" id="diachi" value="<?= $_SESSION["adress"] ?>">
 							</div>
 
 							<div><label class="form-label">Chú thích:</label>
-		                        <textarea class="form-control"  name="note" id="note" rows="4" cols="39"> </textarea>
-		                    </div> 
+								<textarea class="form-control" name="note" id="note" rows="4" cols="39"> </textarea>
+							</div>
 							<div>
 								<label class="form-label">Ngày nhận hàng:</label>
 								<input class="form-control" type="date" name="ngaynhan" id="ngaynhan">
@@ -139,4 +148,4 @@
 			} //đóng else //count>0
 			?>
 
-		</div> <!--content_center_2 -->
+		</section> <!--content_center_2 -->
