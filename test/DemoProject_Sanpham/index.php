@@ -28,7 +28,7 @@ require("KiemtraDangNhap.php");
     <script src="JS/SlideShow.js"></script>
     <!-- Font awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-
+    <link rel="stylesheet" href="./CSS/style copy.css">
 </head>
 
 <body>
@@ -39,7 +39,7 @@ require("KiemtraDangNhap.php");
 
 
     <div class="clear_fix container-fluid">
-        <?php include("ViewsHome/inc_Left.php"); ?>
+        
         <?php
         //hiển thị phần nội dung giữa của trang web
         $module = "";
