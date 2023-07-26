@@ -63,7 +63,7 @@
 												<p class="cart_item_author">Hãng: <?= $row["author"] ?></p>
 											</td>
 											<td><?= number_format($row["price"]) ?> VNĐ</td>
-											<td><input type="number" name="qty[<?= $masp ?>]" value="<?= $soluong ?>" min="1"></td>
+											<td ><input style="width: 50px;" type="number" name="qty[<?= $masp ?>]" value="<?= $soluong ?>" min="1"></td>
 											<td><?= number_format($soluong * $row["price"]) ?> VNĐ</td>
 											<td><a href="?module=cart&act=del&masp=<?= $row["id"] ?>" title="Xóa sản phẩm"> X </a></td>
 										</tr>
