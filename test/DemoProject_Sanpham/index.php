@@ -1,6 +1,6 @@
 <?php
 session_start();
-require("KiemtraDangNhap.php");
+require("KiemtraDangNhapuser.php");
 ?>
 <!doctype html>
 <html>

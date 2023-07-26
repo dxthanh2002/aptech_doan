@@ -30,6 +30,8 @@ if($row!=NULL)//đăng nhập thành công
 		$_SESSION["logined"] ="OK";
 		$_SESSION["user"] = $row["user"];
 		$_SESSION["name"] = $row["fullname"];
+		$_SESSION["tel"]  = $row["tel"];
+		$_SESSION["adress"]  = $row["adress"];
 		//header("location:index_admin.php");
 		$thongbao = "ĐĂNG NHẬP THÀNH CÔNG";
 		$link_tieptuc = "index.php";

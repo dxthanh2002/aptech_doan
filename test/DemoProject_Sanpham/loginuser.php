@@ -23,6 +23,7 @@
                 <input type="submit" name="b1" id="b1" value="Đồng ý">
                 <input type="reset" value="Nhập lại">
             </div>
+            <div> <a href=index.php> << Quay lại</a></div>
         </fieldset>
     </form>
 </div>

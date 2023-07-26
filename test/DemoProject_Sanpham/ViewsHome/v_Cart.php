@@ -77,35 +77,49 @@
 					<div class="container" style="width: 400px;">
 						<script>
 							function kt() {
-								hoten = document.getElementById("hoten");
+								ngnhan = document.getElementById("ngnhan");
 								diachi = document.getElementById("diachi");
 								dienthoai = document.getElementById("dienthoai");
-								if (hoten.value == "" || diachi.value == "" || dienthoai.value == "") {
+								if ( diachi.value == "" ) {
 									alert("Chưa nhập đủ thông tin");
 									return false;
 								}
+								if ( ngnhan.value == ""  ) {
+									ngnhan = document.getElementById("hoten");
+									document.forms[2].submit()
+								}
+								if ( dienthoai.value == ""  ) {
+									dienthoai = document.getElementById("dtmua");
+									document.forms[3].submit()
+								}
 							}
 						</script>
+
+						<?php
+						require("KiemtraDangNhapuser.php");
+						
+						?>
 						<form class="row g-3" name="f2" id="f1" action="?module=checkout" method="post" onSubmit="return kt();">
 							<div>
-								<label class="form-label">Họ tên:(*)</label>
-								<input class="form-control" type="text" name="hoten" id="hoten" required>
+								<label class="form-label">Họ tên người mua:(*)</label>
+								<input class="form-control" type="text" name="hoten" id="hoten"  value="<?=$_SESSION["name"]?>" readonly>
 							</div>
-							<div>
-								<label class="form-label">Địa chỉ:(*)</label>
-								<input class="form-control" type="text" name="diachi" id="diachi">
-							</div>
+							
 							<div>
 								<label class="form-label">Điện thoại người mua:</label>
-		                        <input class="form-control" type="text" name="dtmua" id="dtmua">
+		                        <input class="form-control" type="text" name="dtmua" id="dtmua" value="<?=$_SESSION["tel"]?>" readonly >
 		                    </div>
 							<div>
 								<label class="form-label">Họ tên người nhận:</label>
 		                        <input class="form-control" type="text" name="ngnhan" id="ngnhan">
 		                    </div>
 							<div>
-								<label class="form-label">Điện thoại:(*)</label>
+								<label class="form-label">Điện thoại người nhận:</label>
 								<input class="form-control" class="form-control" type="text" name="dienthoai" id="dienthoai">
+							</div>
+                            <div>
+								<label class="form-label">Địa chỉ:(*)</label>
+								<input class="form-control" type="text" name="diachi" id="diachi" value="<?=$_SESSION["adress"]?>" >
 							</div>
 
 							<div><label class="form-label">Chú thích:</label>
