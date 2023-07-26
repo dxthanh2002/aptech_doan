@@ -44,10 +44,10 @@
                                     <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="text-white">User <b><?= isset($_SESSION["user"]) ? $_SESSION["user"] : "" ?></b></span></a>
                             <div class="dropdown-menu" aria-labelledby="dropdownId">
-                            <ul class="sub_menu pages">
-                            <li class="nav-item"><a class="dropdown-item"><?= isset($_SESSION["user"]) ? "<a href='logoutuser.php'>Đăng xuất</a>" : "<a href='loginuser.php'>Đăng nhập</a>" ?></a></li>
-                            <li class="nav-item"><a class="dropdown-item" href="?module=dangky&act=them"> Đăng ký</a>      </li>
-                                </ul>                 
+                            
+                             <a class="dropdown-item">  <div style="padding-left:20px;"> <?= isset($_SESSION["user"]) ? "<a  href='logoutuser.php'>Log out</a>" : "<a href='loginuser.php'>Log In</a>" ?> </div></a>
+                            <a class="dropdown-item" href="?module=dangky&act=them"> Sign up</a>       
+                                       
                             </div>
                         </li>
                                      
@@ -83,6 +83,10 @@
                                         </a>
                                     </li>
                                     <li class="mini_cart_wrapper">
+                                 
+                                           
+
+
                                     <?PHP
                                             require_once("Models/clsCategory.php");
                                             require_once("Models/clsSanpham.php");
@@ -98,7 +102,10 @@
                                         <?php
                                         if ($count == 0) {
                                             ?>
-                                                <p>Chưa có hàng trong giỏ</p>
+                                             <div class="mini_cart mini_cart2">
+                                         <div class="cart_gallery">
+                                            <div class="cart_info">
+                                                <p>Chưa có hàng trong giỏ</p> </div> </div></div>
                                                 <?php
                                             } else //count>0
                                             {
@@ -123,8 +130,8 @@
                                             if ($hinhanh == "")
                                                 $hinhanh = "no-Image.png";
                                             ?>
-                                        <div class="mini_cart mini_cart2">
-                                            <div class="cart_gallery">
+                                               <div class="mini_cart mini_cart2">
+                                         <div class="cart_gallery">
                                                 <div class="cart_item">
                                                     <div class="cart_img">
                                                         <a href="#">
@@ -133,12 +140,10 @@
                                                     </div>
                                                     <div class="cart_info">
                                                         
-                                                       <p> <a href="?module=chitietsanpham&manhom=<?= $row["cat_id"] ?>&masp=<?= $row["id"] ?>"> <?= $row["title"] ?>
-                                                        </a> </p>
-                                                        <p><span><?= number_format($row["price"]) ?> VNĐ</span> <input type="number" name="qty[<?= $masp ?>]" value="<?= $soluong ?>" min="1"></p>
-                                                    
-                                                        <span>Sub Total :</span>
-                                                        <span class="price"> <?= number_format($soluong * $row["price"]) ?> VNĐ </span>
+                                                       <a href="?module=chitietsanpham&manhom=<?= $row["cat_id"] ?>&masp=<?= $row["id"] ?>"> <?= $row["title"] ?>
+                                                        </a> 
+                                                        <p><?= number_format($row["price"]) ?> VNĐ  x  <?= $soluong ?> </p>
+                                                        <p class="price"> Sub Total : <?= number_format($soluong * $row["price"]) ?> VNĐ </p>
  
                                                     </div>
                                                     <div class="cart_remove">
