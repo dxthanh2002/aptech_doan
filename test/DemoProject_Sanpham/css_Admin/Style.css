@@ -21,7 +21,7 @@
 
 #content_left {width:200px; /*background-color:#3CC;*/ float:left}
 
-#content_right { width:800px; /*background-color:#FFC;*/ float:left}
+#content_right { width:1000px; /*background-color:#FFC;*/ float:left}
 #content_right > h1 {color; text-align:center; padding:10px; margin:5px;
 			background:#FC0; color:#333; border-radius:10px}
 #content_right > h2 {color:#090; padding:10px; margin:5px;}

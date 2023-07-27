@@ -1,5 +1,5 @@
-
-        <div id="content_right"> 
+<div class="d-flex justify-content-center">
+        <div id="content_right" class="col-8"> 
         	<h1 > QUẢN LÝ HÓA ĐƠN</h1>
             <h2> Thông tin mua hàng</h2>
             <div id="right_detail">
@@ -14,20 +14,24 @@
                 else if($rowHD["trangthai"]==3)
                     $trangthai = "Tạm hủy";
                 ?>
-                <p> Mã hóa đơn: <b> <?=$id?> </b></p>
-                <p> Tên người mua: <b> <?=$rowHD["tennguoimua"]?> </b></p>
-                <p> Địa chỉ :<b> <?=$rowHD["diachi"]?> </b></p>
-                <p> Điện thoại :<b> <?=$rowHD["dienthoai"]?> </b></p>
-                <p> Ngày đặt :<b> <?=$rowHD["ngaydat"]?> </b></p>
-                <p> Ngày nhận :<b> <?=$rowHD["ngaynhan"]?> </b></p>
-                <p> Trạng thái :<b> <?=$trangthai?> </b>
-                <select name="sTT" id="sTT" onChange="sTT_Change(this.value);">
-                    <option value=""> Đổi trạng thái HĐ</option>
+                <div class="card" style="width: 18rem;">
+                <ul class="list-group list-group-flush">
+                <li class="list-group-item"> Mã hóa đơn: <b> <?=$id?> </b></li>
+                <li class="list-group-item"> Tên người mua: <b> <?=$rowHD["tennguoimua"]?> </b></li>
+                <li class="list-group-item"> Địa chỉ :<b> <?=$rowHD["diachi"]?> </b></li>
+                <li class="list-group-item"> Điện thoại :<b> <?=$rowHD["dienthoai"]?> </b></li>
+                <li class="list-group-item"> Ngày đặt :<b> <?=$rowHD["ngaydat"]?> </b></li>
+                <li class="list-group-item"> Ngày nhận :<b> <?=$rowHD["ngaynhan"]?> </b></li>
+                <li class="list-group-item"> Trạng thái :<b> <?=$trangthai?> </b>
+                <select class="form-select" name="sTT" id="sTT" onChange="sTT_Change(this.value);">
+                    <option value="" selected> Đổi trạng thái HĐ</option>
                     <option value="0"> Hóa đơn mới</option>
                     <option value="1"> Hóa đơn đã duyệt</option>
                     <option value="2"> Hóa đơn đã thanh toán</option>
                     <option value="3"> Hóa đơn tạm hủy</option>
                 </select>
+                </ul>
+                </div>
                 <script>
                 function sTT_Change(new_value)
                 {
@@ -77,3 +81,4 @@
                 </table>
 			</div>
         </div>
+</div>
