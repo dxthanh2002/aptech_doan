@@ -1,4 +1,4 @@
-		<section class="container-fluid" style="background-color: whitesmoke;"> <!-- không kèm <div id="content_right"> -->
+		<section  class="container-fluid" style="background-color: whitesmoke;" id="thanhtoan"> <!-- không kèm <div id="content_right"> -->
 			<br>
 			<br>
 			<h1 class="text-center" style="color:black">GIỎ HÀNG CỦA BẠN</h1>
@@ -84,8 +84,9 @@
 
 					</div>
 					<hr>
-					<h1 class="text-center">THANH TOÁN</h1>
-					<div class="container" style="width: 400px;">
+					<h1 class="text-center text-dark">THANH TOÁN</h1>
+					<hr>
+					<div class="container d-block" style="width: 900px;">
 						<script>
 							function kt() {
 								ngnhan = document.getElementById("ngnhan");
@@ -110,30 +111,34 @@
 						require("KiemtraDangNhapuser.php");
 
 						?>
-						<form class="row g-3" name="f2" id="f1" action="?module=checkout" method="post" onSubmit="return kt();">
-							<div>
-								<label class="form-label">Họ tên người mua:(*)</label>
-								<input class="form-control" type="text" name="hoten" id="hoten" value="<?= $_SESSION["name"] ?>" readonly>
-							</div>
+						<form class="row g-3" style="color: black" name="f2" id="f1" action="?module=checkout" method="post" onSubmit="return kt();">
+							<div class="row my-3">
+								<div class="col">
+									<label class="form-label">Họ tên người mua:(*)</label>
+									<input class="form-control" type="text" name="hoten" id="hoten" value="<?= $_SESSION["name"] ?>" readonly>
+								</div>
 
-							<div>
-								<label class="form-label">Điện thoại người mua:</label>
-								<input class="form-control" type="text" name="dtmua" id="dtmua" value="<?= $_SESSION["tel"] ?>" readonly>
+								<div class="col">
+									<label class="form-label">Điện thoại người mua:</label>
+									<input class="form-control" type="text" name="dtmua" id="dtmua" value="<?= $_SESSION["tel"] ?>" readonly>
+								</div>
 							</div>
-							<div>
-								<label class="form-label">Họ tên người nhận:</label>
-								<input class="form-control" type="text" name="ngnhan" id="ngnhan">
+							<div class="row my-3">
+								<div class="col">
+									<label class="form-label">Họ tên người nhận:</label>
+									<input class="form-control" type="text" name="ngnhan" id="ngnhan">
+								</div>
+								<div class="col">
+									<label class="form-label">Điện thoại người nhận:</label>
+									<input class="form-control" class="form-control" type="text" name="dienthoai" id="dienthoai">
+								</div>
 							</div>
-							<div>
-								<label class="form-label">Điện thoại người nhận:</label>
-								<input class="form-control" class="form-control" type="text" name="dienthoai" id="dienthoai">
-							</div>
-							<div>
+							<div class="my-3" >
 								<label class="form-label">Địa chỉ:(*)</label>
 								<input class="form-control" type="text" name="diachi" id="diachi" value="<?= $_SESSION["adress"] ?>">
 							</div>
 
-							<div><label class="form-label">Chú thích:</label>
+							<div class="my-3"><label class="form-label">Chú thích:</label>
 								<textarea class="form-control" name="note" id="note" rows="4" cols="39"> </textarea>
 							</div>
 							<div>
@@ -145,6 +150,7 @@
 							</label>
 						</form>
 					</div>
+
 			<?php
 				} //if($ketqua==FALSE)
 			} //đóng else //count>0

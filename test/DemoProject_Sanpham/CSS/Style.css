@@ -48,6 +48,48 @@
 .right1 a {text-decoration:none; color:#333}
 .right1 img { width:100px}
 
-
+#thanhtoan {
+	body {
+		font-family: 'Open Sans', sans-serif;
+		background-color: #777;
+		font-size: 16px;
+	  }
+	  .content {
+		background-color: white;
+		margin: 20px 30px;
+		padding: 30px;
+		border-radius: 10px;
+	  }
+	  label {
+		color: #477;
+		font-weight: normal;
+		font-size: 0.8em;
+	  }
+	  .form-control {
+		border-bottom: 1px solid #dbdbdb;
+		font-size: 1em;
+		&, &:hover, &:active, &:focus {
+		  border: none;
+		  box-shadow: none;
+		  border-bottom: 1px solid #dbdbdb;
+		}
+	  }
+	  img {
+		max-width: 100%;
+		max-height: 100%;
+	  }
+	  .ready {
+		width: 60%;
+		margin: 0 20%;
+		background-color: #477;
+		&:hover {
+		  background-color: #177;
+		}
+	  }
+	  .title {
+		text-align: center;
+		padding-bottom: 20px;
+	  }
+}
 
 
