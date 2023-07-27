@@ -1,16 +1,9 @@
-    	<div id="content_left"> 
-        	<div class="left1">
-            	<h3>CHỨC NĂNG</h3>
-                <p><a href="?module=<?=$module?>&act=them">Thêm Tin tức</a></p>
-                <p><a href="?module=tintuc">Danh sách Tin tức</a></p>
-                
-            </div>
 
-        </div>
-        <div id="content_right"> 
-        	<h1> QUẢN LÝ TIN TỨC</h1>
-            <h2> THÊM TIN TỨC</h2>
-            <div class="container">
+        <div class="container-fluid "> 
+        	
+            <h2 class="text-center m-5"> THÊM TIN TỨC</h2>
+            <div class="row d-flex justify-content-center">
+            <div class="col-sm-8 col-md-8 col-lg-8" >
             <form name="form1" method="post" action="?module=<?=$module?>&act=xulythem">
               
                 <div>
@@ -41,4 +34,5 @@
             </form>
 
 			</div>
+            </div>
         </div>

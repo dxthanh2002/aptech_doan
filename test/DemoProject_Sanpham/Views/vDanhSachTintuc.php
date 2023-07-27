@@ -4,7 +4,7 @@
     <h2 class="text-center"> DANH SÁCH TIN TỨC</h2>
     <br>
     <br>
-    <div class="row d-flex justify-content-center"">
+    <div class="row d-flex justify-content-center">
         <div class="col-sm-8 col-md-8 col-lg-8" >
             <table id="example" class="table table-striped table-hover table-bordered table align-middle">
                 <thead >
