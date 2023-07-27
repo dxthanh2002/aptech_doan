@@ -34,15 +34,15 @@
 						<form name="f1" id="f1" action="?module=cart&act=update" method="post">
 							<table class=" table table-secondary table-striped text-center table-borderless table-responsive">
 								<thead>
-                                    <tr  >
-                                        <th scope="col">Hình ảnh</th>
-                                        <th scope="col">Tên sản phẩm</th>
-                                        <th scope="col"> Đơn giá</th>
-                                        <th scope="col">Số lượng</th>
-                                        <th scope="col">Thành tiền</th>
-                                        <th scope="col">Xóa</th>
-                                    </tr>
-                                </thead>
+									<tr>
+										<th scope="col">Hình ảnh</th>
+										<th scope="col">Tên sản phẩm</th>
+										<th scope="col"> Đơn giá</th>
+										<th scope="col">Số lượng</th>
+										<th scope="col">Thành tiền</th>
+										<th scope="col">Xóa</th>
+									</tr>
+								</thead>
 
 								<tbody>
 									<?php
@@ -56,29 +56,31 @@
 											$hinhanh = "no-Image.png";
 									?>
 
-										<tr >
-											<td style="width: 170px;" 	><a href="#"><img src="hinhanh/Sanpham/<?= $hinhanh ?>" class=" img-thumbnail mx-auto d-block "></a></td>
+										<tr>
+											<td style="width: 170px;"><a href="#"><img src="hinhanh/Sanpham/<?= $hinhanh ?>" class=" img-thumbnail mx-auto d-block "></a></td>
 											<td>
 												<p class="cart_item_name"><a href="?module=chitietsanpham&manhom=<?= $row["cat_id"] ?>&masp=<?= $row["id"] ?>"> <?= $row["title"] ?> </a></p>
 												<p class="cart_item_author">Hãng: <?= $row["author"] ?></p>
 											</td>
 											<td><?= number_format($row["price"]) ?> VNĐ</td>
-											<td ><input style="width: 50px;" type="number" name="qty[<?= $masp ?>]" value="<?= $soluong ?>" min="1"></td>
+											<td><input style="width: 50px;" type="number" name="qty[<?= $masp ?>]" value="<?= $soluong ?>" min="1"></td>
 											<td><?= number_format($soluong * $row["price"]) ?> VNĐ</td>
 											<td><a href="?module=cart&act=del&masp=<?= $row["id"] ?>" title="Xóa sản phẩm"> X </a></td>
 										</tr>
 									<?php
 									}
 									?>
-									<div class="cart_update">
-										<input class="form-control" type="submit" name="capnhat" value="Cập nhật giỏ hàng">
-									</div>
-									<div class="cart_total">
-										Tổng tiền:<?= number_format($total) ?> VNĐ
-									</div>
 								</tbody>
+
+
 							</table>
 						</form>
+						<div class="cart_update">
+							<input class="form-control" type="submit" name="capnhat" value="Cập nhật giỏ hàng">
+						</div>
+						<div class="cart_total">
+							Tổng tiền:<?= number_format($total) ?> VNĐ
+						</div>
 
 					</div>
 					<hr>
