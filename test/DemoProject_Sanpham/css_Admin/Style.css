@@ -39,5 +39,10 @@
 
 
 
-
+.testi {
+    text-align: center;
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
 

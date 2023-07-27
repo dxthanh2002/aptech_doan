@@ -30,10 +30,11 @@ require("KiemtraDangNhap.php");
         <link href="https://cdn.datatables.net/1.13.5/css/dataTables.bootstrap5.min.css" rel="stylesheet">
 </head>
 
-<body>
-
+<body class="testi" style="background-image: url(https://thumbs.dreamstime.com/z/admin-login-sign-table-made-wood-68499314.jpg);">
+	
 
 	<div id="content" class="clear_fix">
+		
 	<div>
 		<?php include("Views/vHeader.php"); ?>
 	</div>
