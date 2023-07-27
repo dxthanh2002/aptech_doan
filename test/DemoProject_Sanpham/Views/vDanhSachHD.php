@@ -19,7 +19,7 @@
     							<td>Ngày nhận</td>
     							<td>Tổng tiền</td>
     							<td>Trạng thái</td>
-    							<td>Act</td>
+    							<td style="width: 120px;">Act</td>
     						</tr>
     					</thead>
     					<tbody>

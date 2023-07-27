@@ -1,10 +1,4 @@
-    	<div id="content_left">
-    	    <div class="left1">
-    	        <h3>CHỨC NĂNG</h3>
-    	        <p><a href="?module=<?= $module ?>&act=them">Thêm Nhóm SP</a></p>
-    	        <p><a href="?module=nhomsp">Danh sách Nhóm SP</a></p>
-    	    </div>
-    	</div>
+<div class="d-flex justify-content-center" >
     	<div id="content_right">
     	    <h1> QUẢN LÝ NHÓM SẢN PHẨM</h1>
     	    <h2> DANH SÁCH NHÓM SẢN PHẨM</h2>
@@ -44,3 +38,4 @@
     	        </table>
     	    </div>
     	</div>
+</div>

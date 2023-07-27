@@ -1,11 +1,4 @@
-    	<div id="content_left">
-    		<div class="left1">
-    			<h3>CHỨC NĂNG</h3>
-    			<p><a href="?module=<?= $module ?>&act=them">Thêm Sản phẩm</a></p>
-
-    		</div>
-
-    	</div>
+<div class="d-flex justify-content-center" >
     	<div id="content_right">
     		<h1> QUẢN LÝ SẢN PHẨM</h1>
     		<div id="Right_Search">
@@ -57,3 +50,4 @@
     			</table>
     		</div>
     	</div>
+</div>
