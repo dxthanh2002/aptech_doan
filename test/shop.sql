@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jul 25, 2023 at 09:39 PM
+-- Generation Time: Jul 27, 2023 at 05:37 AM
 -- Server version: 10.4.27-MariaDB
 -- PHP Version: 8.2.0
 
@@ -140,24 +140,13 @@ CREATE TABLE `tbchitiethoadon` (
 --
 
 INSERT INTO `tbchitiethoadon` (`id`, `mahd`, `masp`, `soluong`, `giamua`) VALUES
-(5, 9, 33, 3, 2100000),
-(7, 9, 28, 1, 1750000),
-(8, 10, 30, 1, 5490000),
-(9, 10, 31, 1, 4500000),
-(10, 16, 32, 1, 5460000),
-(11, 16, 2, 1, 1590000),
-(12, 17, 33, 1, 700000),
-(13, 18, 37, 2, 1340000),
-(14, 21, 34, 4, 13800000),
 (16, 23, 32, 1, 5460000),
 (17, 23, 35, 1, 842000),
 (18, 24, 2, 1, 1590000),
 (19, 24, 33, 2, 1400000),
-(25, 16, 28, 2, 3500000),
 (29, 26, 38, 1, 120000),
-(30, 27, 37, 1, 670000),
-(31, 28, 38, 3, 360000),
-(32, 29, 26, 1, 1590000);
+(34, 31, 35, 1, 842000),
+(35, 31, 50, 1, 510000);
 
 --
 -- Triggers `tbchitiethoadon`
@@ -179,7 +168,7 @@ DELIMITER ;
 
 CREATE TABLE `tbcustomer` (
   `cusid` int(11) NOT NULL,
-  `user` varchar(30) CHARACTER SET latin1 COLLATE latin1_swedish_ci NOT NULL,
+  `user` varchar(15) CHARACTER SET latin1 COLLATE latin1_swedish_ci NOT NULL,
   `pass` varchar(30) CHARACTER SET latin1 COLLATE latin1_swedish_ci NOT NULL,
   `fullname` varchar(30) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL,
   `tel` varchar(10) NOT NULL,
@@ -193,7 +182,10 @@ CREATE TABLE `tbcustomer` (
 --
 
 INSERT INTO `tbcustomer` (`cusid`, `user`, `pass`, `fullname`, `tel`, `adress`, `email`, `status`) VALUES
-(2, 'a', '1', '12,4', '9713440547', '5253 SE 82nd Ave Suite #21', 'tk', 1);
+(2, 'a', '1', '12,4', '9713440547', '5253 SE 82nd Ave Suite #21', 'tk', 1),
+(4, 'VVH', '123', 'Vũ văn Hiệu', '012345674', 'Hà nội', 'VVH@gmail.com', 1),
+(5, 'Long', '123', 'Nguyễn Ngọc Long', '0912356004', 'Nam Định', 'long@gmail.com', 1),
+(6, 'ADH', '1', 'ADH', '12321412', '165ton that huyet', 'ADH@yahoo.com', 1);
 
 -- --------------------------------------------------------
 
@@ -211,6 +203,7 @@ CREATE TABLE `tbhoadon` (
   `Note` text CHARACTER SET utf8 COLLATE utf8_general_ci DEFAULT NULL,
   `ngaydat` datetime NOT NULL DEFAULT current_timestamp(),
   `ngaynhan` datetime NOT NULL DEFAULT current_timestamp(),
+  `cusid` int(11) NOT NULL,
   `trangthai` int(11) NOT NULL DEFAULT 0
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1 COLLATE=latin1_swedish_ci;
 
@@ -218,19 +211,11 @@ CREATE TABLE `tbhoadon` (
 -- Dumping data for table `tbhoadon`
 --
 
-INSERT INTO `tbhoadon` (`mahd`, `tennguoimua`, `dtnguoimua`, `nguoinhan`, `dienthoai`, `diachi`, `Note`, `ngaydat`, `ngaynhan`, `trangthai`) VALUES
-(9, 'nguyễn văn nam', '', '', '0123456789', 'Hà nội', '', '2021-08-13 17:28:14', '2021-08-13 17:28:14', 1),
-(10, 'Nguyễn Trọng Tâm', '', '', '0912356004', 'Định Công - Hà nội', '', '2021-09-15 21:00:22', '2021-09-26 00:00:00', 3),
-(16, 'Lê Văn Quý', '', '', '0912356004', 'Nam Định', '', '2021-09-18 15:24:18', '2020-09-19 00:00:00', 0),
-(17, 'Nguyễn Văn Nam', '', '', '1234567', 'Hà nội', '', '2021-09-18 15:30:44', '2020-09-19 00:00:00', 0),
-(18, 'Nguyễn Văn Dũng', '', '', '0912356004', 'Hà nội', '', '2021-09-18 15:47:17', '2021-09-19 00:00:00', 0),
-(21, 'Nguyễn Văn Dũng3', '', '', '0912356004', 'Hà nội', '', '2021-09-18 15:51:26', '2021-09-26 00:00:00', 0),
-(23, 'Vũ văn Hiệu', '', '', '012345674', 'Hà nội', '', '2021-09-19 14:21:19', '2021-09-19 00:00:00', 2),
-(24, 'Nguyễn Ngọc Long', '', '', '0912356004', 'Nam Định', '', '2021-09-19 17:25:48', '2021-09-26 00:00:00', 2),
-(26, 'ADH', '', '', '12321412', '165ton that huyet', ' 123', '2023-07-17 18:19:25', '0000-00-00 00:00:00', 2),
-(27, 'ADH', '12134235', 'ADHE', '52135345', '165 tôn thất huyết - thanh xuân - hà nội', ' ahh', '2023-07-17 18:19:48', '0000-00-00 00:00:00', 0),
-(28, 'ADH', '', '', '000', 'fg', ' ', '2023-07-21 18:26:34', '0000-00-00 00:00:00', 0),
-(29, 'ADH', '', '', '12321412', '165 tôn thất huyết - thanh xuân - hà nội', ' ', '2023-07-21 18:26:55', '2023-07-19 00:00:00', 0);
+INSERT INTO `tbhoadon` (`mahd`, `tennguoimua`, `dtnguoimua`, `nguoinhan`, `dienthoai`, `diachi`, `Note`, `ngaydat`, `ngaynhan`, `cusid`, `trangthai`) VALUES
+(23, 'Vũ văn Hiệu', '', '', '012345674', 'Hà nội', '', '2021-09-19 14:21:19', '2021-09-19 00:00:00', 4, 2),
+(24, 'Nguyễn Ngọc Long', '', '', '0912356004', 'Nam Định', '', '2021-09-19 17:25:48', '2021-09-26 00:00:00', 5, 2),
+(26, 'ADH', '', '', '12321412', '165ton that huyet', ' 123', '2023-07-17 18:19:25', '0000-00-00 00:00:00', 6, 2),
+(31, '12,4', '9713440547', '', '', '5253 SE 82nd Ave Suite #21', ' ', '2023-07-27 10:02:54', '0000-00-00 00:00:00', 2, 0);
 
 -- --------------------------------------------------------
 
@@ -302,7 +287,8 @@ ALTER TABLE `tbcustomer`
 -- Indexes for table `tbhoadon`
 --
 ALTER TABLE `tbhoadon`
-  ADD PRIMARY KEY (`mahd`);
+  ADD PRIMARY KEY (`mahd`),
+  ADD KEY `cusid` (`cusid`);
 
 --
 -- Indexes for table `tbtintuc`
@@ -336,19 +322,19 @@ ALTER TABLE `tbcategory`
 -- AUTO_INCREMENT for table `tbchitiethoadon`
 --
 ALTER TABLE `tbchitiethoadon`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=33;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=36;
 
 --
 -- AUTO_INCREMENT for table `tbcustomer`
 --
 ALTER TABLE `tbcustomer`
-  MODIFY `cusid` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `cusid` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 
 --
 -- AUTO_INCREMENT for table `tbhoadon`
 --
 ALTER TABLE `tbhoadon`
-  MODIFY `mahd` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=30;
+  MODIFY `mahd` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=32;
 
 --
 -- AUTO_INCREMENT for table `tbtintuc`
@@ -372,6 +358,12 @@ ALTER TABLE `books`
 ALTER TABLE `tbchitiethoadon`
   ADD CONSTRAINT `tbchitiethoadon_ibfk_1` FOREIGN KEY (`mahd`) REFERENCES `tbhoadon` (`mahd`),
   ADD CONSTRAINT `tbchitiethoadon_ibfk_2` FOREIGN KEY (`masp`) REFERENCES `books` (`id`);
+
+--
+-- Constraints for table `tbhoadon`
+--
+ALTER TABLE `tbhoadon`
+  ADD CONSTRAINT `tbhoadon_ibfk_1` FOREIGN KEY (`cusid`) REFERENCES `tbcustomer` (`cusid`);
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

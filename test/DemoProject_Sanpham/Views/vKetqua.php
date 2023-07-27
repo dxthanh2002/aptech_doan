@@ -33,10 +33,10 @@
   <!-- Nội dung hộp thoại -->
   <div class="modal-content">
     <p> 
-    <span class="title">THÔNG BÁO</span>
+    <span class="title">Announcement</span>
     </p>
     <p><?=$thongbao?></p> <!-- nội dung của hộp thoại -->
-    <p><a href="<?=$link_tieptuc?>">Tiếp tục</a></p>
+    <p><a href="<?=$link_tieptuc?>">Continue</a></p>
   </div>
 </div>
 <script>

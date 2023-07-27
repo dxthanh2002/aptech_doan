@@ -32,21 +32,22 @@ if($row!=NULL)//đăng nhập thành công
 		$_SESSION["name"] = $row["fullname"];
 		$_SESSION["tel"]  = $row["tel"];
 		$_SESSION["adress"]  = $row["adress"];
+		$_SESSION["cusid"]  = $row["cusid"];
 		//header("location:index_admin.php");
-		$thongbao = "ĐĂNG NHẬP THÀNH CÔNG";
+		$thongbao = "Log in Success";
 		$link_tieptuc = "index.php";
 	require("Views/vKetqua.php");
 	}
 	else
 	{
-		$thongbao = "TÀI KHOẢN ĐÃ BỊ KHÓA";
+		$thongbao = "Account is locked";
 		$link_tieptuc = "loginuser.php";
 		require("Views/vKetqua.php");;
 	}
 }
 else
 {
-	$thongbao = "ĐĂNG NHẬP SAI USER HOẶC PASSWORD";
+	$thongbao = "WRONG  USER OR PASSWORD";
 	$link_tieptuc = "loginuser.php";
 	require("Views/vKetqua.php");;
 }

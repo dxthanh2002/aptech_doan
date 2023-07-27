@@ -16,7 +16,7 @@ $admin = new clsAdmin();
 $ketqua = $admin->KiemTraTaiKhoan($user,$pass);
 if($ketqua==FALSE)
 {
-	$thongbao = "Lỗi TRUY VẤN CSDL";
+	$thongbao = " DATABASE ERROR ";
 	$link_tieptuc = "login.php";
 	require("Views/vKetqua.php");;
 	die();
@@ -31,20 +31,20 @@ if($row!=NULL)//đăng nhập thành công
 		$_SESSION["user"] = $row["username"];
 		$_SESSION["quyen"] = $row["quyen"];
 		//header("location:index_admin.php");
-		$thongbao = "ĐĂNG NHẬP THÀNH CÔNG";
+		$thongbao = "Log in Success";
 		$link_tieptuc = "index_admin.php";
 	require("Views/vKetqua.php");
 	}
 	else
 	{
-		$thongbao = "TÀI KHOẢN ĐÃ BỊ KHÓA";
+		$thongbao = "Account is locked";
 		$link_tieptuc = "login.php";
 		require("Views/vKetqua.php");;
 	}
 }
 else
 {
-	$thongbao = "ĐĂNG NHẬP SAI USER HOẶC PASSWORD";
+	$thongbao = "WRONG  USER OR PASSWORD";
 	$link_tieptuc = "login.php";
 	require("Views/vKetqua.php");;
 }

@@ -20,8 +20,9 @@ else
 	$diachi = $_REQUEST["diachi"];
 	$note  = $_REQUEST["note"];
 	$ngaynhan = $_REQUEST["ngaynhan"];
+	$cusid = $_SESSION["cusid"] ;
 	$hoadon = new clsHoadon();
-	$ketqua = $hoadon->ThemHoadon($hoten,$dtmua, $ngnhan,$dienthoai, $diachi,$note, $ngaynhan);
+	$ketqua = $hoadon->ThemHoadon($hoten,$dtmua, $ngnhan,$dienthoai, $diachi,$note, $ngaynhan, $cusid);
 	if($ketqua==FALSE)
 		$thongbao ="LỖI THÊM HÓA ĐƠN MỚI";
 	else
