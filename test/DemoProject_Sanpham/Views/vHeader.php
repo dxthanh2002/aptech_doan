@@ -1,6 +1,6 @@
 <header class="container-fluid bg-dark">
-    <div class="container">
-        <nav class="navbar  navbar-expand-sm navbar-dark bg-dark">
+    <div class="row flex-nowrap">
+        <nav class="navbar  navbar-expand-sm navbar-dark bg-dark ">
             <div class="container">
                 <a class="navbar-brand" href="index.php">
                     <img src="./ViewsHome/logo.png" alt="hinh anh" />
@@ -13,15 +13,44 @@
                         <li class="nav-item">
                             <a class="nav-link active" href="index_admin.php" aria-current="page">Trang chủ<span class="visually-hidden">(current)</span></a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="?module=tintuc">Quản lý Tin tức</a>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Tin tức</a>
+                            <div class="dropdown-menu" aria-labelledby="dropdownId">
+                                <a class="dropdown-item" href="?module=tintuc">Danh sách Tin tức</a>
+                                <a class="dropdown-item" href="?module=tintuc&act=them">Thêm tin tức</a>
+
+                            </div>
+
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="?module=nhomsp">Quản lý nhóm sản phẩm</a>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Quản lý nhóm sản phẩm</a>
+                            <div class="dropdown-menu" aria-labelledby="dropdownId">
+                                <a class="dropdown-item" href="?module=nhomsp">Danh sách Sản phẩm</a>
+                                <a class="dropdown-item" href="?module=nhomsp&act=them">Thêm sản phẩm</a>
+
+                            </div>
+                            
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="?module=sanpham">Quản lý sản phẩm</a>
+                        <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Quản lý sản phẩm</a>
+                            <div class="dropdown-menu" aria-labelledby="dropdownId">
+                                <a class="dropdown-item" href="?module=sanpham">Danh sách Sản phẩm</a>
+                                <a class="dropdown-item" href="?module=sanpham&act=them">Thêm sản phẩm</a>
+
+                            </div>
+                            
                         </li>
+                        <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Quản lý khách hàng</a>
+                            <div class="dropdown-menu" aria-labelledby="dropdownId">
+                                <a class="dropdown-item" href="?module=sanpham">Danh sách khách hàng</a>
+                                <a class="dropdown-item" href="?module=sanpham&act=them">Thêm khách hàng</a>
+
+                            </div>
+                            
+                        </li>
+                        
+
                         <li class="nav-item">
                             <a class="nav-link" href="?module=hoadon">Quản lý hóa đơn</a>
                         </li>
