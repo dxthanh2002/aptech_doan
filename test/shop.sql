@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jul 27, 2023 at 05:37 AM
+-- Generation Time: Jul 27, 2023 at 11:17 AM
 -- Server version: 10.4.27-MariaDB
 -- PHP Version: 8.2.0
 
@@ -182,7 +182,7 @@ CREATE TABLE `tbcustomer` (
 --
 
 INSERT INTO `tbcustomer` (`cusid`, `user`, `pass`, `fullname`, `tel`, `adress`, `email`, `status`) VALUES
-(2, 'a', '1', '12,4', '9713440547', '5253 SE 82nd Ave Suite #21', 'tk', 1),
+(2, 'a', '123', 'GLD HOAK', '9713440547', '5253 SE 82nd Ave Suite #21', 'Doan@gmail.com', 1),
 (4, 'VVH', '123', 'Vũ văn Hiệu', '012345674', 'Hà nội', 'VVH@gmail.com', 1),
 (5, 'Long', '123', 'Nguyễn Ngọc Long', '0912356004', 'Nam Định', 'long@gmail.com', 1),
 (6, 'ADH', '1', 'ADH', '12321412', '165ton that huyet', 'ADH@yahoo.com', 1);

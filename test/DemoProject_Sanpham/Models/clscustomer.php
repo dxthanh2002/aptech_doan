@@ -35,20 +35,45 @@ class clscus
 		return $ketqua;
 	}
 	//Hàm sửa dữ liệu
-	function Suauser($id,$user,$pass,$fullname, $tel,$adress,$email, $status)
+	function Suauser($id, $fullname, $tel,$adress,$email)
 	{
-		$sql = "UPDATE  tbcustomer SET user = ? ,pass = ? , fullname = ?,tel = ? ,adress = ? ,email = ? ,status = ? WHERE cusid=?";
-        $data[] = $user;
-		$data[] = $pass;
+		$sql = "UPDATE  tbcustomer SET fullname = ?,tel = ? ,adress = ? ,email = ? WHERE cusid=?";
+      
         $data[] = $fullname;
 		$data[] = $tel;
 		$data[] = $adress;
 		$data[] = $email;
-        $data[] = $status;
+   
 		$data[] = $id;
  		$ketqua = $this->db->ThucthiSQL($sql,$data);
 		return $ketqua;
 	}
+    
+	function Suapassuser($email ,$pass)
+	{
+		$sql = "UPDATE  tbcustomer SET  pass = ?   WHERE email=?";
+        
+		$data[] = $pass;
+       
+		$data[] = $email;
+ 		$ketqua = $this->db->ThucthiSQL($sql,$data);
+		return $ketqua;
+	}
+    
+	function KiemTraemail($email)
+	{
+		$sql = "SELECT * FROM tbcustomer WHERE email=?";
+		
+		$data[] = $email;
+		 
+ 		$ketqua = $this->db->ThucthiSQL($sql,$data);
+		//LẤY BẢN GHI KẾT QUẢ LƯU VÀO $data
+		$this->data=NULL;
+		if($ketqua==TRUE)
+			$this->data = $this->db->pdo_stm->fetch();
+		return $ketqua;//trả về $ketqua: TRUE/FALSE
+	}
+
 	//Hàm xóa dữ liệu
 	function Xoauser($id)
 	{

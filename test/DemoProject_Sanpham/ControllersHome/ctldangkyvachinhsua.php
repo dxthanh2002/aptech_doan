@@ -4,7 +4,7 @@ require_once("Models/clscustomer.php");
 $link_tieptuc ="?module=" . $module;
 $thongbao ="";
 //lấy các thông tin từ request nếu có
-$id = isset($_REQUEST["id"])?$_REQUEST["id"]:"";
+$id = isset($_SESSION["cusid"])?$_SESSION["cusid"]:"";
 $act = isset($_REQUEST["act"])?$_REQUEST["act"]:"";
 $tukhoa = isset($_REQUEST["tTukhoa"])? $_REQUEST["tTukhoa"]:"";
 
@@ -16,7 +16,7 @@ if($act == "them"){
 }
 else if($act == "sua"){//hiển thị form sửa sản phẩm
 	$ketqua = $user->TimTheoIDuser($id);
-	require("ViewsHome/vSuauser.php");
+	require("ViewsHome/vsuauser.php");
 }
 else if($act == "xulythem"){
 	require("xulythemuser.php");

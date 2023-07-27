@@ -189,9 +189,9 @@
                                             <i class="fa fa-cog"></i>
                                         </a>
                                         <ul class="dropdown_links">
-                                            <li><a href="#">Checkout</a></li>
-                                            <li><a href="#">My Account</a></li>
-                                            <li><a href="#">Shopping Cart</a></li>
+                                            <li><a href="?module=checkout">Checkout</a></li>
+                                            <li><a href="?module=dangky&act=sua">My Account</a></li>
+                                            <li><a href="?module=cart">Shopping Cart</a></li>
                                             <li><a href="#">Wishlist</a></li>
                                         </ul>
                                     </li>

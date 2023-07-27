@@ -1,14 +1,17 @@
 <?php
 require_once("Models/clsHoadon.php");
 require_once("Models/clsSanpham.php");
+require("KiemtraDangNhapuser.php");
+
+
 //biến $link_tieptuc và $thongbao dùng cho Views/vKetqua.php
 $link_tieptuc ="?module=cart";
 $thongbao ="";
 //Lấy thông tin từ form và chèn hóa đơn mới
 if(isset($_SESSION["cart"])==false)
-	$thongbao ="Giỏ hàng rỗng";
+	$thongbao ="Emty cart";
 else if(isset($_REQUEST["dathang"])==false)
-	$thongbao ="lỗi submit form đặt hàng";
+	$thongbao ="Error submit form Order";
 else
 {
 	
@@ -24,7 +27,7 @@ else
 	$hoadon = new clsHoadon();
 	$ketqua = $hoadon->ThemHoadon($hoten,$dtmua, $ngnhan,$dienthoai, $diachi,$note, $ngaynhan, $cusid);
 	if($ketqua==FALSE)
-		$thongbao ="LỖI THÊM HÓA ĐƠN MỚI";
+		$thongbao ="ERROR ADD A NEW ORDER";
 	else
 	{
 		//lấy mã hóa đơn tự động sinh từ lệnh insert trên
@@ -38,11 +41,11 @@ else
 			$giasp = $sanpham->data["price"];//lấy giá sản phẩm
 			$ketqua = $hoadon->ThemChitietHoadon($mahd,$masp,$soluong,$giasp);
 			if($ketqua==FALSE)
-				$thongbao ="LỖI THÊM CHI TIẾT HÓA ĐƠN";
+				$thongbao ="ERROR ADD DETAIL ORDER";
 			else
 			{
 				unset($_SESSION["cart"]);//xóa giỏ hàng
- 				$thongbao ="CẢM ƠN BẠN ĐÃ MUA HÀNG, CHÚNG TÔI SẼ LIÊN HỆ SỚM NHẤT";
+ 				$thongbao ="THANKS YOU FOR BUYING FROM US, WE WILL CONTACT SOON ";
 
 			}
 		}

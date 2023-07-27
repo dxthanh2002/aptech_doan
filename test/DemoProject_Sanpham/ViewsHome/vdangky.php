@@ -56,13 +56,18 @@
                 </div> 
                 <br></br>
                  <div>
-                  <label class="form-label">Tôi Đồng ý với điều khoản của trang web: </label>
+                  <label class="form-label">I hereby read and agree to the General Terms and Conditions. I have taken note of the Terms of Revocation. </label>
                   <input  class="form-check-input" type="checkbox" name="c1" id="c1" value="1" required> 
                 </div>
                 <div>
+                  <label class="form-label">I have read the Privacy Policy and agree to the storage of my data. I am aware that I may revoke my consent at any time. </label>
+                  <input  class="form-check-input" type="checkbox" name="c2" id="c2" value="1" required> 
+                </div>
+                
+                <div>
                   <td></td>
                    <br></br>
-                  <td><input class="btn btn-success" type="submit" name="button" id="button" value="Đồng ý"></td>
+                  <td><input class="btn btn-success" type="submit" name="button" id="button" value="SUBMIT"></td>
                 </div>
               
             </form>

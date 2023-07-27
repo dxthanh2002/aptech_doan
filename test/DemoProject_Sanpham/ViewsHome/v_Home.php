@@ -17,7 +17,7 @@
                         style="left: 20px; top: 350px; color: #fff; font-weight: 900; letter-spacing: 0.5px;"
                         data-effect="left(short)" data-duration="3500" data-delay="350" data-ease="easeOutExpo">WINESHOP
                     </h1>
-                    <a href="#" class="ms-layer"
+                    <a href="?module=sanpham" class="ms-layer"
                         style="left: 20px; top: 424px; color: #fff; font-weight: 400; letter-spacing: 0.5px; margin: 0px ; padding: 0px; font-size: 14px; line-height: 20px; border: 1px solid #fff; padding: 10px 20px;"
                         data-effect="left(short)" data-duration="3500" data-delay="300" data-ease="easeOutExpo">SHOP
                         NOW</a>
@@ -37,7 +37,7 @@
                         style="left: 20px; top: 350px; color: #fff; font-weight: 900; letter-spacing: 0.5px;"
                         data-effect="left(short)" data-duration="3500" data-delay="350" data-ease="easeOutExpo">WINESHOP
                     </h1>
-                    <a href="#" class="ms-layer"
+                    <a href="?module=sanpham" class="ms-layer"
                         style="left: 20px; top: 424px; color: #fff; font-weight: 400; letter-spacing: 0.5px; margin: 0px ; padding: 0px; font-size: 14px; line-height: 20px; border: 1px solid #fff; padding: 10px 20px;"
                         data-effect="left(short)" data-duration="3500" data-delay="300" data-ease="easeOutExpo">SHOP
                         NOW</a>
@@ -742,20 +742,18 @@
             <div class="row">
                 <div class="col-md-6 col-sm-6">
                     <div class="dart-headingstyle-one t-mb-20 text-left t-pt-40 t-pb-30">
-                        <h2 class="dart-heading">Newsletter</h2>
-                        <p>Sign Up to our newsletter and save 20% of on next purchase</p>
+                        <h2 class="dart-heading">Sign Up</h2>
+                        <p>Sign Up to our website and save 20% of on next purchase</p>
                     </div>
                 </div>
                 <div class="col-md-6 col-sm-6">
-                    <form action="#" class="form-inline">
+                    
                         <div class="newsletter t-pt-70 t-pb-30">
-                            <div class="form-group">
-                                <input type="email" class="form-control" placeholder="Email...">
-                            </div>
-                            <button type="submit" class="btn btn-default">Subscribe <i
-                                    class="fa fa-envelope"></i></button>
+                            
+                        <a href="?module=dangky&act=them" style="padding-left:100px;"><button   class="btn btn-default" >Subscribe <i
+                                    class="fa fa-envelope"></i></button></a>
                         </div>
-                    </form>
+                     
                 </div>
             </div>
         </div>
