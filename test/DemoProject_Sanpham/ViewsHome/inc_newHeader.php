@@ -50,10 +50,7 @@
                                        
                             </div>
                         </li>
-                                     
-                                         
-                                     
-
+                             
                                 </ul>
                             </nav>
                         </div>
@@ -82,11 +79,9 @@
                                             <span class="item_count">4</span>
                                         </a>
                                     </li>
+                                  
+                                  
                                     <li class="mini_cart_wrapper">
-                                 
-                                           
-
-
                                     <?PHP
                                             require_once("Models/clsCategory.php");
                                             require_once("Models/clsSanpham.php");
@@ -120,6 +115,8 @@
                                             $total = 0; //tổng tiền của tất cả sản phẩm trong giỏ hàng
                                             $rows = $sanpham->data;
                                         ?>
+                                        <div class="mini_cart mini_cart2">
+                                        <div style="height:150px; overflow-y:scroll;">
                                          <?php
                                            foreach ($rows as $row) {
                                             $masp = $row["id"];
@@ -130,11 +127,11 @@
                                             if ($hinhanh == "")
                                                 $hinhanh = "no-Image.png";
                                             ?>
-                                               <div class="mini_cart mini_cart2">
+                                               
                                          <div class="cart_gallery">
                                                 <div class="cart_item">
                                                     <div class="cart_img">
-                                                        <a href="#">
+                                                        <a href="?module=chitietsanpham&manhom=<?= $row["cat_id"] ?>&masp=<?= $row["id"] ?>">
                                                         <img src="hinhanh/Sanpham/<?= $hinhanh ?>">
                                                         </a>
                                                     </div>
@@ -143,18 +140,20 @@
                                                        <a href="?module=chitietsanpham&manhom=<?= $row["cat_id"] ?>&masp=<?= $row["id"] ?>"> <?= $row["title"] ?>
                                                         </a> 
                                                         <p><?= number_format($row["price"]) ?> VNĐ  x  <?= $soluong ?> </p>
-                                                        <p class="price"> Sub Total : <?= number_format($soluong * $row["price"]) ?> VNĐ </p>
+                                                      
  
                                                     </div>
                                                     <div class="cart_remove">
                                                     <a href="?module=cart&act=del&masp=<?= $row["id"] ?>" title="Xóa sản phẩm"> X </a>
                                                     </div>
                                                 </div>
+                                            </div>
+                                           
                                                 <?php
 							}
 							?>
-
-                                            </div>
+                                              </div>
+                                            
 
                                             <div class="mini_cart_table">
                                                 <div class="cart_table_border">
