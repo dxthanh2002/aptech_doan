@@ -33,9 +33,9 @@
                 </div>
                 
                 <div class="chitietsanpham "   >
-                  <div class="card" >
+                  <div class="card text-dark" >
                     <h2 class="card-title">CHI TIẾT SẢN PHẨM</h2>
-                    <p class="card-text" > <?= $row["content"] ?> </p>
+                    <p class="card-text text-dark" > <?= $row["content"] ?> </p>
                   </div>
 
                 </div>
