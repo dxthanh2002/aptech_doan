@@ -142,9 +142,9 @@
                             <span style="font-weight: 100;">Collection</span>
                         </h1>
                         <h2>Save More, Pour More</h2>
-                        <p>This is Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad rerum repudiandae ipsa?
-                            Tempore modi quisquam velit nostrum nulla veritatis tempora quaerat eligendi porro, quos
-                            aperiam. Ea molestias placeat consequuntur fuga.</p>
+                        <p>This is a very good customer service. To reject things itself?
+                            At the time of the way any one of us wants, there are no times of truth that we seek to choose
+                            I will open Those troubles may result in flight.</p>
                         <div class="clearfix"></div>
                         <a href="#" class="btn btn-normal">SHOP NOW</a>
                     </div>
