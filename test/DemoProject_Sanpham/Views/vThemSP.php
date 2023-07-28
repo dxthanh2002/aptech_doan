@@ -2,13 +2,13 @@
 <div id="content_right">
   <h1> QUẢN LÝ SẢN PHẨM</h1>
   <h2> THÊM SẢN PHẨM</h2>
-  <div id="right_detail" class="d-flex justify-content-center">
-    <form name="form1" method="post" action="?module=<?= $module ?>&act=xulythem" enctype="multipart/form-data">
-      <table width="750" border="0" align="center" cellpadding="0" cellspacing="0">
-        <tr>
-          <td width="120" height="30">Loại Rượu:</td>
-          <td width="630">
-            <select name="s1" id="s1">
+  <div  class=" container">
+    <form class="form-floating" name="form1" method="post" action="?module=<?= $module ?>&act=xulythem" enctype="multipart/form-data">
+      <div class="container">
+        <div class="mb-3 row">
+          <label class="form-label">Loại Rượu:</label>
+          <div>
+            <select class="form-select" name="s1" id="s1">
               <option value="0"> Chọn loại rượu</option>
               <?php
               require_once("Models/clsCategory.php");
@@ -18,52 +18,52 @@
               ShowOptions($nps->data, "cat_id", "cat_name", 0);
               ?>
             </select>
-          </td>
-        </tr>
-        <tr>
-          <td width="120" height="30">Tên Rượu:</td>
-          <td width="380"><input type="text" name="t1" id="t1"></td>
-        </tr>
-        <tr>
-          <td height="30">Thương hiệu:</td>
-          <td><input type="text" name="t2" id="t2"></td>
-        </tr>
-        <tr>
-          <td height="30">Giá:</td>
-          <td><input type="text" name="t3" id="t3"></td>
-        </tr>
-        <tr>
-          <td height="30">Hình ảnh:</td>
-          <td><input type="file" name="f1" id="f1"></td>
-        </tr>
-        <tr>
-          <td height="30" valign="top">Xuất xứ:</td>
-          <td><textarea name="t4" id="t4" rows="5" cols="50"></textarea></td>
-        </tr>
-        <tr>
-          <td height="30" valign="top">Nồng độ:</td>
-          <td><textarea name="t4a" id="t4a" rows="5" cols="50"></textarea></td>
-        </tr>
-        <tr>
-          <td height="30" valign="top">Dung tích:</td>
-          <td><textarea name="t4b" id="t4b" rows="5" cols="50"></textarea></td>
-        </tr>
-        <tr>
-          <td height="30" valign="top">Chi tiết:</td>
-          <td><textarea name="t5" id="t5" rows="5" cols="50"></textarea></td>
-        </tr>
-        <tr>
+          </div>
+        </div>
+        <div class="mb-3 row">
+          <label class="form-lable" >Tên Rượu:</label>
+          <input class="form-control" type="text" name="t1" id="t1">
+        </div>
+        <div class="mb-3 row">
+          <label class="form-lable">Thương hiệu:</label>
+          <input class="form-control"  type="text" name="t2" id="t2">
+        </div>
+        <div class="mb-3 row">
+          <label class="form-lable" height="30">Giá:</label>
+          <input class="form-control" type="text" name="t3" id="t3">
+        </div>
+        <div>
+          <label for="f1" class="form-lable" >Hình ảnh:</label>
+          <input class="form-control" type="file" name="f1" id="f1">
+        </div>
+        <div>
+          <label  class="form-lable"  valign="top">Xuất xứ:</label>
+          <textarea class="form-control"  name="t4" id="t4" rows="5" ></textarea>
+        </div>
+        <div>
+          <label class="form-lable"  valign="top">Nồng độ:</label>
+          <textarea class="form-control" name="t4a" id="t4a" rows="5" cols="50"></textarea>
+        </div>
+        <div>
+          <label class="form-lable" valign="top">Dung tích:</label>
+          <textarea class="form-control" name="t4b" id="t4b" rows="5" cols="50"></textarea>
+        </div>
+        <div>
+          <label height="30" valign="top">Chi tiết:</label>
+          <textarea class="form-control" class="form-control" name="t5" id="t5" ></textarea>
+        </div>
+        <div>
           <td height="30">Trạng thái:</td>
           <td>
             Có <input type="radio" name="rTrangthai" id="r1" value="1" checked> &nbsp;
             Không <input type="radio" name="rTrangthai" id="r2" value="0">
           </td>
-        </tr>
-        <tr>
+        </div>
+        <div>
           <td></td>
-          <td><input type="submit" name="button" id="button" value="Đồng ý"></td>
-        </tr>
-      </table>
+          <td><input class="btn btn-success" type="submit" name="button" id="button" value="Đồng ý"></td>
+        </div>
+      </div>
     </form>
     <script language="javascript">
       var ckNoidung = CKEDITOR.replace('t5');
