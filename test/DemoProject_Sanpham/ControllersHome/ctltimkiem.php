@@ -11,9 +11,9 @@ $rows = $search_Onkeyup->data;
 foreach($rows as $row)
 {
     ?>
-        <tr class="item-search-Onkeyup">
-            <td><a href="?module=chitietsanpham&manhom=<?=$row["id"]?>"><img style="width: 30px; height: 40px;" src="Hinhanh/Sanpham/<?=$row["images"]?>"><a></td>
-            <td><a href="?module=chitietsanpham&manhom=<?=$row["id"]?>" style="color:red;"><?=$row["title"]?></a></td>
+        <tr class="item-search-Onkeyup" >
+            <td style="padding:5px;"><a href="?module=chitietsanpham&manhom=<?=$row["id"]?>"><img style="width: 30px; height: 40px;" src="Hinhanh/Sanpham/<?=$row["images"]?>"><a></td>
+            <td style="padding:5px;"><a href="?module=chitietsanpham&manhom=<?=$row["id"]?>" style="color:red;"><?=$row["title"]?></a></td>
         </tr>
     <?php
 }
