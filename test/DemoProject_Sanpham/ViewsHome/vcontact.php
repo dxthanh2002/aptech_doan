@@ -21,7 +21,7 @@ Trân trọng!</p>
       <div class="infoBox">
       <h5 class="text-uppercase mb-4 fw-bold text-warning">Contact</h5>
                 <p>
-                    <i class="fas fa-envelope me-3"></i>29 Ngo Thi Nham -Ha Dong-Ha Noi
+                <i class="fa-solid fa-location-dot me-3"></i>29 Ngo Thi Nham -Ha Dong-Ha Noi
                 </p>
                 <p>
                     <i class="fas fa-phone me-3"></i>Wineshop@gmail.com
