@@ -22,6 +22,7 @@
                 <li class="list-group-item"> Điện thoại :<b> <?=$rowHD["dienthoai"]?> </b></li>
                 <li class="list-group-item"> Ngày đặt :<b> <?=$rowHD["ngaydat"]?> </b></li>
                 <li class="list-group-item"> Ngày nhận :<b> <?=$rowHD["ngaynhan"]?> </b></li>
+                <li class="list-group-item"> ID khách Hàng :<b> <?=$rowHD["cusid"]?> </b></li>
                 <li class="list-group-item"> Trạng thái :<b> <?=$trangthai?> </b>
                 <select class="form-select" name="sTT" id="sTT" onChange="sTT_Change(this.value);">
                     <option value="" selected> Đổi trạng thái HĐ</option>

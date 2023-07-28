@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jul 27, 2023 at 11:17 AM
+-- Generation Time: Jul 28, 2023 at 02:50 PM
 -- Server version: 10.4.27-MariaDB
 -- PHP Version: 8.2.0
 
@@ -145,8 +145,13 @@ INSERT INTO `tbchitiethoadon` (`id`, `mahd`, `masp`, `soluong`, `giamua`) VALUES
 (18, 24, 2, 1, 1590000),
 (19, 24, 33, 2, 1400000),
 (29, 26, 38, 1, 120000),
-(34, 31, 35, 1, 842000),
-(35, 31, 50, 1, 510000);
+(36, 32, 27, 3, 4770000),
+(37, 32, 35, 1, 842000),
+(38, 33, 52, 1, 70000),
+(39, 33, 27, 2, 3180000),
+(40, 34, 52, 2, 140000),
+(41, 34, 38, 1, 120000),
+(42, 34, 27, 4, 6360000);
 
 --
 -- Triggers `tbchitiethoadon`
@@ -198,7 +203,7 @@ CREATE TABLE `tbhoadon` (
   `tennguoimua` varchar(30) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL,
   `dtnguoimua` varchar(15) DEFAULT NULL,
   `nguoinhan` varchar(30) CHARACTER SET utf8 COLLATE utf8_general_ci DEFAULT NULL,
-  `dienthoai` varchar(15) NOT NULL,
+  `dienthoai` varchar(15) DEFAULT NULL,
   `diachi` varchar(100) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL,
   `Note` text CHARACTER SET utf8 COLLATE utf8_general_ci DEFAULT NULL,
   `ngaydat` datetime NOT NULL DEFAULT current_timestamp(),
@@ -215,7 +220,9 @@ INSERT INTO `tbhoadon` (`mahd`, `tennguoimua`, `dtnguoimua`, `nguoinhan`, `dient
 (23, 'Vũ văn Hiệu', '', '', '012345674', 'Hà nội', '', '2021-09-19 14:21:19', '2021-09-19 00:00:00', 4, 2),
 (24, 'Nguyễn Ngọc Long', '', '', '0912356004', 'Nam Định', '', '2021-09-19 17:25:48', '2021-09-26 00:00:00', 5, 2),
 (26, 'ADH', '', '', '12321412', '165ton that huyet', ' 123', '2023-07-17 18:19:25', '0000-00-00 00:00:00', 6, 2),
-(31, '12,4', '9713440547', '', '', '5253 SE 82nd Ave Suite #21', ' ', '2023-07-27 10:02:54', '0000-00-00 00:00:00', 2, 0);
+(32, 'GLD HOAK', '', '', '9713440547', '5253 SE 82nd Ave Suite #21', ' ', '2023-07-28 00:28:40', '0000-00-00 00:00:00', 2, 0),
+(33, 'GLD HOAK', '', '', '9713440547', '5253 SE 82nd Ave Suite #21', ' ', '2023-07-28 19:25:51', '0000-00-00 00:00:00', 2, 0),
+(34, 'GLD HOAK', '9713440547', 'ADH', '21312525', '5253 SE 82nd Ave Suite #21', ' ', '2023-07-28 19:42:33', '0000-00-00 00:00:00', 2, 0);
 
 -- --------------------------------------------------------
 
@@ -322,7 +329,7 @@ ALTER TABLE `tbcategory`
 -- AUTO_INCREMENT for table `tbchitiethoadon`
 --
 ALTER TABLE `tbchitiethoadon`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=36;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=43;
 
 --
 -- AUTO_INCREMENT for table `tbcustomer`
@@ -334,7 +341,7 @@ ALTER TABLE `tbcustomer`
 -- AUTO_INCREMENT for table `tbhoadon`
 --
 ALTER TABLE `tbhoadon`
-  MODIFY `mahd` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=32;
+  MODIFY `mahd` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=35;
 
 --
 -- AUTO_INCREMENT for table `tbtintuc`

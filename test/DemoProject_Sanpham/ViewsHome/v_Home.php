@@ -142,9 +142,9 @@
                             <span style="font-weight: 100;">Collection</span>
                         </h1>
                         <h2>Save More, Pour More</h2>
-                        <p>This is Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad rerum repudiandae ipsa?
-                            Tempore modi quisquam velit nostrum nulla veritatis tempora quaerat eligendi porro, quos
-                            aperiam. Ea molestias placeat consequuntur fuga.</p>
+                        <p>This is a very good customer service. To reject things itself?
+                            At the time of the way any one of us wants, there are no times of truth that we seek to choose
+                            I will open Those troubles may result in flight.</p>
                         <div class="clearfix"></div>
                         <a href="#" class="btn btn-normal">SHOP NOW</a>
                     </div>
@@ -614,11 +614,11 @@
                                             </div>
                                         </div>
                                         <div class="col-lg-9">
-                                            <p>"This is Lorem ipsum dolor sit, amet consectetur adipisicing elit. Est
-                                                facilis veritatis ex voluptatibus vel alias odio quia. Molestias,
-                                                aspernatur! Quidem molestiae laudantium accusamus dolorum. Possimus
-                                                veritatis, excepturi sequi repellendus ab beatae repudiandae quasi a
-                                                voluptates ea, doloremque, adipisci est fugit."</p>
+                                            <p>"This is very good for the customer, it will be followed by adipisicing elit. It is
+                                                easy truth because of pleasures or other things because of hatred. troubles
+                                                he is asperated! We accuse those who praise us of some trouble. We can
+                                                of the truth, except to be followed by the rejected by the blessed, as if a
+                                                To obtain those pleasures and pains is to flee."</p>
                                             <span class="name dart-fs-16">Wine</span>
                                             <span class="position dart-fs-12">Director</span>
                                         </div>

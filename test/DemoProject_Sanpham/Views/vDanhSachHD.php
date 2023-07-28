@@ -17,6 +17,7 @@
     							<td>Điện thoại</td>
     							<td>Ngày đặt</td>
     							<td>Ngày nhận</td>
+								<td>ID khách hàng</td>
     							<td>Tổng tiền</td>
     							<td>Trạng thái</td>
     							<td style="width: 120px;">Act</td>
@@ -45,6 +46,7 @@
     								<td><?= $row["dienthoai"] ?></td>
     								<td><?= $row["ngaydat"] ?></td>
     								<td><?= $row["ngaynhan"] ?></td>
+									<td><?= $row["cusid"] ?></td>
     								<td><?= number_format($hoadon->TongTien($row["mahd"])) ?></td>
     								<td><?= $trangthai ?></td>
     								<td class="text-center">

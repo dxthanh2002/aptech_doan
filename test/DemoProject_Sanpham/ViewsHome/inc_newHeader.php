@@ -65,8 +65,8 @@
     <script>
     function timkiemAJAX()
     {
-        tukhoa = $("#tTukhoa").val(); //lấy giá trị của input có id=tukhoa
-        manhom = $("#manhom2").val(); //lấy giá trị của input có id=namxb
+        tukhoa = $("#tTukhoa").val(); //lấy giá trị của input có id=ttukhoa
+        manhom = $("#manhom2").val(); //lấy giá trị của input có id=manhom2
         if(isNaN(manhom))
             manhom = "";
         
