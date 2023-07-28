@@ -69,7 +69,7 @@
 
 
                                 <li class="search_box">
-                                <script type="text/javascript" src="./Dependencies/Onkeyup.js"></script>
+                               
                                         <a href="javascript:void(0)">
                                             <i class="fa fa-search"></i>
                                         </a>
