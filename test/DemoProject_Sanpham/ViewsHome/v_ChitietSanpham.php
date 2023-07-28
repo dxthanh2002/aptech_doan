@@ -13,7 +13,7 @@
             ?>
               <div id="content_sp"  >
                 <div class="row justify-content-start">
-                  <div class="col-1 col-sm-2 col-md-3 mx-3 card " style="width: 18rem;">
+                  <div class="col-1 col-sm-2 col-md-2 mx-2 card " style="width: 18rem;">
                     <p><a style="text-decoration: none;" href="#"><?= $row["title"]; ?></a></p><!-- thẻ <a href>...</a> để tạo liên kết tới sp1.htm-->
                     <p><a href="#"><img src="Hinhanh/Sanpham/<?= $hinhanh ?>" class="card-img-top"></a></p> <!--thẻ p này dùng để cố định chiều cao dòng 2, và để ảnh căn giữa-->
                   </div>
