@@ -14,7 +14,7 @@
                 else if($rowHD["trangthai"]==3)
                     $trangthai = "Tạm hủy";
                 ?>
-                <div class="card" style="width: 40rem;">
+                <div class="card" style="width: 60rem;">
                 <ul class="list-group list-group-flush">
                 <li class="list-group-item"> Mã hóa đơn: <b> <?=$id?> </b></li>
                 <li class="list-group-item"> Tên người mua: <b> <?=$rowHD["tennguoimua"]?> </b></li>
