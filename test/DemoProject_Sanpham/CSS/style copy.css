@@ -32,6 +32,7 @@ body {
 }
 
 .container {
+    padding-top: 150px;
     max-width: 1170px;
 }
 
@@ -1451,7 +1452,7 @@ a:hover, a:focus {
 
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Montserrat', sans-serif;
-    color: #fff;
+    color: #f47777;
 }
 
 .ms-slide .ms-slide-layers {
@@ -1474,7 +1475,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .no-padding {
-    padding: 0;
+    padding-top: 200px;
 }
 
 .no-gutter>[class*='col-'] {

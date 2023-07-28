@@ -207,11 +207,11 @@
                                                 </span>
                                             </figure>
                                             <div class="block-caption1">
-                                                <h4>Quinta do Crasto</h4>
+                                                <h4>Red Wines</h4>
                                                 <div class="clear"></div>
                                                 <div class="rpice">
-                                                    <span class="sell-price">Rs. 26669</span>
-                                                    <span class="actual-price">Rs. 28999</span>
+                                                    <span class="sell-price">150$</span>
+                                                    <span class="actual-price">170$</span>
                                                 </div>
                                             </div>
                                         </div>
@@ -235,11 +235,11 @@
                                                 </span>
                                             </figure>
                                             <div class="block-caption1">
-                                                <h4>Quinta do Crasto</h4>
+                                                <h4>Vintage Wines</h4>
                                                 <div class="clear"></div>
                                                 <div class="rpice">
-                                                    <span class="sell-price">Rs. 26669</span>
-                                                    <span class="actual-price">Rs. 28999</span>
+                                                    <span class="sell-price">189$</span>
+                                                    <span class="actual-price">200$</span>
                                                 </div>
                                             </div>
                                         </div>
@@ -261,11 +261,11 @@
                                                 </span>
                                             </figure>
                                             <div class="block-caption1">
-                                                <h4>Quinta do Crasto</h4>
+                                                <h4>N-Vintage Wines</h4>
                                                 <div class="clear"></div>
                                                 <div class="rpice">
-                                                    <span class="sell-price">Rs. 26669</span>
-                                                    <span class="actual-price">Rs. 28999</span>
+                                                    <span class="sell-price">230$</span>
+                                                    <span class="actual-price">250$</span>
                                                 </div>
                                             </div>
                                         </div>
@@ -286,11 +286,11 @@
                                                 </span>
                                             </figure>
                                             <div class="block-caption1">
-                                                <h4>Quinta do Crasto</h4>
+                                                <h4>White Wines</h4>
                                                 <div class="clear"></div>
                                                 <div class="rpice">
-                                                    <span class="sell-price">Rs. 26669</span>
-                                                    <span class="actual-price">Rs. 28999</span>
+                                                    <span class="sell-price">130$</span>
+                                                    <span class="actual-price">150$</span>
                                                 </div>
                                             </div>
                                         </div>
@@ -311,11 +311,11 @@
                                                 </span>
                                             </figure>
                                             <div class="block-caption1">
-                                                <h4>Quinta do Crasto</h4>
+                                                <h4>Whisky Wines</h4>
                                                 <div class="clear"></div>
                                                 <div class="rpice">
-                                                    <span class="sell-price">Rs. 26669</span>
-                                                    <span class="actual-price">Rs. 28999</span>
+                                                    <span class="sell-price">180$</span>
+                                                    <span class="actual-price">220$</span>
                                                 </div>
                                             </div>
                                         </div>
@@ -691,9 +691,8 @@
                         </div>
                         <div class="blog-content">
                             <h4 class="blog-title"><a href="#">New Wine Shop in your area</a></h4>
-                            <p class="post-date">August 26, 2021</p>
-                            <p class="post-content">This is Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                Quisquam minus in commodi illo laboriosam autem.</p>
+                            <p class="post-date">August 26, 1982</p>
+                            <p class="post-content">Wine has a rich history of thousands of years, with the earliest wine production to date discovered occurring around 6000 BC in Georgia.</p>
                             <a href="#" class="read-more">Read More</a>
                         </div>
                     </div>
@@ -703,9 +702,8 @@
 
                         <div class="blog-content">
                             <h4 class="blog-title"><a href="#">Jack Daniels are one of the best</a></h4>
-                            <p class="post-date">August 26, 2021</p>
-                            <p class="post-content">This is Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                Quisquam minus in commodi illo laboriosam autem.</p>
+                            <p class="post-date">may 26, 1989</p>
+                            <p class="post-content">Wine is an intoxicating drink that, like all alcoholic beverages, is commonly used for its intoxicating effects throughout history until today.</p>
                             <a href="#" class="read-more">Read More</a>
                         </div>
                         <div class="blog-img ImageWrapper">
@@ -726,7 +724,7 @@
                         </div>
                         <div class="blog-content">
                             <h4 class="blog-title"><a href="#">New Wine Shop in your area</a></h4>
-                            <p class="post-date">August 26, 2021</p>
+                            <p class="post-date">january 20, 1993</p>
                             <p class="post-content">This is Lorem ipsum dolor sit amet consectetur adipisicing elit.
                                 Quisquam minus in commodi illo laboriosam autem.</p>
                             <a href="#" class="read-more">Read More</a>

@@ -3,7 +3,9 @@
 /*style chung cho mọi thẻ*/
 * {margin:0px; padding:0px; box-sizing:border-box; 
 	font-family:Roboto, 'Times New Roman', Times, serif, Tahoma, Geneva, sans-serif; font-size:14px}
-.clear_fix {overflow:auto; zoom:1} 
+.clear_fix {
+	padding-top: 90px;
+	overflow:auto; zoom:1} 
 /*áp dụng cho các thẻ div cha có chiều cao tự động co giãn ngay cả khi thẻ div con sử dụng float*/
 	
 #wrapper { width:1000px; margin:0px auto; /*border:1px red solid;*/ box-sizing:content-box}
