@@ -146,7 +146,7 @@
                             At the time of the way any one of us wants, there are no times of truth that we seek to choose
                             I will open Those troubles may result in flight.</p>
                         <div class="clearfix"></div>
-                        <a href="#" class="btn btn-normal">SHOP NOW</a>
+                        <a href="?module=sanpham" class="btn btn-normal">SHOP NOW</a>
                     </div>
                 </div>
             </div>
@@ -591,7 +591,7 @@
         <div class="container">
             <div class="row">
                 <div class="dart-headingstyle-one text-center">
-                    <h2 class="dart-heading">Customer Review</h2>
+                    <h2 class="dart-heading">Director talk</h2>
                     <img src="images/Icon-sep.png" alt="">
                 </div>
             </div>
