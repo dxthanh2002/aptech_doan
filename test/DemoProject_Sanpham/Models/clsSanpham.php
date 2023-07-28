@@ -36,7 +36,39 @@ class clsSanpham
 			$this->data = $this->db->pdo_stm->fetchAll();
 		return $ketqua;//trả về $ketqua: TRUE/FALSE
 	}
-		
+	
+	function LayDanhSachSP($trangthai=2, $cat_id=0, $tukhoa="")
+	{   
+		$conn = ConnectDB();
+		if($conn==NULL)
+        return -1;//Lỗi kết nối CSDL
+		$sql = "SELECT Sp.*, Cat.cat_name, Cat.cat_status 
+					FROM books AS Sp INNER JOIN tbCategory AS Cat 
+					ON Sp.cat_id=Cat.cat_id WHERE 1 ";
+		if($cat_id != 0)
+			$sql = $sql . " AND Sp.cat_id = " . $cat_id;
+		//nếu khác 2 thì thêm mệnh đề WHERE để lọc, 
+		//còn nếu =2 thì không có có WHERE => sẽ hiển thị mọi sản phẩm
+		if($trangthai!=2) 
+		{
+			$sql = $sql . " AND status = " . $trangthai;
+			$sql = $sql . " AND cat_status = " . $trangthai;
+		}
+		//bổ sung tìm theo từ khóa
+		if($tukhoa!="")
+			$sql = $sql . " AND Sp.title LIKE '%" . $tukhoa . "%'";
+			$pdo_stm = $conn->prepare($sql);	
+		$ketqua = $this->db->ThucthiSQL($sql);
+		//LẤY CÁC BẢN GHI KẾT QUẢ LƯU VÀO $data
+		$this->data=NULL;
+		if($ketqua == FALSE)
+        return -2;//lỗi SQL
+    else{
+        $rows = $pdo_stm->fetchAll();
+        return $rows;
+    }    
+	}
+
 	//Hàm thêm dữ liệu
 	function ThemSanpham($name,$author,$price, $images, $summary,$concentration,$capacity,$content,$status,$cat_id)
 	{
@@ -147,5 +179,7 @@ class clsSanpham
 			$this->data = $this->db->pdo_stm->fetchAll();
 		return $ketqua;//trả về $ketqua: TRUE/FALSE
 	}
+
+	
 }
 ?>
