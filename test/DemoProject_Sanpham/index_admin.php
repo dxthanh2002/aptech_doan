@@ -50,7 +50,10 @@ require("KiemtraDangNhap.php");
 			require("Controllers/ctlSanpham.php");
 		} else if ($module == "hoadon") {
 			require("Controllers/ctlHoadon.php");
-		} else {
+		} else if ($module == "user") {
+			require("Controllers/ctluser.php");
+		}
+		 else {
 			require("Views/vHome.php");
 		}
 		?>

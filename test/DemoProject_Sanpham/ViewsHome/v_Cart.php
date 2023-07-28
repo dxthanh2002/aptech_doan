@@ -74,10 +74,11 @@
 
 
 							</table>
-						</form>
+						
 						<div class="cart_update">
-							<input class="form-control" type="submit" name="capnhat" value="Cập nhật giỏ hàng">
+						  <input class="form-control" type="submit" name="capnhat"  value="Cập nhật giỏ hàng">  
 						</div>
+						</form>
 						<div class="cart_total">
 							Tổng tiền:<?= number_format($total) ?> VNĐ
 						</div>
@@ -101,7 +102,7 @@
 									document.forms[2].submit()
 								}
 								if (dienthoai.value == "") {
-									dienthoai = document.getElementById("dtmua");
+									dienthoai = document.getElementById("dienthoai");
 									document.forms[3].submit()
 								}
 							}
@@ -120,7 +121,7 @@
 
 								<div class="col">
 									<label class="form-label">Điện thoại người mua:</label>
-									<input class="form-control" type="text" name="dtmua" id="dtmua" value="<?= $_SESSION["tel"] ?>" readonly>
+									<input class="form-control" type="text" name="dtmua" id="dtmua"  value="<?= $_SESSION["tel"] ?>">
 								</div>
 							</div>
 							<div class="row my-3">
@@ -130,7 +131,7 @@
 								</div>
 								<div class="col">
 									<label class="form-label">Điện thoại người nhận:</label>
-									<input class="form-control" class="form-control" type="text" name="dienthoai" id="dienthoai">
+									<input class="form-control" class="form-control" type="text" name="dienthoai" id="dienthoai"  value="<?= $_SESSION["tel"] ?>" >
 								</div>
 							</div>
 							<div class="my-3" >

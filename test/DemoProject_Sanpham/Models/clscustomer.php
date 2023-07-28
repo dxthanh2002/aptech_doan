@@ -48,7 +48,20 @@ class clscus
  		$ketqua = $this->db->ThucthiSQL($sql,$data);
 		return $ketqua;
 	}
-    
+    function Suafulluser($id,$user,$pass, $fullname, $tel,$adress,$email, $status)
+	{
+		$sql = "UPDATE  tbcustomer SET user = ?, pass = ?, fullname = ?,tel = ? ,adress = ? ,email = ? , status = ? WHERE cusid=?";
+		$data[] = $user;
+		$data[] = $pass;
+        $data[] = $fullname;
+		$data[] = $tel;
+		$data[] = $adress;
+		$data[] = $email;
+        $data[] = $status;
+		$data[] = $id;
+ 		$ketqua = $this->db->ThucthiSQL($sql,$data);
+		return $ketqua;
+	}
 	function Suapassuser($email ,$pass)
 	{
 		$sql = "UPDATE  tbcustomer SET  pass = ?   WHERE email=?";
@@ -109,6 +122,54 @@ class clscus
 		if($ketqua==TRUE)
 			$this->data = $this->db->pdo_stm->fetch();
 		return $ketqua;//trả về $ketqua: TRUE/FALSE
+	}
+
+	
+
+	function LayDanhSachuser2($tukhoa="")
+	{
+		$sql = "SELECT * FROM tbcustomer WHERE 1";
+		if($tukhoa!="")
+			$sql = $sql . " AND ( fullname LIKE '%" . $tukhoa . "%' OR user LIKE '%" . $tukhoa . "%') " ;
+		$ketqua = $this->db->ThucthiSQL($sql);
+		//LẤY CÁC BẢN GHI KẾT QUẢ LƯU VÀO $data
+		$this->data=NULL;
+		if($ketqua==TRUE)
+			$this->data = $this->db->pdo_stm->fetchAll();
+		return $ketqua;//trả về $ketqua: TRUE/FALSE
+	}
+
+	function LayDShoadontheouser($trangthai=2, $cusid=0)
+	{    
+		$sql = "SELECT hd.*, us.user, us.status 
+					FROM tbhoadon AS hd INNER JOIN tbcustomer AS us 
+					ON hd.cusid=us.cusid WHERE 1 ";
+		if($cusid != 0)
+			$sql = $sql . " AND hd.cusid = " . $cusid;
+		//nếu khác 2 thì thêm mệnh đề WHERE để lọc, 
+		//còn nếu =2 thì không có có WHERE => sẽ hiển thị mọi sản phẩm
+		if($trangthai!=2) 
+		{
+			$sql = $sql . " AND status = " . $trangthai;
+			$sql = $sql . " AND trangthai = " . $trangthai;
+		}
+		//bổ sung tìm theo từ khóa
+		 
+		$ketqua = $this->db->ThucthiSQL($sql);
+		//LẤY CÁC BẢN GHI KẾT QUẢ LƯU VÀO $data
+		$this->data=NULL;
+		if($ketqua==TRUE)
+			$this->data = $this->db->pdo_stm->fetchAll();
+		return $ketqua;//trả về $ketqua: TRUE/FALSE
+	}
+
+	function SuaTrangThaiuser($id, $status)
+	{
+		$sql = "UPDATE tbcustomer SET status = ? WHERE cusid=?";
+		$data[] = $status;
+		$data[] = $id;
+ 		$ketqua = $this->db->ThucthiSQL($sql,$data);
+		return $ketqua;
 	}
 }
 ?>
