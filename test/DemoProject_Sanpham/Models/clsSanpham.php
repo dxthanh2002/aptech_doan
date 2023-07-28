@@ -68,7 +68,24 @@ class clsSanpham
         return $rows;
     }    
 	}
+	function GetProductListOnkeyup($id=0, $keyword="")
+	{
+		$sql = "SELECT Sp.*, Cat.cat_name, Cat.cat_status 
+					FROM books AS Sp INNER JOIN tbCategory AS Cat 
+					ON Sp.cat_id=Cat.cat_id WHERE 1 ";
+		if($id != 0)
+			$sql = $sql . " AND Sp.cat_id = " . $id;
+		//bổ sung tìm theo từ khóa
+		if($keyword!="")
+			$sql = $sql . " AND Sp.title LIKE '%" . $keyword . "%'";
 
+		$ketqua = $this->db->ThucthiSQL($sql);
+		//LẤY CÁC BẢN GHI KẾT QUẢ LƯU VÀO $data
+		$this->data=NULL;
+		if($ketqua==TRUE)
+			$this->data = $this->db->pdo_stm->fetchAll();
+		return $ketqua;//trả về $ketqua: TRUE/FALSE
+	}
 	//Hàm thêm dữ liệu
 	function ThemSanpham($name,$author,$price, $images, $summary,$concentration,$capacity,$content,$status,$cat_id)
 	{
@@ -179,7 +196,49 @@ class clsSanpham
 			$this->data = $this->db->pdo_stm->fetchAll();
 		return $ketqua;//trả về $ketqua: TRUE/FALSE
 	}
+	public function GetSumProductPaging($id=0, $keyword="")
+	{
+		$sql = "SELECT COUNT(*) AS Total FROM books WHERE 1 ";
+		if($id != 0)
+			$sql = $sql . " AND cat_Id = " . $id;
+		//bổ sung tìm theo từ khóa
+		if($keyword!="")
+			$sql = $sql . " AND title LIKE '%" . $keyword . "%'";
 
-	
+ 		$ketqua = $this->db->ThucthiSQL($sql);
+		//LẤY BẢN GHI KẾT QUẢ LƯU VÀO $data
+		if($ketqua==TRUE)
+		{
+			$this->data = $this->db->pdo_stm->fetch();//lấy dòng kết quả
+			return $this->data["Total"];//trả về cột tongtien
+		}
+		else
+			return 0;
+	}
+	 
+	function GetProductList($id=0, $keyword="", $sell="", $start, $limit)
+	{
+		$sql = "SELECT P.*, C.cat_name as CName
+					FROM books AS P INNER JOIN tbcategory AS C
+					ON P.cat_id=C.cat_id WHERE 1 ";
+		if($id != 0)
+			$sql = $sql . " AND P.cat_id = " . $id;
+		//bổ sung tìm theo từ khóa
+		if($keyword!="")
+			$sql = $sql . " AND P.title LIKE '%" . $keyword . "%'";
+		if($sell=="")
+			$sell = " id DESC";
+
+		$sql = $sql . " ORDER BY $sell";
+
+		$sql = $sql . " LIMIT " . $start . ", " . $limit;
+
+		$ketqua = $this->db->ThucthiSQL($sql);
+		//LẤY CÁC BẢN GHI KẾT QUẢ LƯU VÀO $data
+		$this->data=NULL;
+		if($ketqua==TRUE)
+			$this->data = $this->db->pdo_stm->fetchAll();
+		return $ketqua;//trả về $ketqua: TRUE/FALSE
+	}
 }
 ?>

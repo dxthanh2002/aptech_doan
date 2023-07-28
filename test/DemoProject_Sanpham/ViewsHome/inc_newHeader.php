@@ -28,7 +28,7 @@
                                             $rows = $mnuNhomSP->data;
                                             foreach ($rows as $row) {
                                             ?>
-                                                <a class="dropdown-item" href="?module=sanpham&manhom=<?= $row["cat_id"] ?>"><?= $row["cat_name"] ?></a>
+                                                <a class="dropdown-item" href="?module=sanpham&categoryid=<?= $row["cat_id"] ?>"><?= $row["cat_name"] ?></a>
                                             <?php
                                             }
                                             ?>
@@ -60,75 +60,36 @@
                         <div class="header_top_right">
                             <div class="header_right_info">
                                 <ul>
-                                   
-                                <script src="jquery.min.js"></script>
-    <script>
-    function timkiemAJAX()
-    {
-        tukhoa = $("#tTukhoa").val(); //lấy giá trị của input có id=ttukhoa
-        manhom = $("#manhom2").val(); //lấy giá trị của input có id=manhom2
-        if(isNaN(manhom))
-            manhom = "";
-        
-        $("#ketqua1").html("In searching...");
-        //xử dụng AJAX bằng JQuery để gửi request tới trang ListBook.php và hiển thị kết quả
-        $.post(
-            "ControllersHome/ctltimkiem.php",
-            {$tukhoa:tukhoa,$manhom:manhom},
-            function(responseData, status){
-                if(status=="success")
-                    $("#ketqua1").html(responseData);
-                else
-                $("#ketqua1").html("<h3> request send error </h3>");
-            }
-        );
-    }
-    //$(document).ready(function(){...} ); để đảm bảo các lệnh chỉ thực hiện khi nội dung web đã tải xong   
-    $(document).ready(function () {
-        $("#tTukhoa").keyup(function(){
-            timkiemAJAX();
-        });
-        $("#manhom").keyup(function(){
-            timkiemAJAX();
-        });
-    });  
-    </script>
-                                
-                                
+                            
+   
+                               
+                               
+
+
+
+
                                 <li class="search_box">
-                                    
+                                <script type="text/javascript" src="./Dependencies/Onkeyup.js"></script>
                                         <a href="javascript:void(0)">
                                             <i class="fa fa-search"></i>
                                         </a>
-                                        <?php
-                $tukhoa = isset($_REQUEST["tTukhoa"]) ? $_REQUEST["tTukhoa"] : "";
-                $manhom = isset($_REQUEST["manhom"]) ? $_REQUEST["manhom"] : 0;
-                ?>
+                                        
                                         <div class="search_widget">
                                         <input type="hidden" name="module" value="sanpham">
-			        <input type="hidden" name="act" value="timkiem">
-                                            <form class="mb-3" name="fTimkiem" id="fTiemkiem" action="index.php">
-                                                <input type="text"  name="tTukhoa" id="tTukhoa" value="<?= $tukhoa ?>" placeholder="Search Your Wine..."  >
+			                             <input type="hidden" name="act" value="timkiem">
+                                            
+                    <form class="mb-3" name="fTimkiem" id="fTiemkiem" action="?module=sanpham&act=search" method="post" >
+                                                <input type="text"  name="keyword" id="searchInput" onkeyup="search()" class="input-search htop"  placeholder="Search Your Wine..."  >
                                                
-                                                <button type="submit" name="bSearch" id="bSearch" value="Tìm kiếm" >
-                                                    <i class="fa fa-search"></i>
-                                                </button>
-                                                <div name="ketqua1" id="ketqua1" style="width:300px; border:1px red solid; margin:5px auto"> result </div>
+                                                <div class="icon-search htop">
+                            <button type="submit" class="button-search" name="bSearch" id="bSearch"  >
+                            <i class="fa fa-search"></i>
+                            </button>
+                        </div> 
+                                                
                                             </form>
-                                            <label class="form-label">
-			            Nhóm sản phẩm:
-			            <select class="form-select form-select-sm" name="manhom2" id="manhom2">
-			                <option value="0">Tất cả sản phẩm</option>
-			                <?php
-                            require_once("Models/clsCategory.php");
-                            require_once("DungChung/Tienich.php");
-                            $nps = new clsCategory();
-                            //lấy nhóm SP trạng thái 1, sắp xếp theo thứu tự tăng dần
-                            $nps->LayDanhSachNhomSanpham(1, 1);
-                            ShowOptions($nps->data, "cat_id", "cat_name", $manhom);
-                            ?>
-			            </select>
-			        </label>
+                                            <table id="searchResults" class="header-info-search">
+                    </table>
                                         </div>
                                        
                                     </li>

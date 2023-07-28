@@ -91,5 +91,9 @@ require("KiemtraDangNhapuser.php");
 <script src="./Dependencies/masterslider.min.js"></script>
 <script src="./Dependencies/owl.carousel.min.js"></script>
 <script src="./Dependencies/main.js"></script>
+<script type="text/javascript" src="./Dependencies/jquery/jquery.3.6.1.js"></script>
+ <script type="text/javascript" src="./Dependencies/Back-to-top.js"></script>
+    <script type="text/javascript" src="./Dependencies/Onkeyup.js"></script>
+    <script type="text/javascript" src="./Dependencies/Comment.js"></script>
 
 </html>
