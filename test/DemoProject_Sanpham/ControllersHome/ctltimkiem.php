@@ -5,7 +5,7 @@ require_once("../Models/clsSanpham.php");
 
 $search_Onkeyup = new clsSanpham();
 
-$ketqua = $search_Onkeyup->GetProductListOnkeyup(0, $searchValue);
+$ketqua = $search_Onkeyup->GetProductListOnkeyup(1,0, $searchValue);
 $rows = $search_Onkeyup->data;
 
 foreach($rows as $row)

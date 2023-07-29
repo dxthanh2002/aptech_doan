@@ -1,6 +1,6 @@
 <div class="container">
 	<br>
-	<h2 class=" text-center">
+	<h2 class=" text-center" >
 		<?php
 		if ($act == "timkiem")
 			echo "KẾT QUẢ TÌM KIẾM";
@@ -53,7 +53,7 @@
 			$current_page = $total_pages;
 		//B5. Tính vị trí đầu tiên của bản ghi cần truy vấn ứng số vị trí trang cần hiển thị
 		$start = ($current_page - 1) * $limit;
-		$product_page->GetProductList($categoryid,$keyword,$sell,$start,$limit);
+		$product_page->GetProductList(1,$categoryid,$keyword,$sell,$start,$limit);
 		$rowsProduct = $product_page->data;
 		if($rowsProduct==NULL)
 			die("<h3> KHÔNG CÓ SẢN PHẨM NÀO </h3>");

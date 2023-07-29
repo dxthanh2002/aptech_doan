@@ -68,11 +68,13 @@ class clsSanpham
         return $rows;
     }    
 	}
-	function GetProductListOnkeyup($id=0, $keyword="")
+	function GetProductListOnkeyup($trangthai = 2,$id=0, $keyword="")
 	{
 		$sql = "SELECT Sp.*, Cat.cat_name, Cat.cat_status 
 					FROM books AS Sp INNER JOIN tbCategory AS Cat 
 					ON Sp.cat_id=Cat.cat_id WHERE 1 ";
+					if($trangthai!=2) 
+					$sql = $sql . " AND sp.status = " . $trangthai;
 		if($id != 0)
 			$sql = $sql . " AND Sp.cat_id = " . $id;
 		//bổ sung tìm theo từ khóa
@@ -216,11 +218,13 @@ class clsSanpham
 			return 0;
 	}
 	 
-	function GetProductList($id=0, $keyword="", $sell="", $start, $limit)
+	function GetProductList($trangthai = 2,$id=0, $keyword="", $sell="", $start, $limit)
 	{
 		$sql = "SELECT P.*, C.cat_name as CName
 					FROM books AS P INNER JOIN tbcategory AS C
 					ON P.cat_id=C.cat_id WHERE 1 ";
+			if($trangthai!=2) 
+			$sql = $sql . " AND status = " . $trangthai;		
 		if($id != 0)
 			$sql = $sql . " AND P.cat_id = " . $id;
 		//bổ sung tìm theo từ khóa

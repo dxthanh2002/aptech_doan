@@ -4,8 +4,8 @@
           <div class="col-1 col-md-10">
             <br></br>
             
-        	<h1 style="color:red;"> Đăng ký Thành viên</h1>
-          <br></br>
+        	<h1 style="color:red;  margin: auto; width: 50%;"> Đăng ký Thành viên</h1>
+           
             <script>
 							function kt() {
 								t1 = document.getElementById("t1");
