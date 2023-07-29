@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jul 28, 2023 at 02:50 PM
+-- Generation Time: Jul 29, 2023 at 05:18 PM
 -- Server version: 10.4.27-MariaDB
 -- PHP Version: 8.2.0
 
@@ -46,7 +46,7 @@ CREATE TABLE `books` (
 --
 
 INSERT INTO `books` (`id`, `title`, `author`, `price`, `images`, `summary`, `concentration`, `capacity`, `content`, `status`, `cat_id`) VALUES
-(2, 'Timorous Beastie Blended Malt', 'Douglas Laing', 1590000, 'd1.jpg', 'pháp\r\n', 46.8, 700, '<p><br />\r\n<span style=\"font-size:16px\">Nguồn gốc của rượu Timorous Beastie Blended Malt l&agrave; từ b&agrave;i thơ Scots bất hủ nổi tiếng của Robert Burns &ldquo;To a Mouse&rdquo;, l&agrave; b&agrave;i thơ về một con chuột đồng nh&uacute;t nh&aacute;t. Sự th&ocirc;ng minh được ca ngợi trong b&agrave;i thơ n&agrave;y kh&ocirc;ng d&agrave;nh cho những người yếu đuối!<br />\r\n<br />\r\nLoại whisky n&agrave;y l&agrave; sự phức hợp của hương vị vani, l&uacute;a mạch mạch nha, b&aacute;nh trứng đường, mật ong v&agrave; cam qu&yacute;t chỉ b&ugrave;ng nổ khi được giải ph&oacute;ng&hellip;<br />\r\n<br />\r\nBeastie nắm bắt được đặc trưng của v&ugrave;ng Cao nguy&ecirc;n trong sự giao thoa của những Single Malt tốt nhất của khu vực n&agrave;y, gồm cả những mẻ được chưng cất từ những nh&agrave; m&aacute;y ở Blair Athol, Dalmore, Glengoyne v&agrave; Glen Garioch. 100% mạch nha được pha trộn v&agrave; ủ trong th&ugrave;ng Bourbon để tạo ra một loại whisky ngọt ng&agrave;o.<br />\r\n<img alt=\"Timorous Beastie Blended Malt\" src=\"Hinhanh/Sanpham/d1a.jpg\" style=\"height:300px; width:500px\" /></span><br />\r\n<br />\r\n<span style=\"font-size:16px\">Rượu Timorous Beastie Blended Malt đem lại sự hấp dẫn do t&ecirc;n gọi kh&ocirc;ng phải do bản chất của từ Timourous, Với niềm tự h&agrave;o được đ&oacute;ng chai với nồng độ 46,8%, kh&ocirc;ng phẩm m&agrave;u v&agrave; lọc lạnh tạo ra một loại whisky đầy đặn v&agrave; đậm đ&agrave;.<br />\r\n<br />\r\nRượu Timorous Beastie Blended Malt c&oacute; m&agrave;u v&agrave;ng ấm, hương ngọt ng&agrave;o v&agrave; đậm hương hoa, l&uacute;a mạch, mật ong cay. Hương vị gỗ sồi, hương thơm b&eacute;o ngậy của nho kh&ocirc;, dường vani. Vị whisky cay nồng nhưng ngọt ng&agrave;o th&ecirc;m v&agrave;o đ&oacute; một ch&uacute;t vị ngũ cốc v&agrave; b&aacute;nh trứng đường.</span></p>\r\n', 0, 7),
+(2, 'Timorous Beastie Blended Malt', 'Douglas Laing', 1590000, 'd1.jpg', 'pháp\r\n', 46.8, 700, '<p><br />\r\n<span style=\"font-size:16px\">Nguồn gốc của rượu Timorous Beastie Blended Malt l&agrave; từ b&agrave;i thơ Scots bất hủ nổi tiếng của Robert Burns &ldquo;To a Mouse&rdquo;, l&agrave; b&agrave;i thơ về một con chuột đồng nh&uacute;t nh&aacute;t. Sự th&ocirc;ng minh được ca ngợi trong b&agrave;i thơ n&agrave;y kh&ocirc;ng d&agrave;nh cho những người yếu đuối!<br />\r\n<br />\r\nLoại whisky n&agrave;y l&agrave; sự phức hợp của hương vị vani, l&uacute;a mạch mạch nha, b&aacute;nh trứng đường, mật ong v&agrave; cam qu&yacute;t chỉ b&ugrave;ng nổ khi được giải ph&oacute;ng&hellip;<br />\r\n<br />\r\nBeastie nắm bắt được đặc trưng của v&ugrave;ng Cao nguy&ecirc;n trong sự giao thoa của những Single Malt tốt nhất của khu vực n&agrave;y, gồm cả những mẻ được chưng cất từ những nh&agrave; m&aacute;y ở Blair Athol, Dalmore, Glengoyne v&agrave; Glen Garioch. 100% mạch nha được pha trộn v&agrave; ủ trong th&ugrave;ng Bourbon để tạo ra một loại whisky ngọt ng&agrave;o.<br />\r\n<img alt=\"Timorous Beastie Blended Malt\" src=\"Hinhanh/Sanpham/d1a.jpg\" style=\"height:300px; width:500px\" /></span><br />\r\n<br />\r\n<span style=\"font-size:16px\">Rượu Timorous Beastie Blended Malt đem lại sự hấp dẫn do t&ecirc;n gọi kh&ocirc;ng phải do bản chất của từ Timourous, Với niềm tự h&agrave;o được đ&oacute;ng chai với nồng độ 46,8%, kh&ocirc;ng phẩm m&agrave;u v&agrave; lọc lạnh tạo ra một loại whisky đầy đặn v&agrave; đậm đ&agrave;.<br />\r\n<br />\r\nRượu Timorous Beastie Blended Malt c&oacute; m&agrave;u v&agrave;ng ấm, hương ngọt ng&agrave;o v&agrave; đậm hương hoa, l&uacute;a mạch, mật ong cay. Hương vị gỗ sồi, hương thơm b&eacute;o ngậy của nho kh&ocirc;, dường vani. Vị whisky cay nồng nhưng ngọt ng&agrave;o th&ecirc;m v&agrave;o đ&oacute; một ch&uacute;t vị ngũ cốc v&agrave; b&aacute;nh trứng đường.</span></p>\r\n', 1, 7),
 (26, 'Rock Island Blended Malt', 'Douglas Laing', 1590000, 'd2.jpg', 'ScoultLand\r\n', 46.8, 700, '<ul>\r\n	<li><span style=\"font-size:16px\">Sự kết hợp ho&agrave;n hảo của những Single Malt tốt nhất được chưng cất trong tr&ecirc;n c&aacute;c h&ograve;n đảo rực rỡ Islay, Arran, Jura v&agrave; Orkney, rượu Rock Island l&agrave; sự hội tụ tất cả những tinh tế, hương kh&oacute;i v&agrave; ngọt ng&agrave;o của biển cả.</span></li>\r\n	<li>&nbsp;</li>\r\n	<li><span style=\"font-size:16px\">Bước l&ecirc;n bất kỳ h&ograve;n đảo Whisky n&agrave;o của Scotland v&agrave; bạn sẽ bị ấn tượng bởi sự y&ecirc;n b&igrave;nh v&agrave; tĩnh lặng m&agrave; cuộc sống tr&ecirc;n đảo mang lại. Tuy nhi&ecirc;n, h&atilde;y đi s&acirc;u hơn một ch&uacute;t, v&agrave; tr&aacute;i tim của bạn sẽ bay bổng với sự phấn kh&iacute;ch v&agrave; đặc trưng của c&aacute;c nh&agrave; m&aacute;y chưng cất nơi đ&acirc;y gọi những h&ograve;n đảo n&agrave;y l&agrave; nh&agrave;.</span></li>\r\n	<li><span style=\"font-size:16px\"><img alt=\"Rượu Douglas Rock Island Blended Malt 2\" src=\"Hinhanh/Sanpham/d2a.jpg\" style=\"height:600px; width:800px\" /></span></li>\r\n	<li><span style=\"font-size:16px\">Rượu Rock Island Blend Malt c&oacute; m&agrave;u hổ ph&aacute;ch, hương vị của những con s&oacute;ng mạnh mẽ va v&agrave;o đ&aacute; v&agrave; ảnh hưởng bởi hương vị mặn m&ograve;i thanh tho&aacute;t của đại dương. Nhẹ nh&agrave;ng, mang theo sự mềm mại v&agrave; kh&aacute; ngọt của than b&ugrave;n mềm song song với vị kh&oacute;i, mật ong, bụi than ẩm, cam thảo v&agrave; ti&ecirc;u. Tất những hương vị trước đ&acirc;y được t&aacute;i tạo gọn g&agrave;ng trong hậu vị ho&agrave;n thiện hơn</span>.</li>\r\n</ul>\r\n', 1, 7),
 (27, 'Scallywag Blended Malt', 'Douglas Laing', 1590000, 'd3.jpg', 'ScoultLand\r\n', 46, 700, '<p><br />\r\nLấy cảm hứng từ d&ograve;ng Fox Terriers l&acirc;u đời của gia đ&igrave;nh Douglas Laing, Scallywag Malt Scotch Whisky l&agrave; sự kết hợp của những Malt đơn Speyside l&acirc;u năm được trưởng th&agrave;nh chủ yếu trong th&ugrave;ng Sherry T&acirc;y Ban Nha. Kết quả cho thấy sự b&ugrave;ng nổ của tr&aacute;i c&acirc;y đậm, đậm đ&agrave;, s&ocirc; c&ocirc; la v&agrave; gia vị đan xen với vani muộn. Rượu Scallywag Blended Malt thuộc d&ograve;ng whisky được tỉ mỉ chọn lọc, đ&oacute;ng chai v&agrave; sản xuất theo từng l&ocirc; nhỏ để đảm bảo được chất lượng của sản phẩm.<br />\r\n<img alt=\"Rượu Douglas Laing Scallywag 2\" src=\"Hinhanh/Sanpham/d3a.jpg\" style=\"height:300px; width:500px\" /><br />\r\nRượu Scallywag Blended Malt l&agrave; một loại rượu kết hợp Malt đơn được chưng cất 100% ở Speyside nằm ở ph&iacute;a đ&ocirc;ng bắc Scotland. Khu vực n&agrave;y nằm trong một thung lũng m&agrave;u mỡ của những con s&ocirc;ng hẻo l&aacute;nh v&agrave; l&agrave; nơi c&oacute; hơn một nửa c&aacute;c nh&agrave; m&aacute;y chưng cất của Scotland. Đặc t&iacute;nh nguy&ecirc;n mẫu của Speyside l&agrave; một phong c&aacute;ch đa dạng, bổ dưỡng v&agrave; mạnh mẽ của Malt Scotch Whisky.<br />\r\n<br />\r\nRượu Scallywag Blended Malt được pha trộn 100% đ&aacute;ng ch&uacute; &yacute; của c&aacute;c loại Malt đơn th&ugrave;ng kh&aacute;c nhau từ Speyside, chủ yếu được trưởng th&agrave;nh trong th&ugrave;ng Sherry T&acirc;y Ban Nha. C&aacute;c th&ugrave;ng gỗ rượu Scallywag được chọn lọc tỉ mỉ cho mỗi lần đ&oacute;ng chai Scallywag, đảm bảo rượu Whisky tạo ra đậm đ&agrave; với hương vị của cacao, gia vị v&agrave; tr&aacute;i c&acirc;y sẫm m&agrave;u. Ch&uacute;ng t&ocirc;i kh&ocirc;ng bao giờ l&agrave;m lạnh Scallywag, cũng như th&ecirc;m phẩm m&agrave;u, v&igrave; vậy h&atilde;y thưởng thức m&agrave;u tự nhi&ecirc;n đậm v&agrave; cảm gi&aacute;c ngon miệng của Scallywag.</p>\r\n', 1, 7),
 (28, 'Gauldrons Blended Malt', 'Douglas Laing', 1750000, 'd4.jpg', 'ScoultLand\r\n', 46.2, 700, '<p><br />\r\n<span style=\"font-size:16px\">Rượu Gauldrons Blended Malt kể c&acirc;u chuyện về vịnh nhỏ đầy b&atilde;o tố c&ugrave;ng t&ecirc;n tr&ecirc;n bờ biển ph&iacute;a t&acirc;y của Campbeltown, v&agrave; nghĩa đen l&agrave; &ldquo;Vịnh B&atilde;o&rdquo;. Khi bạn bước l&ecirc;n b&atilde;i c&aacute;t mịn v&agrave; sạch của The Gauldrons, bạn cũng sẽ được quay l&ugrave;i thời gian. Bạn c&oacute; thể cảm nhận được b&oacute;ng ma của những nh&agrave; m&aacute;y chưng cất đ&atilde; mất từ ​​l&acirc;u, nơi từng tự h&agrave;o l&agrave; thủ đ&ocirc; rượu Whisky của Campbeltown Scotland.</span><br />\r\n<img alt=\"Rượu Douglas Laing Gauldrons 2\" src=\"Hinhanh/Sanpham/d4a.jpg\" style=\"height:600px; width:800px\" /><br />\r\n<span style=\"font-size:16px\">Rượu Gauldrons Blended Malt l&agrave; sự kết hợp của những mạch nha Campbeltown tốt nhất, được đ&oacute;ng chai theo l&ocirc; rất nhỏ ở nồng độ 46,2% ABV, v&agrave; tự h&agrave;o kh&ocirc;ng c&oacute; phẩm m&agrave;u hay lọc lạnh. Gauldrons l&agrave; một trong những Regional Single Malt Scotch Whisky nổi tiếng của Douglas Laing, c&ugrave;ng với The Epicurean (The Lowlands), Timourous Beastie (The Highlands), Scallywag (Speyside), Rock Island (The Islands) v&agrave; Big Peat (Islay).</span></p>\r\n', 1, 7),
@@ -69,7 +69,7 @@ INSERT INTO `books` (`id`, `title`, `author`, `price`, `images`, `summary`, `con
 (47, 'Vodka Nhôm Danzka', 'Danzka', 350000, 'vk1.jpg', 'Đan Mạch\r\n', 40, 1000, '<p><span style=\"font-size:18px\"><strong><strong>Rượu Vodka&nbsp;</strong>Danzka&nbsp;</strong>l&agrave; loại&nbsp;vodka&nbsp;xuất xứ từ Đan Mạch, được chưng cất từ l&uacute;a mầm, chứa trong&nbsp;<strong>chai nh&ocirc;m</strong>, với vị &ecirc;m mượt, hương phong ph&uacute; c&ugrave;ng đặc t&iacute;nh nhẹ của tr&aacute;i c&acirc;y.&nbsp;Vodka&nbsp;Danzka bắt đầu được tung ra thị trường năm 1989, v&agrave; d&agrave;nh được kh&aacute; nhiều giải thưởng cho&nbsp;vodka.&nbsp;<br />\r\n<br />\r\nBất kể&nbsp;<strong>Rượu&nbsp;Vodka&nbsp;Danzka 1 l&iacute;t&nbsp;</strong>n&agrave;y được d&ugrave;ng trong những buổi tiệc chi&ecirc;u đ&atilde;i, l&agrave;m khai vị cho một m&oacute;n ăn hay để ch&uacute;c mừng một ai đ&oacute;.<br />\r\n&nbsp;<img alt=\"\" src=\"Hinhanh/Sanpham/vk1.jpg\" style=\"height:800px; width:600px\" /></span></p>\r\n\r\n<p><span style=\"font-size:18px\">M&ugrave;i vị th&igrave; nhẹ nh&agrave;ng, &ecirc;m dịu, hương thơm của tr&aacute;i c&acirc;y.</span></p>\r\n\r\n<p><span style=\"font-size:18px\">Sau khi thưởng thức qu&yacute; vị c&oacute; thể tận dụng vỏ chai đựng nước trong tủ lạnh.</span></p>\r\n\r\n<p><span style=\"font-size:18px\">Rất th&iacute;ch hợp d&ugrave;ng pha chế với c&aacute;c đồ uống kh&aacute;c, nền để pha Cocktail. Rất th&iacute;ch hợp với c&aacute;c m&oacute;n hải sản.</span></p>\r\n', 1, 10),
 (48, 'Vodka Danzka Citrus', 'Danzka', 400000, 'vk2.jpg', 'Đan Mạch\r\n', 40, 1000, '<p><span style=\"font-size:18px\">Một loại vodka tinh tế v&agrave; &ecirc;m dịu với hương vị c&acirc;n bằng v&agrave; một ch&uacute;t hương tr&aacute;i c&acirc;y họ cam qu&yacute;t.&nbsp;Hương vị DANZKA Citrus hấp dẫn đến từ 100% nguy&ecirc;n liệu tự nhi&ecirc;n mang đến chất lượng v&agrave; hương vị cao nhất.<br />\r\n<br />\r\nRượu DANZKA Citrus đảm bảo sẽ l&agrave;m h&agrave;i l&ograve;ng những người y&ecirc;u th&iacute;ch hương vị cổ điển n&agrave;y: N&oacute; tự h&agrave;o c&oacute; đủ sự vui tươi để l&agrave;m s&aacute;ng tỏ nhiều loại cocktail, nhưng vẫn duy tr&igrave; hương vị đậm đ&agrave; hơn cho những người uống d&agrave;y dặn hơn.&nbsp;Một sự lựa chọn l&yacute; tưởng với một ch&uacute;t soda hoặc nam việt quất.</span></p>\r\n\r\n<p><span style=\"font-size:18px\"><img alt=\"\" src=\"Hinhanh/Sanpham/vk2.jpg\" style=\"height:800px; width:600px\" /></span></p>\r\n', 1, 10),
 (49, 'Sochu Kaido Nhật', 'Kaido', 650, 'j15.jpg', 'Nhật\r\n', 25, 750, '<p><span style=\"font-size:18px\">Rượu Sochu Kaido&nbsp;được hơn 1 năm tuổi.&nbsp;C&oacute; cảm gi&aacute;c ngon miệng mềm mại, sự hiện diện nhiều của vị umami v&agrave; dư vị thanh khiết.&nbsp;Kaido Shochu l&agrave; sự pha trộn giữa khoai lang v&agrave; Shochu gạo.&nbsp;N&oacute; được l&agrave;m bằng khoai lang Koganesengan từ Kagoshima v&agrave; gạo koji được l&agrave;m bằng 100% gạo Nhật Bản, sau đ&oacute; được l&agrave;m thủ c&ocirc;ng một c&aacute;ch kh&eacute;o l&eacute;o v&agrave; cẩn thận bằng c&aacute;ch sử dụng Black Koji.</span></p>\r\n\r\n<p><span style=\"font-size:18px\"><img alt=\"\" src=\"Hinhanh/Sanpham/j15a.jpg\" style=\"height:1200px; width:1600px\" /></span></p>\r\n', 1, 11),
-(50, 'Rượu Mơ Choya Honey', 'Choya Honey', 510000, 'j16.jpg', 'Nhật\r\n', 15, 650, '<p>&nbsp;</p>\r\n\r\n<ul>\r\n	<li>\r\n	<h1><span style=\"font-size:16px\">Rượu Mơ Choya Honey</span></h1>\r\n	</li>\r\n	<li><span style=\"font-size:16px\">M&atilde; sản phẩm:&nbsp;<strong>Choya Honey</strong></span></li>\r\n	<li>\r\n	<p><span style=\"font-size:16px\">510.000 đ</span></p>\r\n	</li>\r\n	<li>\r\n	<p><span style=\"font-size:16px\">Xuất xứ: Japan<br />\r\n	Thể t&iacute;ch: 650ml<br />\r\n	Nồng độ: 15%</span></p>\r\n	</li>\r\n</ul>\r\n\r\n<p><span style=\"font-size:16px\"><input name=\"num\" type=\"number\" value=\"1\" /></span></p>\r\n\r\n<p><span style=\"font-size:16px\"><em>&nbsp;</em>&nbsp;TH&Ecirc;M V&Agrave;O GIỎ H&Agrave;NG<br />\r\nV&agrave; xem th&ecirc;m c&aacute;c sản phẩm kh&aacute;c&nbsp;<em>&nbsp;</em>&nbsp;MUA NGAY<br />\r\nGiao h&agrave;ng tận nơi hoặc nhận tại cửa h&agrave;ng&nbsp;<a href=\"tel:0972123451\" title=\"HOTLINE 0972.12345.1\">&nbsp;HOTLINE MUA H&Agrave;NG 0972.12345.1</a></span></p>\r\n\r\n<ul>\r\n	<li><span style=\"font-size:16px\"><a href=\"https://ruoungon.net/ruou-nhat/ruou-mo-choya-honey.html#content_detail-1\">CHI TIẾT</a></span></li>\r\n	<li><span style=\"font-size:16px\"><a href=\"https://ruoungon.net/ruou-nhat/ruou-mo-choya-honey.html#content_rate-6\">Đ&Aacute;NH GI&Aacute;</a></span></li>\r\n</ul>\r\n\r\n<p><span style=\"font-size:16px\">Rượu mơ Choya Honey l&agrave; d&ograve;ng sản phẩm thuộc thương hiệu rượu l&acirc;u năm của Nhật Bản &ndash; Traditional Japanese UMESHU, với những tr&aacute;i mơ Nhật được ng&acirc;m trong chai kết hợp với sự tinh tu&yacute; của mật ong rừng. Rượu mơ choya mật ong c&oacute; nồng độ nhẹ (14 độ), thơm m&ugrave;i mơ, kh&ocirc;ng chỉ mang tới sắc hồng cho đ&ocirc;i m&aacute; m&agrave; c&ograve;n gi&uacute;p trao đổi m&aacute;u, nhuận tr&agrave;ng, đẹp da.</span><br />\r\n&nbsp;</p>\r\n\r\n<p><span style=\"font-size:16px\"><img alt=\"choya honey 1\" src=\"Hinhanh/Sanpham/j16.jpg\" style=\"height:1368px; width:1026px\" /></span></p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p><span style=\"font-size:16px\">Chế biến từ mơ tươi Umeshu Nanko chất lượng cao từ v&ugrave;ng Kishu Nhật Bản h&ograve;a quyện với mật ong v&agrave; nước &eacute;p m&iacute;a l&ecirc;n men ho&agrave;n to&agrave;n từ tự nhi&ecirc;n tạo vị ngọt vừa phải, thanh m&aacute;t.</span></p>\r\n\r\n<p><span style=\"font-size:16px\">Th&agrave;nh phần chứa nhiều loại Vitamin đặc biệt l&agrave; Vitamin A v&agrave; Vitamin C c&ugrave;ng c&aacute;c loại Acid Citric v&agrave; muối kho&aacute;ng,&nbsp;Vị ngọt dịu từ 100% mật ong rừng m&agrave; kh&ocirc;ng sử dụng đường.</span></p>\r\n\r\n<p><span style=\"font-size:16px\"><strong><em>Rượu mơ Choya Honey</em></strong>&nbsp;gi&uacute;p tăng cường sự thẩm thấu trong c&aacute;c tế b&agrave;o, k&iacute;ch th&iacute;ch dạ d&agrave;y tiết dịch vị, tăng cường vị gi&aacute;c mang đến cảm gi&aacute;c ngon miệng khi ăn.&nbsp;Thanh lọc cơ thể, rất hiệu nghiệm trong việc xoa dịu tinh thần, x&oacute;a tan mệt mỏi cho cơ thể.</span></p>\r\n\r\n<p><span style=\"font-size:16px\">Với th&agrave;nh phần chứa nhiều acid citric rượu mơ Nhật Bản sẽ l&agrave;m giảm sự mệt mỏi, gi&uacute;p cơ thể lấy lại năng lượng, c&acirc;n bằng hệ thần kinh gi&uacute;p người uống dễ ngủ hơn.&nbsp;Mang đến cảm gi&aacute;c thư gi&atilde;n, sảng kho&aacute;i tuyệt vời cho người d&ugrave;ng.</span></p>\r\n', 1, 11),
+(50, 'Rượu Mơ Choya Honey', 'Choya Honey', 510000, 'j16.jpg', 'Nhật\r\n', 15, 650, '<p><span style=\"font-size:16px\">Rượu mơ Choya Honey l&agrave; d&ograve;ng sản phẩm thuộc thương hiệu rượu l&acirc;u năm của Nhật Bản &ndash; Traditional Japanese UMESHU, với những tr&aacute;i mơ Nhật được ng&acirc;m trong chai kết hợp với sự tinh tu&yacute; của mật ong rừng. Rượu mơ choya mật ong c&oacute; nồng độ nhẹ (14 độ), thơm m&ugrave;i mơ, kh&ocirc;ng chỉ mang tới sắc hồng cho đ&ocirc;i m&aacute; m&agrave; c&ograve;n gi&uacute;p trao đổi m&aacute;u, nhuận tr&agrave;ng, đẹp da.</span><br />\r\n&nbsp;</p>\r\n\r\n<p><span style=\"font-size:16px\"><img alt=\"choya honey 1\" src=\"Hinhanh/Sanpham/j16.jpg\" style=\"height:1368px; width:1026px\" /></span></p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p><span style=\"font-size:16px\">Chế biến từ mơ tươi Umeshu Nanko chất lượng cao từ v&ugrave;ng Kishu Nhật Bản h&ograve;a quyện với mật ong v&agrave; nước &eacute;p m&iacute;a l&ecirc;n men ho&agrave;n to&agrave;n từ tự nhi&ecirc;n tạo vị ngọt vừa phải, thanh m&aacute;t.</span></p>\r\n\r\n<p><span style=\"font-size:16px\">Th&agrave;nh phần chứa nhiều loại Vitamin đặc biệt l&agrave; Vitamin A v&agrave; Vitamin C c&ugrave;ng c&aacute;c loại Acid Citric v&agrave; muối kho&aacute;ng,&nbsp;Vị ngọt dịu từ 100% mật ong rừng m&agrave; kh&ocirc;ng sử dụng đường.</span></p>\r\n\r\n<p><span style=\"font-size:16px\"><strong><em>Rượu mơ Choya Honey</em></strong>&nbsp;gi&uacute;p tăng cường sự thẩm thấu trong c&aacute;c tế b&agrave;o, k&iacute;ch th&iacute;ch dạ d&agrave;y tiết dịch vị, tăng cường vị gi&aacute;c mang đến cảm gi&aacute;c ngon miệng khi ăn.&nbsp;Thanh lọc cơ thể, rất hiệu nghiệm trong việc xoa dịu tinh thần, x&oacute;a tan mệt mỏi cho cơ thể.</span></p>\r\n\r\n<p><span style=\"font-size:16px\">Với th&agrave;nh phần chứa nhiều acid citric rượu mơ Nhật Bản sẽ l&agrave;m giảm sự mệt mỏi, gi&uacute;p cơ thể lấy lại năng lượng, c&acirc;n bằng hệ thần kinh gi&uacute;p người uống dễ ngủ hơn.&nbsp;Mang đến cảm gi&aacute;c thư gi&atilde;n, sảng kho&aacute;i tuyệt vời cho người d&ugrave;ng.</span></p>\r\n', 1, 11),
 (51, 'Sake Vảy Vàng Takara Shozu', 'Takara Shozu', 1290000, 'j17.jpg', 'Nhật\r\n', 15, 1800, '<p><span style=\"font-size:16px\">Kh&ocirc;ng đơn thuần như một số loại rượu th&ocirc;ng thường, uống&nbsp;<strong>rượu Sake vẩy v&agrave;ng Nhật</strong>, ch&uacute;ng ta vừa được thưởng thức những n&eacute;t tinh t&uacute;y trong văn h&oacute;a ẩm thực Nhật Bản vừa được tăng cường th&ecirc;m sức khỏe, bồi bổ cơ thể. Với hương vị rượu ngon, dễ uống,&nbsp;<strong>Sake vẩy v&agrave;ng Takara Shozu</strong>&nbsp;xứng đ&aacute;ng để phục vụ gia đ&igrave;nh bạn trong những ng&agrave;y Tết cổ truyền của d&acirc;n tộc. Với thiết kế đẹp, sang trọng, bạn cũng c&oacute; thể d&ugrave;ng l&agrave;m qu&agrave; tặng cho những người th&acirc;n y&ecirc;u, đồng nghiệp, bạn b&egrave;.<br />\r\n&nbsp;</span></p>\r\n\r\n<p><span style=\"font-size:16px\"><img alt=\"Sake vảy vàng 1\" src=\"Hinhanh/Sanpham/j17.jpg\" style=\"height:1066px; width:800px\" /></span></p>\r\n\r\n<p><span style=\"font-size:16px\">&nbsp;</span></p>\r\n\r\n<p><span style=\"font-size:16px\">Ch&uacute;ng ta đ&atilde; biết Sake l&agrave; quốc tửu của xứ sở hoa anh đ&agrave;o, nhưng với sự độc đ&aacute;o trong nguy&ecirc;n liệu v&agrave; c&ocirc;ng thức pha chế m&agrave; hương vị của Sake đ&atilde; trở th&agrave;nh một thức uống quen thuộc được nhiều quốc gia tr&ecirc;n Thế giới ưa chuộng.</span></p>\r\n\r\n<p><span style=\"font-size:16px\"><strong>Rượu sake vảy v&agrave;ng 1,8l</strong>&nbsp;mang hương vị tinh t&uacute;y của nền ẩm thực truyền thống Nhật Bản, được bổ sung th&ecirc;m những l&aacute;t v&agrave;ng mỏng tinh khiết, mang đến một trải nghiệm v&ocirc; c&ugrave;ng kh&aacute;c biệt của loại rượu quen m&agrave; lạ n&agrave;y.</span><br />\r\n&nbsp;</p>\r\n\r\n<p><span style=\"font-size:16px\"><img alt=\"Sake vảy vàng 2\" src=\"Hinhanh/Sanpham/j17a.jpg\" style=\"height:900px; width:1200px\" /></span></p>\r\n\r\n<p><span style=\"font-size:16px\"><strong>Rượu sake vảy v&agrave;ng 1 8l</strong>&nbsp;(chai trắng) được người Nhật sử dụng phổ biến trong dịp lễ lớn, dịp Tết v&agrave; l&agrave;m qu&agrave; tặng cho người th&acirc;n.</span></p>\r\n', 1, 11),
 (52, 'Soju Jinro Strawberry Dâu Tây', 'Jinro', 70000, 'ko1.jpg', 'Hàn Quốc\r\n', 13, 330, '<p><span style=\"font-size:16px\">Rượu soju d&acirc;u t&acirc;y mới mang hương vị&nbsp;<strong>tr&aacute;i d&acirc;u t&acirc;y</strong>&nbsp;ngọt ng&agrave;o thơm m&aacute;t. Bạn sẽ cảm nhận được sức hấp dẫn sảng kho&aacute;i khi tận hưởng&nbsp;soju&nbsp;strawberry với bạn b&egrave;, đối t&aacute;c hay người th&acirc;n trong c&aacute;c bữa tiệc.</span></p>\r\n\r\n<p><span style=\"font-size:16px\">Rượu soju hoa quả được&nbsp;tung ra nhưng soju nho xanh,&nbsp;<strong>soju t&aacute;o xanh</strong>, soju đ&agrave;o, sojo nho, soju chanh bưởi,&hellip;ch&uacute;ng nhanh ch&oacute;ng&nbsp;thu h&uacute;t được lượng lớn kh&aacute;ch h&agrave;ng.</span></p>\r\n\r\n<p><span style=\"font-size:16px\"><img alt=\"Soju Jinro Strawberry\" src=\"Hinhanh/Sanpham/ko1.jpg\" style=\"height:1500px; width:1125px\" /></span></p>\r\n\r\n<p><br />\r\n<span style=\"font-size:16px\">Nồng độ nhẹ vị ngọt dịu d&agrave;ng dễ uống của&nbsp;<strong>Rượu sochu d&acirc;u t&acirc;y&nbsp;</strong>chắc chắn sẽ chiếm được cảm t&igrave;nh của chị em phụ nữ v&agrave; những người y&ecirc;u th&iacute;ch d&ograve;ng rượu nhẹ vị tr&aacute;i c&acirc;y.</span></p>\r\n', 1, 12);
 
@@ -168,17 +168,40 @@ DELIMITER ;
 -- --------------------------------------------------------
 
 --
+-- Table structure for table `tbcodeemail`
+--
+
+CREATE TABLE `tbcodeemail` (
+  `id` int(11) NOT NULL,
+  `cusid` int(11) NOT NULL,
+  `code` int(11) NOT NULL,
+  `status` tinyint(4) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Dumping data for table `tbcodeemail`
+--
+
+INSERT INTO `tbcodeemail` (`id`, `cusid`, `code`, `status`) VALUES
+(1, 10, 93, 1),
+(2, 11, 93, 1),
+(3, 12, 93, 1),
+(4, 13, 93, 1);
+
+-- --------------------------------------------------------
+
+--
 -- Table structure for table `tbcustomer`
 --
 
 CREATE TABLE `tbcustomer` (
   `cusid` int(11) NOT NULL,
   `user` varchar(15) CHARACTER SET latin1 COLLATE latin1_swedish_ci NOT NULL,
-  `pass` varchar(30) CHARACTER SET latin1 COLLATE latin1_swedish_ci NOT NULL,
+  `pass` varchar(255) CHARACTER SET latin1 COLLATE latin1_swedish_ci NOT NULL,
   `fullname` varchar(30) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL,
   `tel` varchar(10) NOT NULL,
   `adress` text CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL,
-  `email` varchar(20) NOT NULL,
+  `email` varchar(255) NOT NULL,
   `status` tinyint(4) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
@@ -187,10 +210,10 @@ CREATE TABLE `tbcustomer` (
 --
 
 INSERT INTO `tbcustomer` (`cusid`, `user`, `pass`, `fullname`, `tel`, `adress`, `email`, `status`) VALUES
-(2, 'a', '123', 'GLD HOAK', '9713440547', '5253 SE 82nd Ave Suite #21', 'Doan@gmail.com', 1),
-(4, 'VVH', '123', 'Vũ văn Hiệu', '012345674', 'Hà nội', 'VVH@gmail.com', 1),
-(5, 'Long', '123', 'Nguyễn Ngọc Long', '0912356004', 'Nam Định', 'long@gmail.com', 1),
-(6, 'ADH', '1', 'ADH', '12321412', '165ton that huyet', 'ADH@yahoo.com', 1);
+(2, 'a', '202cb962ac59075b964b07152d234b70', 'GLD HOAK', '9713440547', '5253 SE 82nd Ave Suite #21', 'nc.hie@gmail.com', 1),
+(4, 'VVH', '202cb962ac59075b964b07152d234b70', 'Vũ văn Hiệu', '012345674', 'Hà nội', 'VVH@gmail.com', 1),
+(5, 'Long', 'e10adc3949ba59abbe56e057f20f883e', 'Nguyễn Ngọc Long', '091235602', 'Nam Định', 'nc.hieu2512@gmail.com', 1),
+(6, 'ADH', 'c4ca4238a0b923820dcc509a6f75849b', 'ADH', '12321412', '165ton that huyet', 'ADH@yahoo.com', 1);
 
 -- --------------------------------------------------------
 
@@ -220,7 +243,7 @@ INSERT INTO `tbhoadon` (`mahd`, `tennguoimua`, `dtnguoimua`, `nguoinhan`, `dient
 (23, 'Vũ văn Hiệu', '', '', '012345674', 'Hà nội', '', '2021-09-19 14:21:19', '2021-09-19 00:00:00', 4, 2),
 (24, 'Nguyễn Ngọc Long', '', '', '0912356004', 'Nam Định', '', '2021-09-19 17:25:48', '2021-09-26 00:00:00', 5, 2),
 (26, 'ADH', '', '', '12321412', '165ton that huyet', ' 123', '2023-07-17 18:19:25', '0000-00-00 00:00:00', 6, 2),
-(32, 'GLD HOAK', '', '', '9713440547', '5253 SE 82nd Ave Suite #21', ' ', '2023-07-28 00:28:40', '0000-00-00 00:00:00', 2, 0),
+(32, 'GLD HOAK', '', '', '9713440547', '5253 SE 82nd Ave Suite #21', ' ', '2023-07-28 00:28:40', '0000-00-00 00:00:00', 2, 1),
 (33, 'GLD HOAK', '', '', '9713440547', '5253 SE 82nd Ave Suite #21', ' ', '2023-07-28 19:25:51', '0000-00-00 00:00:00', 2, 0),
 (34, 'GLD HOAK', '9713440547', 'ADH', '21312525', '5253 SE 82nd Ave Suite #21', ' ', '2023-07-28 19:42:33', '0000-00-00 00:00:00', 2, 0);
 
@@ -284,11 +307,19 @@ ALTER TABLE `tbchitiethoadon`
   ADD KEY `idx_masp` (`masp`);
 
 --
+-- Indexes for table `tbcodeemail`
+--
+ALTER TABLE `tbcodeemail`
+  ADD PRIMARY KEY (`id`);
+
+--
 -- Indexes for table `tbcustomer`
 --
 ALTER TABLE `tbcustomer`
   ADD PRIMARY KEY (`cusid`),
-  ADD UNIQUE KEY `user` (`user`);
+  ADD UNIQUE KEY `user` (`user`),
+  ADD UNIQUE KEY `tel` (`tel`),
+  ADD UNIQUE KEY `email` (`email`);
 
 --
 -- Indexes for table `tbhoadon`
@@ -332,10 +363,16 @@ ALTER TABLE `tbchitiethoadon`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=43;
 
 --
+-- AUTO_INCREMENT for table `tbcodeemail`
+--
+ALTER TABLE `tbcodeemail`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+
+--
 -- AUTO_INCREMENT for table `tbcustomer`
 --
 ALTER TABLE `tbcustomer`
-  MODIFY `cusid` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+  MODIFY `cusid` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=14;
 
 --
 -- AUTO_INCREMENT for table `tbhoadon`

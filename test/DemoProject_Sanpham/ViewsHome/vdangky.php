@@ -1,4 +1,4 @@
- 
+
       <div><br> </br> <div>
       <div class="row col-1 col-md-10 col-lg-10 col-xl-10 mx-auto mt-3  d-flex flex-shrink-0 p-3 bg-light">
           <div class="col-1 col-md-10">
@@ -14,9 +14,15 @@
                 t4 = document.getElementById("t4");
                 t5 = document.getElementById("t5");
                 t6 = document.getElementById("t6");
-
+                a1 = document.getElementById("a1");
+                a2 = document.getElementById("a2");
+                a3= document.getElementById("a3");
 								if (t1.value == "" || t2.value == "" || t3.value == "" || t4.value == "" ||t5.value == "" ||t6.value == "") {
 									alert("Chưa nhập đủ thông tin, vui lòng nhập lại");
+									return false;
+								}
+                if (a1.value != "" || a2.value != "" || a3.value != "") {
+									alert("  thông tin bị trùng , vui lòng nhập lại");
 									return false;
 								}
 							}
@@ -26,7 +32,8 @@
               
                 <div>
                   <label class="form-label" width="80" height="30">UseName:</label>
-                  <input class="form-control" type="text" name="t1" id="t1" size="80" required>
+                  <label class="form-label" width="80" height="30" name="checkuser" id="checkuser"></label>
+                  <input class="form-control" type="text" name="t1" id="t1" size="80" onkeyup="searchuser()" required>
                 </div>
 
                 <div>
@@ -40,8 +47,9 @@
                 </div>
 
                 <div>
-                  <label class="form-label" width="80" height="30">phone:</label>
-                  <input class="form-control" type="text" name="t4" id="t4" size="80">
+                  <label class="form-label" width="80" height="30">Phone:</label>
+                  <label class="form-label" width="80" height="30" name="checktel" id="checktel" ></label>
+                  <input class="form-control" type="text" name="t4" id="t4" size="80" onkeyup="searchtel()">
                 </div>
 
                 
@@ -52,7 +60,8 @@
 
                 <div>
                   <label class="form-label" width="80" height="30">Email:</label>
-                  <input class="form-control" type="text" name="t6" id="t6" size="80">
+                  <label class="form-label" width="80" height="30" name="checkemail" id="checkemail" value="0"></label>
+                  <input class="form-control" type="email" name="t6" id="t6" size="80" onkeyup="searchemail()">
                 </div> 
                 <br></br>
                  <div>

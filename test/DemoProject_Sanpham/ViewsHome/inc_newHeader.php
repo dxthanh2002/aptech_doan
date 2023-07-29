@@ -16,7 +16,9 @@
                                         <a class="nav-link" href="index.php" class="active">Home</a>
                                     </li>
                                     <li class="nav-item dropdown sub_menu pages">
-                                        <a class="nav-link dropdown-toggle" href="?module=sanpham" id="dropdownId" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Wines</a>
+                                        <a class="nav-link dropdown-toggle" href="?module=sanpham" id="dropdownId"
+                                            data-bs-toggle="dropdown" aria-haspopup="true"
+                                            aria-expanded="false">Wines</a>
                                         <div class="dropdown-menu" aria-labelledby="dropdownId">
                                             <?PHP
                                             require_once("Models/clsCategory.php");
@@ -27,9 +29,10 @@
                                             <?php
                                             $rows = $mnuNhomSP->data;
                                             foreach ($rows as $row) {
-                                            ?>
-                                                <a class="dropdown-item" href="?module=sanpham&categoryid=<?= $row["cat_id"] ?>"><?= $row["cat_name"] ?></a>
-                                            <?php
+                                                ?>
+                                                <a class="dropdown-item"
+                                                    href="?module=sanpham&categoryid=<?= $row["cat_id"] ?>"><?= $row["cat_name"] ?></a>
+                                                <?php
                                             }
                                             ?>
 
@@ -42,11 +45,17 @@
                                     </li>
 
                                     <li class="nav-item dropdown">
-                                        <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="text-white">User <b><?= isset($_SESSION["user"]) ? $_SESSION["user"] : "" ?></b></span></a>
+                                        <a class="nav-link dropdown-toggle" href="#" id="dropdownId"
+                                            data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span
+                                                class="text-white">User <b>
+                                                    <?= isset($_SESSION["user"]) ? $_SESSION["user"] : "" ?>
+                                                </b></span></a>
                                         <div class="dropdown-menu" aria-labelledby="dropdownId">
 
                                             <a class="dropdown-item">
-                                                <div style="padding-left:20px;"> <?= isset($_SESSION["user"]) ? "<a  href='logoutuser.php'>Log out</a>" : "<a href='loginuser.php'>Log In</a>" ?> </div>
+                                                <div style="padding-left:20px;">
+                                                    <?= isset($_SESSION["user"]) ? "<a  href='logoutuser.php'>Log out</a>" : "<a href='loginuser.php'>Log In</a>" ?>
+                                                </div>
                                             </a>
                                             <a class="dropdown-item" href="?module=dangky&act=them"> Sign up</a>
 
@@ -72,22 +81,26 @@
                                             <input type="hidden" name="module" value="sanpham">
                                             <input type="hidden" name="act" value="timkiem">
 
-                                            <form class="mb-3" name="fTimkiem" id="fTiemkiem" action="?module=sanpham&act=search" method="post">
-                                                <input type="text" name="keyword" id="searchInput" onkeyup="search()" class="input-search htop" placeholder="Search Your Wine...">
+                                            <form class="mb-3" name="fTimkiem" id="fTiemkiem"
+                                                action="?module=sanpham&act=search" method="post">
+                                                <input type="text" name="keyword" id="searchInput" onkeyup="search()"
+                                                    class="input-search htop" placeholder="Search Your Wine...">
 
                                                 <div class="icon-search htop">
-                                                    <button type="submit" class="button-search" name="bSearch" id="bSearch">
+                                                    <button type="submit" class="button-search" name="bSearch"
+                                                        id="bSearch">
                                                         <i class="fa fa-search"></i>
                                                     </button>
                                                 </div>
 
                                             </form>
-                                            <table id="searchResults" class="header-info-search bg-light rounded" style="height:150px; overflow-y:scroll;">
+                                            <table id="searchResults" class="header-info-search bg-light rounded"
+                                                style="height:150px; overflow-y:scroll;">
                                             </table>
                                         </div>
 
                                     </li>
-                                    
+
                                     <li class="mini_cart_wrapper">
                                         <?PHP
                                         require_once("Models/clsCategory.php");
@@ -99,11 +112,13 @@
                                         ?>
                                         <a href="javascript:void(0)">
                                             <i class="fa fa-shopping-cart"></i>
-                                            <span class="item_count"><?= $count ?></span>
+                                            <span class="item_count">
+                                                <?= $count ?>
+                                            </span>
                                         </a>
                                         <?php
                                         if ($count == 0) {
-                                        ?>
+                                            ?>
                                             <div class="mini_cart mini_cart2">
                                                 <div class="cart_gallery">
                                                     <div class="cart_info">
@@ -124,7 +139,7 @@
                                             } else {
                                                 $total = 0; //tổng tiền của tất cả sản phẩm trong giỏ hàng
                                                 $rows = $sanpham->data;
-                                            ?>
+                                                ?>
                                                 <div class="mini_cart mini_cart2">
                                                     <div style="height:150px; overflow-y:scroll;">
                                                         <?php
@@ -136,32 +151,38 @@
                                                             $hinhanh = $row["images"];
                                                             if ($hinhanh == "")
                                                                 $hinhanh = "no-Image.png";
-                                                        ?>
+                                                            ?>
 
                                                             <div class="cart_gallery">
                                                                 <div class="cart_item">
                                                                     <div class="cart_img">
-                                                                        <a href="?module=chitietsanpham&manhom=<?= $row["cat_id"] ?>&masp=<?= $row["id"] ?>">
+                                                                        <a
+                                                                            href="?module=chitietsanpham&manhom=<?= $row["cat_id"] ?>&masp=<?= $row["id"] ?>">
                                                                             <img src="hinhanh/Sanpham/<?= $hinhanh ?>">
                                                                         </a>
                                                                     </div>
                                                                     <div class="cart_info">
 
-                                                                        <a href="?module=chitietsanpham&manhom=<?= $row["cat_id"] ?>&masp=<?= $row["id"] ?>"> <?= $row["title"] ?>
+                                                                        <a
+                                                                            href="?module=chitietsanpham&manhom=<?= $row["cat_id"] ?>&masp=<?= $row["id"] ?>">
+                                                                            <?= $row["title"] ?>
                                                                         </a>
-                                                                        <p><?= number_format($row["price"]) ?> VNĐ x <?= $soluong ?> </p>
+                                                                        <p>
+                                                                            <?= number_format($row["price"]) ?> VNĐ x
+                                                                            <?= $soluong ?>
+                                                                        </p>
 
 
-                                                                    </div>
+                           </div>
                                                                     <div class="cart_remove">
-                                                                        <a href="?module=cart&act=del&masp=<?= $row["id"] ?>" title="Xóa sản phẩm"> X </a>
+                                                                        <a href="?module=cart&act=del&masp=<?= $row["id"] ?>"
+                                                                            title="Xóa sản phẩm"> X </a>
                                                                     </div>
-                                                                </div>
+                                    </div>
                                                             </div>
-
-                                                        <?php
+          <?php
                                                         }
-                                                        ?>
+         ?>
                                                     </div>
 
 
@@ -170,7 +191,9 @@
 
                                                             <div class="cart_total mt-10">
                                                                 <span>Total :</span>
-                                                                <span class="price"><?= number_format($total) ?></span>
+                                                                <span class="price">
+                                                                    <?= number_format($total) ?>
+                                                                </span>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -184,7 +207,7 @@
 
                                                     </div>
                                                 </div>
-                                        <?php
+                                                <?php
                                             }
                                         } ?>
 

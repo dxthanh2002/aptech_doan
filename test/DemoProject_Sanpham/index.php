@@ -94,6 +94,8 @@ require("KiemtraDangNhapuser.php");
 <script type="text/javascript" src="./Dependencies/jquery/jquery.3.6.1.js"></script>
  <script type="text/javascript" src="./Dependencies/Back-to-top.js"></script>
     <script type="text/javascript" src="./JS/Onkeyup.js"></script>
-   
+    <script type="text/javascript" src="./JS/checkuser.js"></script> 
+    <script type="text/javascript" src="./JS/checktel.js"></script>
+    <script type="text/javascript" src="./JS/checkemail.js"></script>
 
 </html>

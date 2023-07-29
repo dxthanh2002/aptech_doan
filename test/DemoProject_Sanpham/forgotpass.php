@@ -38,7 +38,8 @@
                     </div>
                     
                 </form>
-                
+                <div> <a href=loginuser.php>
+                                     Go back</a></div>
             </div>
             </div>
         </div>

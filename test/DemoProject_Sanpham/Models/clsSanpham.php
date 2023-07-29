@@ -38,7 +38,7 @@ class clsSanpham
 	}
 	
 	function LayDanhSachSP($trangthai=2, $cat_id=0, $tukhoa="")
-	{   
+	{    
 		$conn = ConnectDB();
 		if($conn==NULL)
         return -1;//Lỗi kết nối CSDL

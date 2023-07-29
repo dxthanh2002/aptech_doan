@@ -182,6 +182,57 @@ class clscus
 			$this->data = $this->db->pdo_stm->fetch();
 		return $ketqua;//trả về $ketqua: TRUE/FALSE
 	}
+	function GetUserByUsername2($username)
+	{   
+			
+	 
+		$sql = "SELECT * FROM tbcustomer WHERE user=?";
+		$data = [$username];
+ 		$ketqua = $this->db->ThucthiSQL($sql,$data);
+		$this->data=NULL;
+		if($ketqua==TRUE)
+			$this->data = $this->db->pdo_stm->fetch();
+			if($this->data == null) {
+				return $ketqua=false;
+			} else {
+		return $ketqua; }//trả về $ketqua: TRUE/FALSE
+		
+	}
+
+
+	function GetUserByemail2($email)
+	{   
+			
+	 
+		$sql = "SELECT * FROM tbcustomer WHERE email=?";
+		$data = [$email];
+ 		$ketqua = $this->db->ThucthiSQL($sql,$data);
+		$this->data=NULL;
+		if($ketqua==TRUE)
+			$this->data = $this->db->pdo_stm->fetch();
+			if($this->data == null) {
+				return $ketqua=false;
+			} else {
+		return $ketqua; }//trả về $ketqua: TRUE/FALSE
+		
+	}
+
+	function GetUserBytel2($tel)
+	{   
+			
+	 
+		$sql = "SELECT * FROM tbcustomer WHERE tel=?";
+		$data = [$tel];
+ 		$ketqua = $this->db->ThucthiSQL($sql,$data);
+		$this->data=NULL;
+		if($ketqua==TRUE)
+			$this->data = $this->db->pdo_stm->fetch();
+			if($this->data == null) {
+				return $ketqua=false;
+			} else {
+		return $ketqua; }//trả về $ketqua: TRUE/FALSE
+		
+	}
 
 	function SuaPasstuUser($username,$password)
 	{
@@ -192,5 +243,37 @@ class clscus
 		return $ketqua;
 	}
 
+	function dky($cusid,$code,$status =2)
+	{
+		$sql = "INSERT INTO  tbcodeemail  (cusid,code,status) VALUES (?, ?, ?)";
+		
+		 $data[] = $cusid;
+        
+		$data[] = $code;
+		$data[] = $status;
+ 		$ketqua = $this->db->ThucthiSQL($sql,$data);
+		return $ketqua;
+	}
+	function timcode($cusid)
+	{
+		$sql = "SELECT * from  tbcodeemail  where cusid =?";
+		
+		 $data[] = $cusid;
+ 		$ketqua = $this->db->ThucthiSQL($sql,$data);
+		 if($ketqua==TRUE)
+		 $this->data = $this->db->pdo_stm->fetch();
+		 if($this->data == null) {
+			 return $ketqua=false;
+		 } else {
+	 return $ketqua; }
+	}
+    function updatestt($email)
+	{
+		$sql = "UPDATE tbcustomer SET status=1 WHERE email=?";
+		 
+		$data[] = $email;
+ 		$ketqua = $this->db->ThucthiSQL($sql,$data);
+		return $ketqua;
+	}
 }
 ?>
