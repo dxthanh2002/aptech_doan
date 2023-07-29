@@ -27,7 +27,7 @@
               <div class="chitietsanpham">
                 <div class="card text-dark"></div>
               	<h2>Nội dung</h2>
-                <div style="margin: 5px; padding: 10px; font-size:20px;font-family: Roboto, Arial, Helvetica, Verdana, Geneva, Tahoma, sans-serif;">  <?=$row["noidung"]?> </div>
+                <div class="text-dark" style="margin: 5px; padding: 10px; font-size:20px;font-family: Roboto, Arial, Helvetica, Verdana, Geneva, Tahoma, sans-serif;">  <?=$row["noidung"]?> </div>
               </div> 
               
             </div>
