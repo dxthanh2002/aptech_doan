@@ -25,7 +25,7 @@ class clscus
 	{
 		$sql = "INSERT INTO  tbcustomer(user,pass,fullname, tel,adress,email,status) VALUES (?, ?, ?, ?, ?,?,?)";
 		$data[] = $user;
-		$data[] = $pass;
+		$data[] = md5($pass);
         $data[] = $fullname;
 		$data[] = $tel;
 		$data[] = $adress;
@@ -52,7 +52,7 @@ class clscus
 	{
 		$sql = "UPDATE  tbcustomer SET user = ?, pass = ?, fullname = ?,tel = ? ,adress = ? ,email = ? , status = ? WHERE cusid=?";
 		$data[] = $user;
-		$data[] = $pass;
+		$data[] = md5($pass);
         $data[] = $fullname;
 		$data[] = $tel;
 		$data[] = $adress;
@@ -66,7 +66,7 @@ class clscus
 	{
 		$sql = "UPDATE  tbcustomer SET  pass = ?   WHERE email=?";
         
-		$data[] = $pass;
+		$data[] = md5($pass);
        
 		$data[] = $email;
  		$ketqua = $this->db->ThucthiSQL($sql,$data);
@@ -115,7 +115,7 @@ class clscus
 		$sql = "SELECT * FROM tbcustomer WHERE user=? and pass=?";
 		
 		$data[] = $user;
-		$data[] = $pass;
+		$data[] = md5($pass);
  		$ketqua = $this->db->ThucthiSQL($sql,$data);
 		//LẤY BẢN GHI KẾT QUẢ LƯU VÀO $data
 		$this->data=NULL;

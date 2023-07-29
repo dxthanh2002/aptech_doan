@@ -11,7 +11,7 @@ if(isset($_REQUEST["tUser"])==false)//nếu chưa chạy form Login.php
 }
 $user = $_REQUEST["tUser"];
 $pass= $_REQUEST["tPassword"];
-$pass = md5($pass);//sử dụng hàm của php mã hóa md5() mật khẩu mà người dùng nhập
+//$pass = $pass;//sử dụng hàm của php mã hóa md5() mật khẩu mà người dùng nhập
 $admin = new clscus();
 $ketqua = $admin->KiemTrauser($user,$pass);
 if($ketqua==FALSE)
