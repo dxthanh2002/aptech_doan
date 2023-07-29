@@ -65,9 +65,8 @@
                                 <span class="label">Password: <b style="color:red"></b></span>
                                 <input type="password" id="tPassword" name="tPassword" class="no_border" placeholder="Input Password">
                             </div>
-                            <div class="button_box">
-                                <input type="button" class="btn btn-primary "
-               type="submit" name="b1" id="b1" value="Log in">
+                            <div class="text-center text-lg-start mt-4 pt-2">
+                                <input class="btn btn-primary" type="submit" name="b1" id="b1" value="Log in">
                                 <input class="btn btn-secondary" type="reset" value="Reset">
                             </div>
                             <div> <a href=index.php>
