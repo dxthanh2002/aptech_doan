@@ -32,5 +32,37 @@ function ShowOptions($rows, $valueColumn, $labelColumn, $selectedVal)
 		echo "<option value='" . $value. "' " . $selected . ">" . $label ."</option>\n";
 	}
 }
-
+function SendMail($email,$random_number){   
+    require "Dependencies/PHPMailer-master/src/PHPMailer.php"; 
+    require "Dependencies/PHPMailer-master/src/SMTP.php"; 
+    require 'Dependencies/PHPMailer-master/src/Exception.php'; 
+    $mail = new PHPMailer\PHPMailer\PHPMailer(true);//true:enables exceptions
+    try {
+        $mail->SMTPDebug = 0; //0,1,2: chế độ debug. khi chạy ngon thì chỉnh lại 0 nhé
+        $mail->isSMTP();  
+        $mail->CharSet  = "utf-8";
+        $mail->Host = 'smtp.gmail.com';  //SMTP servers
+        $mail->SMTPAuth = true; // Enable authentication
+        $mail->Username = 'Group4SellBook@gmail.com'; // SMTP username
+        $mail->Password = 'wikoflmjdlosbfda';   // SMTP password
+        $mail->SMTPSecure = 'ssl';  // encryption TLS/SSL 
+        $mail->Port = 465;  // port to connect to                
+        $mail->setFrom('Group4SellBook@gmail.com', 'Group4' ); 
+        $mail->addAddress( $email , ""); //mail và tên người nhận  
+        $mail->isHTML(true);  // Set email format to HTML
+        $mail->Subject = 'Xác nhận Email';
+        $noidungthu = 'Dãy số xác nhận của bạn là: ' . $random_number ; 
+        $mail->Body = $noidungthu;
+        $mail->smtpConnect( array(
+            "ssl" => array(
+                "verify_peer" => false,
+                "verify_peer_name" => false,
+                "allow_self_signed" => true
+            )
+        ));
+        $mail->send();
+    } catch (Exception $e) {
+        echo 'Mail không gửi được. Lỗi: ', $mail->ErrorInfo;
+    }
+}
 ?>

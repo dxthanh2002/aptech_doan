@@ -171,5 +171,26 @@ class clscus
  		$ketqua = $this->db->ThucthiSQL($sql,$data);
 		return $ketqua;
 	}
+
+	function GetUserByUsername($username)
+	{
+		$sql = "SELECT * FROM tbcustomer WHERE user=?";
+		$data[] = $username;
+ 		$ketqua = $this->db->ThucthiSQL($sql,$data);
+		$this->data=NULL;
+		if($ketqua==TRUE)
+			$this->data = $this->db->pdo_stm->fetch();
+		return $ketqua;//trả về $ketqua: TRUE/FALSE
+	}
+
+	function SuaPasstuUser($username,$password)
+	{
+		$sql = "UPDATE tbcustomer SET pass=? WHERE user=?";
+		$data[] = md5($password);
+		$data[] = $username;
+ 		$ketqua = $this->db->ThucthiSQL($sql,$data);
+		return $ketqua;
+	}
+
 }
 ?>

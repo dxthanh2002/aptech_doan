@@ -1,7 +1,7 @@
 <?php
 
 $username = $_REQUEST["t1"];
-$pass = $_REQUEST["t2"];
+$pass = md5($_REQUEST["t2"]);
 $name = $_REQUEST["t3"];
 $tel = $_REQUEST["t4"];
 $adress = $_REQUEST["t5"];

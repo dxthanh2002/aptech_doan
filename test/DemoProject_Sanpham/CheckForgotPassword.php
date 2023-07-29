@@ -1,14 +1,7 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Đăng nhập</title>
 
-    <link rel="stylesheet" type="text/css" href="CSS/base.css"/>
-    <link rel="stylesheet" type="text/css" href="CSS/login.css"/>
+<link rel="stylesheet" type="text/css" href="CSS/base.css"/>
+<link rel="stylesheet" type="text/css" href="CSS/login.css"/>
     
-</head>
-<body>
  <!--   Modal layout-->
 <div class="modal">
     <div class="modal__overlay">
@@ -20,17 +13,17 @@
         <div class="auth-form">
             <div class="auth-form__container">
                 <div class="auth-form__header">
-                    <h3 class="auth-form__heading">Quên mật khẩu</h3>
+                    <h3 class="auth-form__heading">Xác nhận Email</h3>
                 </div>
 
-                <form class="" id="frmLogin" name="frmLogin" method="post" action="ctlForgotPassword.php">
+                <form class="" id="frmLogin" name="frmLogin" method="post" action="ctlForgotPassword.php?act=check">
 
                     <div class="auth-form__form">
                         <div class="auth-form__group">
-                            <input type="text" id="user" name="user" class="auth-form__input" placeholder="Tài khoản" required>
+                            <input type="text" id="number_check" name="number_check" class="auth-form__input" placeholder="Mã xác nhận được gửi tới Email của bạn" required>
                         </div>
                         <div class="auth-form__group">
-                            <input type="email" id="email" name="email" class="auth-form__input" placeholder="Email" required>
+                            <input type="password" id="password" name="password" class="auth-form__input" placeholder="Mật khẩu mới" required>
                         </div>
                     </div>
                     <div style="padding-bottom: 30px;" class="auth-form__controls">
@@ -38,11 +31,10 @@
                     </div>
                     
                 </form>
-                
+                <div> <a href=loginuser.php>
+                                     Go back</a>
             </div>
             </div>
         </div>
     </div>
 </div>
-</body>
-</html>
