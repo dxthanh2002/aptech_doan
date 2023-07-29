@@ -82,7 +82,7 @@
                                                 </div>
 
                                             </form>
-                                            <table id="searchResults" class="header-info-search" style="height:150px; overflow-y:scroll;">
+                                            <table id="searchResults" class="header-info-search bg-light rounded" style="height:150px; overflow-y:scroll;">
                                             </table>
                                         </div>
 

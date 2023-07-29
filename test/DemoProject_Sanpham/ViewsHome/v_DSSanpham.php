@@ -1,13 +1,13 @@
 <div class="container">
 	<br>
-	<h5 class=" text-center">
+	<h2 class=" text-center">
 		<?php
 		if ($act == "timkiem")
 			echo "KẾT QUẢ TÌM KIẾM";
 		else
 			echo "DANH SÁCH SẢN PHẨM";
 		?>
-	</h5>
+	</h2>
 	<?php
 	/*if ($sanpham->data == NULL)
 		echo "<h5>KHÔNG TÌM THẤY SẢN PHẨM</h5>";
@@ -111,15 +111,15 @@
 		
 		?>
 		
-		<a <?=$CSS_OffButtonDau?> style="color:red;"> Đầu </a>
-		<a <?=$CSS_OffButtonTruoc?> style="color:red;"> <i class="pagination-item__icon fas fa-angle-left" style="color:red;"></i> </a> 
+		<a class="text-light" <?=$CSS_OffButtonDau?> style="color:red;"> Đầu </a>
+		<a class="text-light" <?=$CSS_OffButtonTruoc?> "> <i class="pagination-item__icon fas fa-angle-left" ></i> </a> 
 		<?php
 		for($page=1; $page<=$total_pages; $page++)
 		{
 			$CSS_curPage = ($page==$current_page)?" class='curPage' ": "";
 		
 		?>
-		<a href="?module=sanpham<?=$link?>&page=<?=$page?>" <?=$CSS_curPage?>> <?=$page?></a> 
+		<a class="text-light" href="?module=sanpham<?=$link?>&page=<?=$page?>" <?=$CSS_curPage?>> <?=$page?></a> 
 		<?php
 		}
 		//tính vị trí trang tiếp
@@ -135,8 +135,8 @@
 			$CSS_OffButtonTiep = "href='?module=sanpham$link&page=$page'";
 		}
 		?>
-		<a <?=$CSS_OffButtonTiep?> style="color:red;"> <i class="pagination-item__icon fas fa-angle-right" style="color:red;"></i> </a>
-		<a <?=$CSS_OffButtonCuoi?> style="color:red;"> Cuối </a>
+		<a class="text-light" <?=$CSS_OffButtonTiep?> > <i class="pagination-item__icon fas fa-angle-right" ></i> </a>
+		<a class="text-light" <?=$CSS_OffButtonCuoi?> > Cuối </a>
 	</div>
 	</div>
 </div>
