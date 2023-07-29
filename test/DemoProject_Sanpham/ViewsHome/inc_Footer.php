@@ -40,7 +40,7 @@
             <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
                 <h5 class="text-uppercase mb-4 fw-bold text-warning">Contact</h5>
                 <p>
-                    <i class="fas fa-envelope me-3"></i>29 Ngo Thi Nham -Ha Dong-Ha Noi
+                <i class="fa-solid fa-house me-3"></i>29 Ngo Thi Nham -Ha Dong-Ha Noi
                 </p>
                 <p>
                     <i class="fas fa-phone me-3"></i>Wineshop@gmail.com
