@@ -16,12 +16,16 @@ if($ketqua==FALSE)
 	$thongbao="Lỗi thêm dữ liệu";
 else
 	$thongbao ="Đăng Ký thành công, làm ơn hãy kiểm tra email";
+	$link_tieptuc =  "loginuser.php";
 	$ketqua3 = $user->GetUserByUsername2($username);
 	if($ketqua3==true){
 		$rows = $user->data["cusid"];
 	}
+	$mail = $_POST["t6"];
 	$ketqua = $user->dky($rows,$token,1);
-	$link = '<a href='.'?ctlverify.php?key=<?=$_POST["'.'"t6]?>&token=<?=$token?>"'.'>Click and Verify Email</a>';
+	$link =
+	 '<a href="?ctlverify.php?key=<?=$mail?>&token=<?=$token?>">Click and Verify Email</a>'; 
+	
 	SendMail2($mail,$link);
 	
 require("Views/vKetqua.php");
