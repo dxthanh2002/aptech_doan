@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jul 29, 2023 at 05:18 PM
+-- Generation Time: Aug 03, 2023 at 06:58 PM
 -- Server version: 10.4.27-MariaDB
 -- PHP Version: 8.2.0
 
@@ -168,29 +168,6 @@ DELIMITER ;
 -- --------------------------------------------------------
 
 --
--- Table structure for table `tbcodeemail`
---
-
-CREATE TABLE `tbcodeemail` (
-  `id` int(11) NOT NULL,
-  `cusid` int(11) NOT NULL,
-  `code` int(11) NOT NULL,
-  `status` tinyint(4) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
-
---
--- Dumping data for table `tbcodeemail`
---
-
-INSERT INTO `tbcodeemail` (`id`, `cusid`, `code`, `status`) VALUES
-(1, 10, 93, 1),
-(2, 11, 93, 1),
-(3, 12, 93, 1),
-(4, 13, 93, 1);
-
--- --------------------------------------------------------
-
---
 -- Table structure for table `tbcustomer`
 --
 
@@ -213,7 +190,8 @@ INSERT INTO `tbcustomer` (`cusid`, `user`, `pass`, `fullname`, `tel`, `adress`, 
 (2, 'a', '202cb962ac59075b964b07152d234b70', 'GLD HOAK', '9713440547', '5253 SE 82nd Ave Suite #21', 'nc.hie@gmail.com', 1),
 (4, 'VVH', '202cb962ac59075b964b07152d234b70', 'Vũ văn Hiệu', '012345674', 'Hà nội', 'VVH@gmail.com', 1),
 (5, 'Long', 'e10adc3949ba59abbe56e057f20f883e', 'Nguyễn Ngọc Long', '091235602', 'Nam Định', 'nc.hieu2512@gmail.com', 1),
-(6, 'ADH', 'c4ca4238a0b923820dcc509a6f75849b', 'ADH', '12321412', '165ton that huyet', 'ADH@yahoo.com', 1);
+(6, 'ADH', 'c4ca4238a0b923820dcc509a6f75849b', 'ADH', '12321412', '165ton that huyet', 'ADH@yahoo.com', 1),
+(30, 'HR', '28c8edde3d61a0411511d3b1866f0636', 'Full name', '0904802754', '25', 'h3n1dinhcong@gmail.com', 0);
 
 -- --------------------------------------------------------
 
@@ -307,12 +285,6 @@ ALTER TABLE `tbchitiethoadon`
   ADD KEY `idx_masp` (`masp`);
 
 --
--- Indexes for table `tbcodeemail`
---
-ALTER TABLE `tbcodeemail`
-  ADD PRIMARY KEY (`id`);
-
---
 -- Indexes for table `tbcustomer`
 --
 ALTER TABLE `tbcustomer`
@@ -363,16 +335,10 @@ ALTER TABLE `tbchitiethoadon`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=43;
 
 --
--- AUTO_INCREMENT for table `tbcodeemail`
---
-ALTER TABLE `tbcodeemail`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
-
---
 -- AUTO_INCREMENT for table `tbcustomer`
 --
 ALTER TABLE `tbcustomer`
-  MODIFY `cusid` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=14;
+  MODIFY `cusid` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=31;
 
 --
 -- AUTO_INCREMENT for table `tbhoadon`

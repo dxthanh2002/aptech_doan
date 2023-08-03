@@ -15,9 +15,9 @@ $ketqua = $user->Themuser($username,$pass,$name,  $tel, $adress,$mail,$trangthai
 if($ketqua==FALSE)
 	$thongbao="Lỗi thêm dữ liệu";
 else
-	$thongbao ="Đăng Ký thành công, làm ơn hãy kiểm tra email";
+	$thongbao ="Đăng Ký thành công, Hãy đăng nhập để tiếp tục";
 	$link_tieptuc =  "loginuser.php";
-	$ketqua3 = $user->GetUserByUsername2($username);
+	/*$ketqua3 = $user->GetUserByUsername2($username);
 	if($ketqua3==true){
 		$rows = $user->data["cusid"];
 	}
@@ -26,7 +26,7 @@ else
 	$link =
 	 '<a href="?ctlverify.php?key=<?=$mail?>&token=<?=$token?>">Click and Verify Email</a>'; 
 	
-	SendMail2($mail,$link);
+	SendMail2($mail,$link);*/
 	
 require("Views/vKetqua.php");
 ?>
